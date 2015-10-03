@@ -1,0 +1,57 @@
+@(title: String, isLoggedIn: Boolean, departmentList: List[Department])
+
+@import views.html.admin._
+@import helper._
+@import views.html.bootstrap3._
+
+
+@backend(title, isLoggedIn) {
+
+	<h2><span class="glyphicon glyphicon-th"></span> @title <small> | View all SJSU Department summary</small></h2>
+	<hr>
+	
+	@if(departmentList.size() > 0){
+		<table class="table all-department text-center">
+		        <thead>
+		          <tr>
+		            <th>Name</th>
+		            <th>Username</th>
+		            <th>Location</th>
+		            <th>Items</th>
+		            <th>Active</th>
+		            <th>Disposed</th>
+		            <th>Inventory</th>
+		            <th>Edit</th>
+		          </tr>
+		        </thead>
+		        <tbody>
+				@for(department <- departmentList){
+				      <tr>
+			            <td>@department.getName()</td>
+			            <td>@department.getUsername()</td>
+			            <td>@department.getLocation()</td>
+			            <td>@department.getItemCount()</td>
+			            <td>@department.getActiveItems()</td>
+			            <td>@(department.getItemCount() - department.getActiveItems())</td>
+			            <td><a href="/adm/item/1?dept=@department.getId()" class="btn btn-primary">Inventory</a></td>
+			            <td>
+			            	@if( department.getId() == 1 ){
+			            		<strong style="font-size:10px"> 
+			            		Cannot be edited or deleted.</strong>
+			            	}else{
+			            		<a href="@routes.AdminController.editDepartment(department.getId())"  class="btn btn-default">Edit Account</a>
+			            	}
+		            	</td>
+			          </tr>
+				}
+			</tbody>
+        </table>
+        <a href="/adm/department/add" class="btn btn-primary pull-right">Add a department</a>
+        
+        
+	}else{
+		No departments added. Please add a department.
+	}
+	
+
+}

@@ -1,0 +1,119 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+.dashboard-menu {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  max-width: 180px;
+  width: 100%;
+  background-color: #243743;
+  height: 100%;
+  color: #FAFAFA;
+}
+.dashboard-menu .list-group {
+  margin: 0;
+  cursor: pointer;
+}
+.dashboard-menu .list-group-item-text {
+  font-size: 11px;
+  color: #C5D0C1;
+  padding-left: 29px;
+  font-style: italic;
+  padding-right: 10px;
+  margin-bottom: 7px;
+}
+.dashboard-menu .list-group-item {
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+  background-color: #243743;
+  font-size: 13px;
+  color: #FAFAFA;
+}
+.dashboard-menu .list-group-item .list-group-item {
+  padding-left: 29px;
+  font-style: italic;
+  font-size: 12px;
+}
+.dashboard-menu .list-group-item .glyphicon {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.dashboard-menu .list-group-item:first-child {
+  padding-top: 10px;
+  border-radius: 0 0 0 0;
+}
+.dashboard-menu .list-group-item:last-child {
+  border-radius: 0 0 0 0;
+}
+.full-width .department .panel {
+  background-color: #BFCFCC;
+  color: white;
+}
+.full-width .department .panel-footer {
+  color: black;
+}
+.full-width .department .main-glyphicon {
+  top: 20%;
+  position: absolute;
+  font-size: 35px;
+}
+.all-department thead {
+  background-color: #f3f3f3;
+}
+.all-department thead th {
+  text-align: center;
+}
+.dashboard-content h1,
+.dashboard-content h2,
+.dashboard-content h3,
+.dashboard-content h4 {
+  color: #485C5A;
+}
+.dashboard-content .department-summary {
+  margin-top: 25px;
+}
+.lol {
+  display: none;
+}
+.log-container ul {
+  list-style: none;
+}
+.log-container ul li {
+  font-size: 11px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.log-container ul li .log-activity,
+.log-container ul li .log-user,
+.log-container ul li .log-date {
+  font-weight: 600;
+}
+.table > tr > td {
+  vertical-align: middle;
+}
+.full-width-modal .modal-dialog {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.full-width-modal .modal-content {
+  height: 100%;
+  border-radius: 0;
+  color: white;
+  overflow: auto;
+}
+.item-image {
+  cursor: pointer;
+}
+#spiceworks-update {
+  display: none;
+}
+.welcome {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

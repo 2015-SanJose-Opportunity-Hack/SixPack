@@ -1,0 +1,12 @@
+2015-10-03 15:43:26,481 - [INFO] - from play in pool-4-thread-1 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-10-03 15:43:31,675 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 15:43:32,595 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 15:43:32,601 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+

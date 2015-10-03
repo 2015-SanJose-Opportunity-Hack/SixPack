@@ -1,0 +1,30 @@
+# Home page
+
+GET     /                           controllers.ApplicationController.index()
+
+GET     /logout                     controllers.ApplicationController.logout()
+
+GET     /about                      controllers.ApplicationController.aboutProject()
+
+GET     /not-found				    controllers.ApplicationController.errorNotFound()
+
+GET		/error						controllers.ApplicationController.error()
+
+
+GET     /login                      controllers.AdminController.login()
+
+POST   /authenticate                 controllers.AdminController.authenticateLogin()
+
+GET    /dashboard                    controllers.AdminController.dashboard()
+
+GET	   /settings					 controllers.AdminController.settings()
+
+POST   /settings					controllers.AdminController.updateSettings()
+
+GET    /error/not-found              controllers.AdminController.errorNotFound()
+
+POST   /request/v1					controllers.ApplicationController.requestRestCall()
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

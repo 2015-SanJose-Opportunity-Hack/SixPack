@@ -1,0 +1,34 @@
+@(loginForm: Form[views.formdata.department.DepartmentLoginForm])
+
+@import helper._
+@import views.html.bootstrap3._
+
+@main("Welcome to SJSU Inventory Management") {
+	
+	<div class="col-md-6">
+		<center>
+				<img alt="San Jose Logo Welcome" src="@routes.Assets.at("images/san-jose-state-university-logo.png")" class="">
+		</center>
+	</div>
+	
+	
+	<div class="col-md-6">
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			      <h3 class="panel-title">Department Login</h3>
+			  </div>
+			  <div class="panel-body">
+			    	@form(routes.DepartmentController.authenticateLogin(), 'class -> "form-horizontal"){
+				    	@text(loginForm("username"),
+						        	label = "Username",
+						        	placeholder = "Deparment Username)")
+						        	
+				       	@password(loginForm("password"),
+						        	label = "Password",
+						        	placeholder = "Department password (required)")
+						<button type="submit" class="btn-default btn btn-primary pull-right">Department Login</button>
+				    }
+			  </div>
+			</div>
+	</div>
+}

@@ -1,0 +1,57 @@
+@(title: String, isLoggedIn: Boolean, categoryList: List[Category])
+
+@import views.html.admin._
+@import helper._
+@import views.html.bootstrap3._
+
+
+@backend(title, isLoggedIn) {
+
+	<h2><span class="glyphicon glyphicon-list-alt"></span> @title <small> | View all inventory categories</small></h2>
+	<hr>
+	<div class="col-md-6">
+	
+	@if(categoryList.size() > 0){
+		<table class="table all-department">
+		        <thead class="text-center">
+		          <tr>
+		            <th>ID</th>
+		            <th>Category Name</th>
+		            <th>Action</th>
+		          </tr>
+		        </thead>
+		        <tbody class="text-center">
+				@for(category <- categoryList){
+				      <tr>
+			            <th scope="row">@category.getId()</th>
+			            <td>@category.getCategoryName()</td>
+			            <td>
+			            	@if( category.getId() != 1 ){
+				            	<a href="/adm/category/@category.getId()" class="btn btn-warning">
+				            		<span class="glyphicon glyphicon-pencil"></span>
+			            		</a> 
+				            	
+		            		}else{
+		            			<strong>Default Category. Cannot be edited or deleted.</strong>
+		            		}
+		            	</td>
+			          </tr>
+				}
+			</tbody>
+        </table>
+	}else{
+		No category added. Please add a category.
+	}
+	</div>
+	
+	<script>
+		jQuery(document).ready(function(){
+				jQuery(".delete-category").click(function(){
+					jQuery('#delete-button').attr("href","/adm/category/delete/"+ jQuery(this).data("id"))
+					jQuery('#myModalLabel').text("Confirm Deletion of '" + jQuery(this).data("category-name") + "' category");
+				});
+		});
+	</script>
+	
+
+}

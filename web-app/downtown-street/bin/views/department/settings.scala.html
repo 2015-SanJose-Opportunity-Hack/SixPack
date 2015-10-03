@@ -1,0 +1,59 @@
+@(title: String, isLoggedIn: Boolean, settingsForm: Form[views.formdata.department.SettingsForm])
+
+@import helper._
+@import views.html.bootstrap3._
+
+@backend(title, isLoggedIn) {
+	
+	<h2><span class="glyphicon glyphicon-th-large"></span> @title <small> | Update your account settings</small></h2>
+	<hr>
+	
+	<div class="col-md-6">
+		@form(routes.DepartmentController.updateSettings(), 'class -> "form-horizontal"){
+			
+				@text(settingsForm("username"),
+		        	label = "Username",
+		        	placeholder = "Department Username (required)")
+		        
+
+				@text(settingsForm("departmentName"),
+		        	label = "Department Name",
+		        	placeholder = "Department Name (required)")
+		        	
+	        	@password(settingsForm("oldPassword"),
+		        	label = "Old Password",
+		        	placeholder = "Department Old password",
+		        	help = "6-20 characters"
+		        	)
+		        	
+	       		@password(settingsForm("password"),
+		        	label = "New Password",
+		        	placeholder = "Department's new password (required)",
+		        	help = "6-20 characters"
+		        	)
+		
+				@password(settingsForm("rePassword"),
+		        	label = "Password again",
+		        	placeholder = "Password again (required)")
+		        	
+		        @text(settingsForm("location"),
+		        	label = "Location",
+		        	placeholder = "Location (required)")	
+	        	
+	        	@text(settingsForm("adminName"),
+		        	label = "Admin Name",
+		        	placeholder = "Admin Name (required)")
+		        	
+	        	
+				@text(settingsForm("adminPhone"),
+		        	label = "Admin Phone",
+		        	placeholder = "Admin Phone (required)")
+		        	
+				<button type="submit" class="btn-default btn btn-primary pull-right">Update Settings</button>			
+		}
+	</div>
+	
+	
+	
+	
+}

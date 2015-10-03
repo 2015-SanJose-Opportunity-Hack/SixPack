@@ -1,0 +1,49 @@
+@(title: String, isLoggedIn: Boolean, departmentLoginForm: Form[views.formdata.department.DepartmentLoginForm])
+
+@import helper._
+@import views.html.bootstrap3._
+
+@backend(title, isLoggedIn) {
+
+	<div class="col-md-6">
+		<div class="panel panel-info">
+				  <div class="panel-heading">
+				      <h3 class="panel-title">Department Safety Tips</h3>
+				  </div>
+				  <div class="panel-body">
+						<ul>
+							<li>Keep your password private</li>
+							<li>Do not share this login link with anyone</li>
+							<li>Report suspicious activities to admin immediately</li>
+						</ul> 
+				  </div>
+				</div>
+	</div>
+
+	<div class="col-md-6">
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+				      <h3 class="panel-title">Department Login</h3>
+				  </div>
+				  <div class="panel-body">
+						  @if(departmentLoginForm.hasErrors){
+				  			<div class="alert alert-danger" role="alert">Username or Password do not match. Please try again</div>
+				  		}
+			    
+				    	@form(routes.DepartmentController.authenticateLogin(), 'class -> "form-horizontal"){
+					    	@text(departmentLoginForm("username"),
+							        	label = "Username",
+							        	placeholder = "Department's Username)")
+							        	
+					       	@password(departmentLoginForm("password"),
+							        	label = "Password",
+							        	placeholder = "Department password (required)")
+							
+				    		<button type="submit" class="btn-default btn btn-primary pull-right">Department Login</button>
+					    	
+					    }
+				  </div>
+				</div>
+		</div>
+	
+}

@@ -1,0 +1,93 @@
+Computer name	Policy compliance	Up to date	Alerts and errors	On-access	Firewall enabled	Application control on-access	Data control scanning	Device control scanning	Tamper protection	Patch assessment	Web control status	Group	
+SV5SU	Differs from policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SV4DB	Differs from policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SV2	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUOPS2-PC	Same as policy	Not since 9/16/2015 12:50:22 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-VWEBFUSN1	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUI-VWEBFUSN1	Awaiting policy transfer	Not since 6/19/2015 2:40:49 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUI-VITWS1	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-VDBSSCDB1	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUI-VDBSFUSN1	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUI-VCSWS01												\Workgroup-SUI\Workstations	
+SUI-VAPPSCVM1	Same as policy	Not since 9/16/2015 4:40:20 PM	Error	Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUI-VAPPSCCM1	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUI-VAPPFUSN1	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUI-SUMAINT	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-SUFW2	Awaiting policy transfer	Not since 8/23/2015 4:03:42 AM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-SUENDPOINT	Same as policy	Not since 8/28/2015 8:04:46 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-SU-BMS	Awaiting policy transfer	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-SUBLDNGOPS	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI	
+SUI-SUAV03	Awaiting policy transfer	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-SUAV02	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-SUAV01	Same as policy	Not since 9/12/2015 7:00:19 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-SUASDIR	Awaiting policy transfer	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-SUADMIN	Same as policy	Not since 9/15/2015 5:50:21 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-MODFDEV2												\Workgroup-SUI\Workstations	
+SUI-JVMH1	Differs from policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUI-INFOMGR	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-INFO2	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-INFO1	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-IMAC	Differs from policy	Not since 9/14/2015 7:00:23 PM		Active				Inactive	Inactive			\Workgroup-SUI\Workstations	
+SUI-GRAPHMAC2	Same as policy	Not since 9/15/2015 5:50:21 PM		Active				Inactive	Inactive			\Workgroup-SUI\Workstations	
+SUI-GRAPHMAC1	Same as policy	Not since 9/16/2015 4:40:20 PM		Active				Inactive	Inactive			\Workgroup-SUI\Workstations	
+SUI-EXDIR	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-ECSPENTRY3	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-ECSPENTRY2	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-ECSPENTRY1	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-ECHVAC	Awaiting policy transfer	Not since 8/20/2015 10:51:41 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-ECEVENTDIR	Awaiting policy transfer	Not since 6/12/2015 5:20:12 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-ECCLBSPRTSA	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-ECCLBSPRTS4	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-ECCLBSPRTS3	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI	
+SUI-ECCLBSPRTS2	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-ECAVASSISTA	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-ECASDIR	Awaiting policy transfer	Not since 9/16/2015 12:50:22 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI	
+SUI-DPRT1	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUI-DFSV1	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUI-DDBSVR1	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUI-DADC1	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUI-CSTECHASST1	Same as policy	Yes	Error	Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-CSLTD810	Awaiting policy transfer	Unknown		Active		Inactive	Inactive	Inactive	Inactive		Inactive	\Workgroup-SUI\Workstations	
+SUI-CSLAP02	Same as policy	Not since 9/11/2015 5:20:11 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-CSLAP01	Same as policy	Not since 5/29/2015 1:59:12 PM		Active				Inactive	Inactive			\Workgroup-SUI\Workstations	
+SUI-CSEEEPC	Awaiting policy transfer	Not since 4/26/2015 12:02:28 AM		Active		Inactive	Inactive	Inactive	Inactive		Inactive	\Workgroup-SUI\Workstations	
+SUI-CSDEV3	Same as policy	Not since 9/14/2015 7:00:23 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-CSDEV	Same as policy	Not since 9/1/2015 4:49:52 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-COMPVIEW	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUI-CLBSPRTCRD	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI	
+SUI-BOXOFTABW8	Awaiting policy transfer	Not since 7/1/2015 11:21:35 AM		Active		Inactive	Inactive	Inactive	Inactive		Inactive	\Workgroup-SUI\Workstations	
+SUI-BOXOFFCEMGR	Awaiting policy transfer	Not since 8/3/2015 12:55:22 PM		Active		Inactive	Inactive	Inactive	Inactive		Inactive	\Workgroup-SUI\Workstations	
+SUI-BK2	Differs from policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Servers	
+SUI-AVTECHCORD2	Awaiting policy transfer	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI	
+SUI-ASFOURWIND	Awaiting policy transfer	Not since 12/19/2014 7:18:00 PM		Active		Inactive	Inactive	Inactive	Inactive		Inactive	\Workgroup-SUI\Workstations	
+SUI-APPSV	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUHRMGR1-PC	Same as policy	Not since 9/14/2015 7:00:23 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUHR3-PC	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUHR2A-PC	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUGRAPHICS2-PC	Awaiting policy transfer	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUEVNTSUP-PC	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUEVNTFD-PC	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUEVNTCRDS-PC	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SUBC-PC	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+suadmin_clp												\Workgroup-SUI\Workstations	
+SPENTRY4-PC	Awaiting policy from console	Unknown		Active		Inactive	Inactive	Inactive	Inactive		Inactive	\Workgroup-SUI\Workstations	
+SPENTRY2-PC	Awaiting policy transfer	Not since 9/4/2015 6:09:48 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+SPENTRY1-PC	Same as policy	Not since 9/4/2015 6:09:48 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI	
+EXADMIN-PC	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+ECSCASMGR-PC	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+ECRECMGR-PC	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+ECMAINT-PC	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+ECEVENTMGRS-PC	Awaiting policy transfer	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+ECEVENTDIR-PC	Same as policy	Yes	Adware or PUA detected	Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+ECBOX-PC	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+ECAVVIDEO-PC	Same as policy	Not since 8/30/2015 8:49:33 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI	
+ECADMIN-PC	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+ECADMINASST-PC	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+ECADIRADM2-PC	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+ECACCTMGR-PC	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI	
+ECACCTASST1-PC	Same as policy	Not since 9/16/2015 3:10:35 AM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+ECACCTAR1-PC	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+ECACCTAP1-PC	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+CSLAT36410	Same as policy	Not since 9/16/2015 4:40:20 PM		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+AQSUP2A-PC	Awaiting policy transfer	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
+AQCORD2-PC	Same as policy	Yes		Active		Inactive	Inactive	Inactive	Inactive		Active	\Workgroup-SUI\Workstations	
