@@ -1,12 +1,242 @@
-2015-10-03 15:43:26,481 - [INFO] - from play in pool-4-thread-1 
+2015-10-03 15:59:43,197 - [INFO] - from play in pool-4-thread-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-10-03 15:43:31,675 - [INFO] - from play in play-internal-execution-context-1 
+2015-10-03 15:59:52,662 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:mysql://localhost/downtown_street
 
-2015-10-03 15:43:32,595 - [INFO] - from application in play-internal-execution-context-1 
+2015-10-03 15:59:53,099 - [INFO] - from application in play-internal-execution-context-1 
 Application has started
 
-2015-10-03 15:43:32,601 - [INFO] - from play in play-internal-execution-context-1 
+2015-10-03 15:59:53,103 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:01:47,491 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:01:47,623 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:01:47,660 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:01:47,660 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:02:25,447 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:02:25,559 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:02:25,594 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:02:25,595 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:03:14,616 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:03:14,716 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:03:14,758 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:03:14,758 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:03:39,790 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:03:39,858 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:03:39,899 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:03:39,899 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:04:40,645 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:04:40,718 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:04:40,754 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:04:40,754 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:07:38,522 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:07:38,623 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:07:38,670 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:07:38,670 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:09:45,857 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:09:45,946 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:09:45,992 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:09:45,993 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:10:57,639 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:10:57,720 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:10:57,761 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:10:57,761 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:12:37,913 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:12:38,025 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:12:38,086 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:12:38,086 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:16:29,202 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:16:29,278 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:16:29,318 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:16:29,318 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:18:18,947 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:18:19,010 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:18:19,043 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:18:19,044 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:22:02,311 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:22:02,378 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:22:02,434 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:22:02,434 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:24:02,214 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:24:02,272 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:24:02,325 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:24:02,325 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-03 16:34:51,066 - [ERROR] - from application in New I/O worker #3 
+
+
+! @6nk3fpnc4 - Internal server error, for (GET) [/dashboard] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-10-03 16:35:03,683 - [ERROR] - from application in New I/O worker #3 
+
+
+! @6nk3g0g3i - Internal server error, for (GET) [/dashboard] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.8.jar:2.3.8]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.8.jar:2.3.8]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-10-03 16:35:43,033 - [INFO] - from application in play-internal-execution-context-1 
+Application shutdown...
+
+2015-10-03 16:35:43,109 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://localhost/downtown_street
+
+2015-10-03 16:35:43,169 - [INFO] - from application in play-internal-execution-context-1 
+Application has started
+
+2015-10-03 16:35:43,169 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 

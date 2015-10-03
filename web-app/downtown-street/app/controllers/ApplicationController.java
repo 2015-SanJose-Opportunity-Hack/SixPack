@@ -5,9 +5,12 @@ import java.io.IOException;
 import models.Admin;
 import models.Request;
 import modules.utilities.Setup;
+import modules.utilities.Utilities;
 import play.data.Form;
 import play.libs.Json;
 import play.mvc.Controller;
+import play.mvc.Http;
+import play.mvc.Http.MultipartFormData.FilePart;
 import play.mvc.Result;
 import views.formdata.admin.AdminLoginForm;
 
@@ -50,13 +53,26 @@ public class ApplicationController extends Controller {
     public static Result requestRestCall(){
       ObjectNode result = Json.newObject();
   	  JsonNode json = request().body().asJson();
-  	  
+	  Http.MultipartFormData body = request().body().asMultipartFormData();
+	  String fileName = "";
+	  if( (fileName == null || fileName.length() == 0) && (body.getFiles() == null || body.getFiles().size() == 0)){
+        	Utilities.deleteFile(fileName);
+			fileName="";
+	   }else if(body.getFiles().size() == 1 ){
+		   FilePart pictureFile = body.getFile("picture");
+			fileName = Utilities.uploadItemPicture(pictureFile);
+	   }else{
+			fileName = "";
+	  }
+	  
   	  String firstName = json.findPath("firstName").asText();
   	  String lastName = json.findPath("lastName").asText();
   	  String latitude = json.findPath("latitude").asText();
   	  String longitude = json.findPath("longitude").asText();
+  	  String email = json.findPath("email").asText();
+  	  String business = json.findPath("business").asText();
   	  String address = json.findPath("address").asText();
-  	  String imagePath = json.findPath("imagePath").asText();
+  	  String imagePath = json.findPath("image").asText();
   	  String comment = json.findPath("comment").asText();
   	
   	  if(latitude.equals("") || longitude.equals("")){
@@ -73,6 +89,7 @@ public class ApplicationController extends Controller {
   	  request.setAddress(address);
   	  request.setComment(comment);
   	  request.save();
+  	  
   	  result.put("success", "success");
   	  return ok(result);
     }

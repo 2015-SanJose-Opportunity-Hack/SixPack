@@ -31,28 +31,42 @@ Seq[Any](format.raw/*1.56*/("""
 
 """),format.raw/*5.1*/("""
 """),_display_(/*6.2*/main("Downtown Street")/*6.25*/ {_display_(Seq[Any](format.raw/*6.27*/("""
-	
-	
-	"""),format.raw/*9.2*/("""<div class="col-md-6">
-			<div class="panel panel-default">
-			  <div class="panel-heading">
-			      <h3 class="panel-title">Staff Login</h3>
-			  </div>
-			  <div class="panel-body">
-			    	"""),_display_(/*15.10*/form(routes.AdminController.authenticateLogin(), 'class -> "form-horizontal")/*15.87*/{_display_(Seq[Any](format.raw/*15.88*/("""
-				    	"""),_display_(/*16.11*/text(loginForm("username"),
-						        	label = "Username",
-						        	placeholder = "Username)")),format.raw/*18.42*/("""
-						        	
-				       	"""),_display_(/*20.14*/password(loginForm("password"),
-						        	label = "Password",
-						        	placeholder = "Password (required)")),format.raw/*22.52*/("""
-						"""),format.raw/*23.7*/("""<button type="submit" class="btn-default btn btn-primary pull-right">Login</button>
-				    """)))}),format.raw/*24.10*/("""
-			  """),format.raw/*25.6*/("""</div>
+
+	"""),format.raw/*8.2*/("""<div class="col-md-6 login-form-container">
+			<div class="login-form">
+				  <h3 class="login-title"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Staff Login</h3>
+			    	<form action="/authenticate" method="POST" class="form-horizontal">
+    				
+					  <div class="form-group ">
+					    
+					    <div class="col-sm-12">
+					      <input type="text" class="form-control" id="username" name="username" value="" placeholder="Username">
+					      <span class="help-block"></span>
+					      <span class="help-block"></span>
+					    </div>
+					  </div>
+					
+											        	
+									       	
+					
+					  <div class="form-group ">
+					    
+					    <div class="col-sm-12">
+					      <input type="password" class="form-control" id="password" name="password" value="" placeholder="Password">
+					      <span class="help-block"></span>
+					      <span class="help-block"></span>
+					    </div>
+					  </div>
+					
+					<button type="submit" class="btn-default btn btn-primary">Login</button>
+						<div class="forgot-password-container">
+						    <a href="#" title="Forgot Password" class="forgot-password">Forgot Password</a>
+						</div>
+					</form>
 			</div>
+						  
 	</div>
-""")))}),format.raw/*28.2*/("""
+""")))}),format.raw/*42.2*/("""
 """))}
   }
 
@@ -65,11 +79,11 @@ Seq[Any](format.raw/*1.56*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Oct 03 15:17:05 PDT 2015
+                  DATE: Sat Oct 03 16:22:01 PDT 2015
                   SOURCE: /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/main/login.scala.html
-                  HASH: 0bd4f559f721684953a0def7f10147b42c6b917c
-                  MATRIX: 763->1|951->55|979->106|1006->108|1037->131|1076->133|1108->139|1329->333|1415->410|1454->411|1492->422|1617->526|1674->556|1813->674|1847->681|1971->774|2004->780|2060->806
-                  LINES: 26->1|30->1|32->5|33->6|33->6|33->6|36->9|42->15|42->15|42->15|43->16|45->18|47->20|49->22|50->23|51->24|52->25|55->28
+                  HASH: 1b026e549a0059b7a2b433af4c5493dba28c2015
+                  MATRIX: 763->1|951->55|979->106|1006->108|1037->131|1076->133|1105->136|2350->1351
+                  LINES: 26->1|30->1|32->5|33->6|33->6|33->6|35->8|69->42
                   -- GENERATED --
               */
           

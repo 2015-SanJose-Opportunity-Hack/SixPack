@@ -1,5 +1,7 @@
 html{ min-height: 100%; position: relative; }
-
+body{
+	background-color: #D5E1DD;
+}
 .dashboard-menu{
 	position: absolute;
 	left: 0;
@@ -129,10 +131,36 @@ html{ min-height: 100%; position: relative; }
 
 .item-image{ cursor: pointer; }
 
-#spiceworks-update{
-	display: none;
+.login-form{
+	    background-color: white;
+    	padding: 25px;
+    	input{height: 50px;}
+    	
+    	button[type=submit]{
+    	    width: 100%;
+    		padding: 10px;
+    	}
+    	
+    	.forgot-password-container{
+    		text-align: center;
+    		display: block;
+    		margin-top: 20px;
+		}
 }
 
 .welcome{
+	text-align: center;
+}
+
+.login-form-container{
+	margin: 0 auto;
+	float: none;
+	margin-top: 50px;
+}
+
+.login-title{
+	margin-bottom: 25px;
+	margin-top: 0;
+	color: #2B3E42;
 	text-align: center;
 }
