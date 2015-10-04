@@ -45,7 +45,7 @@ function getFormData() {
         formData.append("business", localStorage.getItem('business') || '');
         formData.append("latitude", localStorage.getItem('latitude') || '');
         formData.append("longitude", localStorage.getItem('longitude') || '');
-        formData.append("latitude", localStorage.getItem('location') || '');
+        formData.append("location", localStorage.getItem('location') || '');
         formData.append("comments", localStorage.getItem('comments') || '');
         var blob = dataURItoBlob(localStorage.getItem('image'));
         formData.append("image",blob,'1.png');

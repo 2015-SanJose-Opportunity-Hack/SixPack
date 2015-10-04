@@ -21,10 +21,17 @@ margin:auto;
   background-attachment: fixed;
   background-size: cover;
   background-color: #fff;
-
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
+.home-content{
 
+  margin-top: 30%;
+
+}
 .logo{
 
   text-align: center;

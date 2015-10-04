@@ -19,7 +19,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
 })
 
 .controller("ExampleController", function ($scope, $cordovaCamera) {
-                
+
                 $scope.takePhoto = function () {
                   var options = {
                     quality: 75,
@@ -32,14 +32,14 @@ angular.module('starter', ['ionic', 'ngCordova'])
                     popoverOptions: CameraPopoverOptions,
                     saveToPhotoAlbum: false
                 };
-   
                     $cordovaCamera.getPicture(options).then(function (imageData) {
                         $scope.imgURI = "data:image/jpeg;base64," + imageData;
+                        localStorage.setItem('image',$scope.imgURI );
                     }, function (err) {
                         // An error occured. Show a message to the user
                     });
                 }
-                
+
                 $scope.choosePhoto = function () {
                   var options = {
                     quality: 75,
@@ -52,9 +52,10 @@ angular.module('starter', ['ionic', 'ngCordova'])
                     popoverOptions: CameraPopoverOptions,
                     saveToPhotoAlbum: false
                 };
-   
+
                     $cordovaCamera.getPicture(options).then(function (imageData) {
                         $scope.imgURI = "data:image/jpeg;base64," + imageData;
+                        localStorage.setItem('image',$scope.imgURI );
                     }, function (err) {
                         // Show Error message to the user
                     });
