@@ -30,28 +30,36 @@
     <!--<h1 class="title">-->
     <!--</h1>-->
     <!--</ion-header-bar>-->
-    <ion-view view-title="Home" ng-show="showHome" class="home-page">
+    <ion-view view-title="Home" ng-show="showHome" class="home-page" ng-show="imgURI === undefined">
       <ion-content id="capture-content" ng-controller="ExampleController" padding="true" class="home-content">
-          <div ng-show="imgURI === undefined">
-        <button class="button button-full button-assertive" ng-click="takePhoto()">
-          <i class="fa fa-camera"></i>&nbsp;Take Photo
-        </button>
-        <button class="button button-full button-assertive" ng-click="choosePhoto()">
-          <i class="fa fa-file-image-o"></i>&nbsp;Choose Photo
-        </button>
-          </div>
-          <div ng-show="imgURI !== undefined">
+        <div ng-show="imgURI === undefined">
+          <button class="button button-full button-assertive" ng-click="takePhoto()">
+            <i class="fa fa-camera"></i>&nbsp;Take Photo
+          </button>
+          <button class="button button-full button-assertive" ng-click="choosePhoto()">
+            <i class="fa fa-file-image-o"></i>&nbsp;Choose Photo
+          </button>
+        </div>
+      </ion-content>
+    </ion-view>
+
+    <ion-view  ng-show="imgURI !== undefined">
+
+      <ion-header-bar class="bar-assertive">
+        <h1 class="title">Your Complaint</h1>
+      </ion-header-bar>
+      <div>
             <span class="pic-preview">
-                <img ng-src="{{imgURI}}" class="img-prev"></span>
+                <img ng-src="{{imgURI}}" class="img-prev">
+            </span>
         <textarea id="comments" class="comments" rows="3" placeholder="comments"></textarea>
         <button class="button button-full button-assertive" onClick="loadForm()">
           Upload
         </button>
-              <button class="button button-full button-assertive" onClick="returnHome()">
+        <button class="button button-full button-assertive" onClick="returnHome()">
           Cancel
         </button>
-          </div>
-      </ion-content>
+      </div>
     </ion-view>
   </ion-pane>
 </form>
