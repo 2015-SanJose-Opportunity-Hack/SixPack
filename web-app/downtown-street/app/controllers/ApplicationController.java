@@ -77,11 +77,7 @@ public class ApplicationController extends Controller {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-  	
-  	 if(latitude.equals("") || longitude.equals("")){
-  		  result.put("error", "No longitude/latitude");
-  		 return badRequest(result);
-  	  }
+
   	  
   	  Request request = new Request();
   	  
