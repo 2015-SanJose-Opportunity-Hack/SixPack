@@ -42,19 +42,17 @@
 				@for(request <- requestList){
 					<tr>
 						<td><strong>@request.getId()</strong></td>
-						<td><img src="@request.getImage()"</td>
+						<td><img class="thumb" src="/assets/images/request-thumbs/thumb-@request.getImage()"></td>
 						<td class="text-center">@request.getFirstName() @request.getLastName()</td>
 						<td>@request.getAddress()</td>
 						<td>@request.getComment()</td>
 						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
+						<td><a href="@routes.AdminController.viewRequest(request.getId())" class="btn btn-default">Details</a></td>
 						
 						<td><a href="#" class="btn btn-default">Resolve</a></td>
 					</tr>
 				}
-					
-				
-						
+							
 			</tbody>
 		</table>
 	</div>
@@ -69,8 +67,8 @@
      		jQuery('#search-table').dataTable({
      			"scrollY":        800,
      	        "scrollCollapse": true,
-     			"jQueryUI":       true,
-     			"autoWidth": false
+     			"jQueryUI":       true
+     			
      		}				
      		);
      		

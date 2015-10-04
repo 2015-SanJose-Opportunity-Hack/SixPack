@@ -76,7 +76,7 @@ public class Utilities {
      * @return Name of the file
      */
     public static String uploadItemPicture(FilePart file){
-    	String directoryPath = play.Play.application().configuration().getString("inventory.imagePath");
+    	String directoryPath = play.Play.application().configuration().getString("request.imageDirectory");
     	String fileName = "";
     	FilePart pictureFile = file;
     	try {

@@ -1,6 +1,6 @@
 // @SOURCE:/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/conf/routes
-// @HASH:f3fe5ee664547a443b571e3223003e2b04aa57a7
-// @DATE:Sat Oct 03 15:17:04 PDT 2015
+// @HASH:d09978da376513e9e9d5c0036cccc1a91c19163b
+// @DATE:Sat Oct 03 23:30:08 PDT 2015
 
 
 import play.core._
@@ -110,19 +110,40 @@ HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "err
         
 
 // @LINE:26
-private[this] lazy val controllers_ApplicationController_requestRestCall11_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("request/v1"))))
-private[this] lazy val controllers_ApplicationController_requestRestCall11_invoker = createInvoker(
+private[this] lazy val controllers_AdminController_viewRequest11_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("request/"),DynamicPart("id", """[^/]+""",true))))
+private[this] lazy val controllers_AdminController_viewRequest11_invoker = createInvoker(
+controllers.AdminController.viewRequest(fakeValue[Integer]),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "viewRequest", Seq(classOf[Integer]),"GET", """""", Routes.prefix + """request/$id<[^/]+>"""))
+        
+
+// @LINE:28
+private[this] lazy val controllers_ApplicationController_requestRestCall12_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("request/v1"))))
+private[this] lazy val controllers_ApplicationController_requestRestCall12_invoker = createInvoker(
 controllers.ApplicationController.requestRestCall(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.ApplicationController", "requestRestCall", Nil,"POST", """""", Routes.prefix + """request/v1"""))
         
 
 // @LINE:30
-private[this] lazy val controllers_Assets_at12_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_at12_invoker = createInvoker(
+private[this] lazy val controllers_AdminController_resolveRequest13_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("request/"),DynamicPart("id", """[^/]+""",true))))
+private[this] lazy val controllers_AdminController_resolveRequest13_invoker = createInvoker(
+controllers.AdminController.resolveRequest(fakeValue[Integer]),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "resolveRequest", Seq(classOf[Integer]),"POST", """""", Routes.prefix + """request/$id<[^/]+>"""))
+        
+
+// @LINE:32
+private[this] lazy val controllers_AdminController_unresolveRequest14_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("request/unresolve/"),DynamicPart("id", """[^/]+""",true))))
+private[this] lazy val controllers_AdminController_unresolveRequest14_invoker = createInvoker(
+controllers.AdminController.unresolveRequest(fakeValue[Integer]),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "unresolveRequest", Seq(classOf[Integer]),"GET", """""", Routes.prefix + """request/unresolve/$id<[^/]+>"""))
+        
+
+// @LINE:38
+private[this] lazy val controllers_Assets_at15_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_at15_invoker = createInvoker(
 controllers.Assets.at(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.ApplicationController.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.ApplicationController.logout()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """about""","""controllers.ApplicationController.aboutProject()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """not-found""","""controllers.ApplicationController.errorNotFound()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """error""","""controllers.ApplicationController.error()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.AdminController.login()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """authenticate""","""controllers.AdminController.authenticateLogin()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dashboard""","""controllers.AdminController.dashboard()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings""","""controllers.AdminController.settings()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings""","""controllers.AdminController.updateSettings()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """error/not-found""","""controllers.AdminController.errorNotFound()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request/v1""","""controllers.ApplicationController.requestRestCall()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.ApplicationController.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.ApplicationController.logout()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """about""","""controllers.ApplicationController.aboutProject()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """not-found""","""controllers.ApplicationController.errorNotFound()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """error""","""controllers.ApplicationController.error()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.AdminController.login()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """authenticate""","""controllers.AdminController.authenticateLogin()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dashboard""","""controllers.AdminController.dashboard()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings""","""controllers.AdminController.settings()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings""","""controllers.AdminController.updateSettings()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """error/not-found""","""controllers.AdminController.errorNotFound()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request/$id<[^/]+>""","""controllers.AdminController.viewRequest(id:Integer)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request/v1""","""controllers.ApplicationController.requestRestCall()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request/$id<[^/]+>""","""controllers.AdminController.resolveRequest(id:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request/unresolve/$id<[^/]+>""","""controllers.AdminController.unresolveRequest(id:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -219,17 +240,41 @@ case controllers_AdminController_errorNotFound10_route(params) => {
         
 
 // @LINE:26
-case controllers_ApplicationController_requestRestCall11_route(params) => {
+case controllers_AdminController_viewRequest11_route(params) => {
+   call(params.fromPath[Integer]("id", None)) { (id) =>
+        controllers_AdminController_viewRequest11_invoker.call(controllers.AdminController.viewRequest(id))
+   }
+}
+        
+
+// @LINE:28
+case controllers_ApplicationController_requestRestCall12_route(params) => {
    call { 
-        controllers_ApplicationController_requestRestCall11_invoker.call(controllers.ApplicationController.requestRestCall())
+        controllers_ApplicationController_requestRestCall12_invoker.call(controllers.ApplicationController.requestRestCall())
    }
 }
         
 
 // @LINE:30
-case controllers_Assets_at12_route(params) => {
+case controllers_AdminController_resolveRequest13_route(params) => {
+   call(params.fromPath[Integer]("id", None)) { (id) =>
+        controllers_AdminController_resolveRequest13_invoker.call(controllers.AdminController.resolveRequest(id))
+   }
+}
+        
+
+// @LINE:32
+case controllers_AdminController_unresolveRequest14_route(params) => {
+   call(params.fromPath[Integer]("id", None)) { (id) =>
+        controllers_AdminController_unresolveRequest14_invoker.call(controllers.AdminController.unresolveRequest(id))
+   }
+}
+        
+
+// @LINE:38
+case controllers_Assets_at15_route(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at12_invoker.call(controllers.Assets.at(path, file))
+        controllers_Assets_at15_invoker.call(controllers.Assets.at(path, file))
    }
 }
         

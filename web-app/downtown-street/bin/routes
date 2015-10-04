@@ -4,103 +4,27 @@ GET     /                           controllers.ApplicationController.index()
 
 GET     /logout                     controllers.ApplicationController.logout()
 
-GET     /login                      controllers.DepartmentController.login()
-
 GET     /about                      controllers.ApplicationController.aboutProject()
 
 GET     /not-found				    controllers.ApplicationController.errorNotFound()
 
 GET		/error						controllers.ApplicationController.error()
 
-# Admin Controller Responsibilities
 
-POST   /adm/authenticate            controllers.AdminController.authenticateLogin()
+GET     /login                      controllers.AdminController.login()
 
-GET    /adm/login                   controllers.AdminController.login()
+POST   /authenticate                 controllers.AdminController.authenticateLogin()
 
-GET    /adm/settings				controllers.AdminController.settings()
+GET    /dashboard                    controllers.AdminController.dashboard()
 
-POST   /adm/settings                controllers.AdminController.updateSettings()
+GET	   /settings					 controllers.AdminController.settings()
 
-GET    /adm/not-found               controllers.AdminController.errorNotFound()
+POST   /settings					controllers.AdminController.updateSettings()
 
-GET    /adm/                        controllers.AdminController.dashboard()
+GET    /error/not-found              controllers.AdminController.errorNotFound()
 
-GET    /adm/department/add          controllers.AdminController.addDepartment()
+POST   /request/v1					controllers.ApplicationController.requestRestCall()
 
-GET    /adm/department              controllers.AdminController.allDepartments()
-
-GET    /adm/department/approve/:id	controllers.AdminController.approveAll(id: Int)
-
-GET    /adm/department/:id          controllers.AdminController.editDepartment(id : Int)
-
-POST   /adm/department/submit       controllers.AdminController.submitDepartment()
-
-POST   /adm/department/update/:id   controllers.AdminController.updateDepartment(id: Int)
-
-GET    /adm/category            	controllers.AdminController.allCategories()
-
-GET    /adm/category/add          	controllers.AdminController.addCategory()
-
-POST   /adm/category/submit         controllers.AdminController.submitCategory()
-
-GET    /adm/category/:id        	controllers.AdminController.editCategory(id: Int)
-
-POST   /adm/category/:id           	controllers.AdminController.updateCategory(id: Int)
-
-GET    /adm/item/add             	controllers.AdminController.addItem()
-
-POST   /adm/item/submit             controllers.AdminController.submitItem()
-
-GET    /adm/item            	    controllers.AdminController.allItems(page: Int = 1)
-
-GET    /adm/item/search       	    controllers.AdminController.searchItems()
-
-POST   /adm/item/search       	    controllers.AdminController.submitSearch()
-
-GET    /adm/item/view/:id    	    controllers.AdminController.editItem(id: Int)
-
-GET    /adm/item/delete/:id    	    controllers.AdminController.deleteItem(id: Int)
-
-POST   /adm/item/view/:id    	    controllers.AdminController.updateItem(id: Int)
-
-GET    /adm/item/:page       	    controllers.AdminController.allItems(page: Int)
-
-GET    /adm/report					controllers.AdminController.report()
-
-# Department Controller Responsibilities
-
-POST   /authenticate                 controllers.DepartmentController.authenticateLogin()
-
-GET    /dashboard                    controllers.DepartmentController.dashboard()
-
-POST   /dashboard                    controllers.DepartmentController.submitLoggedInUserInfo()
-
-GET	   /settings					 controllers.DepartmentController.settings()
-
-POST   /settings					controllers.DepartmentController.updateSettings()
-
-GET	   /user/new					 controllers.DepartmentController.newUserLoggedIn()
-
-GET    /item/add                     controllers.DepartmentController.addItem()
-
-GET    /item/view/:id                controllers.DepartmentController.editItem(id: Int)
-
-GET    /error/not-found              controllers.DepartmentController.errorNotFound()
-
-POST   /item/view/:id				 controllers.DepartmentController.updateItem(id: Int)
-
-GET    /item                         controllers.DepartmentController.allItems(page: Int = 1)
-
-GET    /item/search                  controllers.DepartmentController.searchItems()
-
-POST   /item/search                  controllers.DepartmentController.submitSearch()
-
-GET    /item/:page                   controllers.DepartmentController.allItems(page: Int )
-
-POST   /item                         controllers.DepartmentController.submitItem()
-
-POST   /deviceinfo					 controllers.ApplicationController.getDeviceInfo()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

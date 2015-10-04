@@ -69,20 +69,18 @@ Seq[Any](format.raw/*1.99*/("""
 				"""),_display_(/*42.6*/for(request <- requestList) yield /*42.33*/{_display_(Seq[Any](format.raw/*42.34*/("""
 					"""),format.raw/*43.6*/("""<tr>
 						<td><strong>"""),_display_(/*44.20*/request/*44.27*/.getId()),format.raw/*44.35*/("""</strong></td>
-						<td><img src=""""),_display_(/*45.22*/request/*45.29*/.getImage()),format.raw/*45.40*/(""""</td>
+						<td><img class="thumb" src="/assets/images/request-thumbs/thumb-"""),_display_(/*45.72*/request/*45.79*/.getImage()),format.raw/*45.90*/(""""></td>
 						<td class="text-center">"""),_display_(/*46.32*/request/*46.39*/.getFirstName()),format.raw/*46.54*/(""" """),_display_(/*46.56*/request/*46.63*/.getLastName()),format.raw/*46.77*/("""</td>
 						<td>"""),_display_(/*47.12*/request/*47.19*/.getAddress()),format.raw/*47.32*/("""</td>
 						<td>"""),_display_(/*48.12*/request/*48.19*/.getComment()),format.raw/*48.32*/("""</td>
 						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
+						<td><a href=""""),_display_(/*50.21*/routes/*50.27*/.AdminController.viewRequest(request.getId())),format.raw/*50.72*/("""" class="btn btn-default">Details</a></td>
 						
 						<td><a href="#" class="btn btn-default">Resolve</a></td>
 					</tr>
 				""")))}),format.raw/*54.6*/("""
-					
-				
-						
-			"""),format.raw/*58.4*/("""</tbody>
+							
+			"""),format.raw/*56.4*/("""</tbody>
 		</table>
 	</div>
 	
@@ -91,22 +89,22 @@ Seq[Any](format.raw/*1.99*/("""
 	
 	
    <script type="text/javascript">
-     	jQuery(document).ready(function()"""),format.raw/*67.40*/("""{"""),format.raw/*67.41*/("""
-     		"""),format.raw/*68.8*/("""jQuery(".table-responsive").fadeIn(1000);
-     		jQuery('#search-table').dataTable("""),format.raw/*69.42*/("""{"""),format.raw/*69.43*/("""
-     			"""),format.raw/*70.9*/(""""scrollY":        800,
+     	jQuery(document).ready(function()"""),format.raw/*65.40*/("""{"""),format.raw/*65.41*/("""
+     		"""),format.raw/*66.8*/("""jQuery(".table-responsive").fadeIn(1000);
+     		jQuery('#search-table').dataTable("""),format.raw/*67.42*/("""{"""),format.raw/*67.43*/("""
+     			"""),format.raw/*68.9*/(""""scrollY":        800,
      	        "scrollCollapse": true,
-     			"jQueryUI":       true,
-     			"autoWidth": false
-     		"""),format.raw/*74.8*/("""}"""),format.raw/*74.9*/("""				
-     		"""),format.raw/*75.8*/(""");
+     			"jQueryUI":       true
+     			
+     		"""),format.raw/*72.8*/("""}"""),format.raw/*72.9*/("""				
+     		"""),format.raw/*73.8*/(""");
      		
-     	"""),format.raw/*77.7*/("""}"""),format.raw/*77.8*/(""");
+     	"""),format.raw/*75.7*/("""}"""),format.raw/*75.8*/(""");
      </script>
 	</div>
 	
 	
-""")))}),format.raw/*82.2*/("""
+""")))}),format.raw/*80.2*/("""
 """))}
   }
 
@@ -119,11 +117,11 @@ Seq[Any](format.raw/*1.99*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Oct 03 17:23:55 PDT 2015
+                  DATE: Sun Oct 04 00:24:17 PDT 2015
                   SOURCE: /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/admin/dashboard.scala.html
-                  HASH: 3861ec61d0095001d16f994be1b1b6a51e4e89f7
-                  MATRIX: 775->1|1006->98|1034->149|1061->151|1095->177|1134->179|1166->185|2118->1111|2161->1138|2200->1139|2233->1145|2284->1169|2300->1176|2329->1184|2392->1220|2408->1227|2440->1238|2505->1276|2521->1283|2557->1298|2586->1300|2602->1307|2637->1321|2681->1338|2697->1345|2731->1358|2775->1375|2791->1382|2825->1395|3017->1557|3066->1579|3211->1696|3240->1697|3275->1705|3386->1788|3415->1789|3451->1798|3605->1925|3633->1926|3672->1938|3716->1955|3744->1956|3805->1987
-                  LINES: 26->1|30->1|32->5|33->6|33->6|33->6|35->8|69->42|69->42|69->42|70->43|71->44|71->44|71->44|72->45|72->45|72->45|73->46|73->46|73->46|73->46|73->46|73->46|74->47|74->47|74->47|75->48|75->48|75->48|81->54|85->58|94->67|94->67|95->68|96->69|96->69|97->70|101->74|101->74|102->75|104->77|104->77|109->82
+                  HASH: 0d30bf20c48e40e7413352f95ce0e3718c073bc9
+                  MATRIX: 775->1|1006->98|1034->149|1061->151|1095->177|1134->179|1166->185|2118->1111|2161->1138|2200->1139|2233->1145|2284->1169|2300->1176|2329->1184|2442->1270|2458->1277|2490->1288|2556->1327|2572->1334|2608->1349|2637->1351|2653->1358|2688->1372|2732->1389|2748->1396|2782->1409|2826->1426|2842->1433|2876->1446|2936->1479|2951->1485|3017->1530|3176->1659|3215->1671|3360->1788|3389->1789|3424->1797|3535->1880|3564->1881|3600->1890|3735->1998|3763->1999|3802->2011|3846->2028|3874->2029|3935->2060
+                  LINES: 26->1|30->1|32->5|33->6|33->6|33->6|35->8|69->42|69->42|69->42|70->43|71->44|71->44|71->44|72->45|72->45|72->45|73->46|73->46|73->46|73->46|73->46|73->46|74->47|74->47|74->47|75->48|75->48|75->48|77->50|77->50|77->50|81->54|83->56|92->65|92->65|93->66|94->67|94->67|95->68|99->72|99->72|100->73|102->75|102->75|107->80
                   -- GENERATED --
               */
           

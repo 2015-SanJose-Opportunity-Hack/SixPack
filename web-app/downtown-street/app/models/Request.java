@@ -28,6 +28,8 @@ public class Request extends Model{
 	@Required
 	private String image;
 	
+	private String resolvedImage;
+
 	private String contact = "";
 	
 	private String comment = "";
@@ -138,6 +140,15 @@ public class Request extends Model{
 
 	public void setResolved(boolean isResolved) {
 		this.isResolved = isResolved;
+	}
+	
+	
+	public String getResolvedImage() {
+		return resolvedImage;
+	}
+
+	public void setResolvedImage(String resolvedImage) {
+		this.resolvedImage = resolvedImage;
 	}
 	
 	public static Finder<Integer, Request> find =  new Finder<Integer, Request>(Integer.class, Request.class);

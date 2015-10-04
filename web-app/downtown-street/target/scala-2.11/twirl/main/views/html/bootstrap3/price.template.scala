@@ -63,7 +63,7 @@ Seq[Any](format.raw/*1.116*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Oct 03 15:17:04 PDT 2015
+                  DATE: Sat Oct 03 19:40:12 PDT 2015
                   SOURCE: /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/bootstrap3/price.scala.html
                   HASH: 37a8a2e9bbc5080d652336cdf90bbc29f917f86e
                   MATRIX: 762->1|965->115|995->119|1045->143|1072->162|1111->164|1151->174|1223->220|1248->225|1539->489|1553->494|1577->497|1629->522|1643->527|1669->532|1722->558|1736->563|1777->583|1835->614|1867->625|1960->691|1983->705|2022->706|2067->723|2134->759|2179->776|2253->823|2278->827|2345->867|2410->911

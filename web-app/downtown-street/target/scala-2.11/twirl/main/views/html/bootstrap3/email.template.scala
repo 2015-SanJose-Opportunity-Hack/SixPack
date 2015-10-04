@@ -56,7 +56,7 @@ Seq[Any](format.raw/*1.116*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Oct 03 15:17:04 PDT 2015
+                  DATE: Sat Oct 03 19:40:12 PDT 2015
                   SOURCE: /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/bootstrap3/email.scala.html
                   HASH: 97c573922bb92914a2a5f5cca8f9ef6de1f6e2ad
                   MATRIX: 762->1|965->115|995->119|1045->143|1072->162|1111->164|1151->174|1223->220|1248->225|1390->341|1403->346|1426->349|1475->372|1488->377|1513->382|1564->406|1578->411|1619->431|1662->447|1685->461|1724->462|1767->477|1832->511|1874->525|1915->539|1947->550|2011->587|2036->591|2103->631|2168->675

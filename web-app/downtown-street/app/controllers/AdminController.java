@@ -1,20 +1,25 @@
 package controllers;
 
-import java.io.File;
-import java.net.URI;
-import java.util.ArrayList;
 import java.util.List;
 
 import models.Admin;
 import models.Request;
 import modules.utilities.Utilities;
+
+import org.json.JSONArray;
+
 import play.data.Form;
+import play.libs.Json;
 import play.mvc.Controller;
-import play.mvc.Http.MultipartFormData.FilePart;
+import play.mvc.Http;
 import play.mvc.Result;
 import play.mvc.Security;
+import play.mvc.Http.MultipartFormData.FilePart;
 import views.formdata.admin.AdminLoginForm;
 import views.formdata.admin.SettingsForm;
+
+import com.fasterxml.jackson.databind.node.ObjectNode;
+
 import controllers.security.SecuredAdmin;
 
 public class AdminController extends Controller {
@@ -98,68 +103,72 @@ public class AdminController extends Controller {
 		}
 		return redirect(routes.AdminController.settings());
 	}
-
 	
-	// check if information is filled
-	private static boolean isLoggedInInfoFilled() {
-		if (session().get("name") == null || session().get("id") == null
-				|| session().get("name").length() == 0
-				|| session("id").length() == 0) {
-			return false;
+	//view request details
+	@Security.Authenticated(SecuredAdmin.class)
+	public static Result viewRequest(int id){
+		Request request = Request.find.byId(id);
+		if(request == null){
+			return redirect(routes.AdminController.errorNotFound());
 		}
-		return true;
+		
+		return ok(views.html.admin.request
+				.render("View Request", SecuredAdmin.isLoggedIn(ctx()), request));
 	}
-
-	// get loggedin user information
-	private static String loggedInUserInfo() {
-		return session().get("name") + " - " + session().get("id");
-	}
-
-	//upload a picture
-	private static String uploadItemPicture(FilePart file) {
-		String directoryPath = play.Play.application().configuration()
-				.getString("inventory.imagePath");
-		String fileName = "";
-		FilePart pictureFile = file;
-		try {
-			String tempName = pictureFile.getFilename();
-			String fileDetails[] = tempName.split("\\.");
-			String fileExtension = fileDetails[fileDetails.length - 1];
-			fileName = Utilities.getRandomUID() + "." + fileExtension;
-			File destination = new File(directoryPath, fileName);
-			pictureFile.getFile().renameTo(destination);
-		} catch (Exception e) {
-			return "";
+	
+	@Security.Authenticated(SecuredAdmin.class)
+	public static Result allRequestAjax(){
+		ObjectNode result = Json.newObject();
+		
+		JSONArray requestArray = new JSONArray();
+		ObjectNode requestJSON = Json.newObject();
+		List<Request> requestList = Request.find.all();
+		for(Request request : requestList){
+			requestJSON.put("firstName", request.getFirstName());
+			requestJSON.put("lastName", request.getLastName());
+			requestJSON.put("latitude", request.getLatitude());
+			requestJSON.put("longitude", request.getLongitude());
+			requestJSON.put("business", request.getBusiness());
+			requestJSON.put("contact", request.getContact());
+			requestJSON.put("image", request.getImage());
+			requestJSON.put("email", request.getEmail());
+			requestJSON.put("address", request.getAddress());
+			requestArray.put(requestJSON);
 		}
-		return fileName;
+		//result.put("data", requestArray);
+		//result.putArray(requestArray);
+		return ok();
 	}
-
-	// deleting a file
-	private static boolean deleteFile(String fileName) {
-		String filePath = directoryPath + fileName;
-		try {
-			File file = new File(filePath);
-			file.delete();
-		} catch (Exception e) {
-			return false;
+	
+	@Security.Authenticated(SecuredAdmin.class)
+	public static Result resolveRequest(int id){
+		System.out.println("herer");
+		Http.MultipartFormData body = request().body().asMultipartFormData();
+		Request request = Request.find.byId(id);
+		if(request == null){
+			return redirect(routes.AdminController.errorNotFound());
 		}
-		return true;
+		
+		FilePart pictureFile = body.getFile("resolvedImage");
+  	  	String fileName = Utilities.uploadItemPicture(pictureFile);
+  	  	
+  	  	request.setResolvedImage(fileName);
+	  	request.setResolved(true);
+		request.update();
+		
+		return redirect(routes.AdminController.viewRequest(id));
 	}
-
-	// get image path from file system
-	private static String getImagePath(String fileName) {
-		String directoryPath = play.Play.application().configuration()
-				.getString("inventory.imagePath");
-		String filePath = directoryPath + fileName;
-		File file = null;
-		String fileUrl = "";
-		try {
-			file = new File(filePath);
-			URI uri = file.toURI();
-			fileUrl = uri.resolve(uri).toString();
-		} catch (Exception e) {
-			return "";
+	
+	@Security.Authenticated(SecuredAdmin.class)
+	public static Result unresolveRequest(int id){
+		Request request = Request.find.byId(id);
+		if(request == null){
+			return redirect(routes.AdminController.errorNotFound());
 		}
-		return fileUrl;
-	}	
+		request.setResolved(false);
+		request.update();
+		return redirect(routes.AdminController.viewRequest(id));
+	}
+	
+	
 }

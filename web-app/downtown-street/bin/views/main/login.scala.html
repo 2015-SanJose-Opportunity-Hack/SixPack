@@ -1,34 +1,42 @@
-@(loginForm: Form[views.formdata.department.DepartmentLoginForm])
+@(loginForm: Form[views.formdata.admin.AdminLoginForm])
 
 @import helper._
 @import views.html.bootstrap3._
 
-@main("Welcome to SJSU Inventory Management") {
-	
-	<div class="col-md-6">
-		<center>
-				<img alt="San Jose Logo Welcome" src="@routes.Assets.at("images/san-jose-state-university-logo.png")" class="">
-		</center>
-	</div>
-	
-	
-	<div class="col-md-6">
-			<div class="panel panel-default">
-			  <div class="panel-heading">
-			      <h3 class="panel-title">Department Login</h3>
-			  </div>
-			  <div class="panel-body">
-			    	@form(routes.DepartmentController.authenticateLogin(), 'class -> "form-horizontal"){
-				    	@text(loginForm("username"),
-						        	label = "Username",
-						        	placeholder = "Deparment Username)")
-						        	
-				       	@password(loginForm("password"),
-						        	label = "Password",
-						        	placeholder = "Department password (required)")
-						<button type="submit" class="btn-default btn btn-primary pull-right">Department Login</button>
-				    }
-			  </div>
+@main("Downtown Street") {
+
+	<div class="col-md-6 login-form-container">
+			<div class="login-form">
+				  <h3 class="login-title"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Staff Login</h3>
+			    	<form action="/authenticate" method="POST" class="form-horizontal">
+    				
+					  <div class="form-group ">
+					    
+					    <div class="col-sm-12">
+					      <input type="text" class="form-control" id="username" name="username" value="" placeholder="Username">
+					      <span class="help-block"></span>
+					      <span class="help-block"></span>
+					    </div>
+					  </div>
+					
+											        	
+									       	
+					
+					  <div class="form-group ">
+					    
+					    <div class="col-sm-12">
+					      <input type="password" class="form-control" id="password" name="password" value="" placeholder="Password">
+					      <span class="help-block"></span>
+					      <span class="help-block"></span>
+					    </div>
+					  </div>
+					
+					<button type="submit" class="btn-default btn btn-primary">Login</button>
+						<div class="forgot-password-container">
+						    <a href="#" title="Forgot Password" class="forgot-password">Forgot Password</a>
+						</div>
+					</form>
 			</div>
+						  
 	</div>
 }

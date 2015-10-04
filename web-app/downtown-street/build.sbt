@@ -15,7 +15,8 @@ libraryDependencies ++= Seq(
 
 libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.29"
 
-libraryDependencies += "org.apache.poi" % "poi" % "3.13-beta1"
+
+libraryDependencies += "net.coobird" % "thumbnailator" % "0.4.8"
 
 
 

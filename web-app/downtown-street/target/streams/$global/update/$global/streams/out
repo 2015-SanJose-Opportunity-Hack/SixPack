@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66307c2e[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@244d332e[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.1 in sbt-chain[0m
@@ -1075,19 +1075,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.apache.poi#poi;3.13-beta1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.poi#poi;3.13-beta1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.poi#poi;3.13-beta1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.poi#poi;3.13-beta1[0m
-[0m[[0mdebug[0m] [0m	found org.apache.poi#poi;3.13-beta1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving net.coobird#thumbnailator;0.4.8 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.coobird#thumbnailator;0.4.8 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.coobird#thumbnailator;0.4.8[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: net.coobird#thumbnailator;0.4.8[0m
+[0m[[0mdebug[0m] [0m	found net.coobird#thumbnailator;0.4.8 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [compile][0m
@@ -1709,14 +1705,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [runtime][0m
@@ -2339,14 +2331,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.8 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-test_2.11;2.3.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-test_2.11;2.3.8 {test=[default(compile)]}[0m
@@ -4317,14 +4305,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -4949,14 +4933,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [test-internal][0m
@@ -5581,14 +5561,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->mysql#mysql-connector-java;5.1.29 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.13-beta1->commons-codec#commons-codec;1.9 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.apache.poi#poi;3.13-beta1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.8 [test->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.8 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.8 [test->compile][0m
@@ -7110,7 +7086,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-cache_2.11;2.3.8!play-cache_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-ws_2.11;2.3.8!play-java-ws_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] mysql#mysql-connector-java;5.1.29!mysql-connector-java.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.poi#poi;3.13-beta1!poi.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.coobird#thumbnailator;0.4.8!thumbnailator.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.1!commons-lang3.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#build-link;2.3.8!build-link.jar[0m
@@ -7241,7 +7217,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.1!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.11!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1735ms :: artifacts dl 39ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3023ms :: artifacts dl 74ms[0m
 [0m[[0mdebug[0m] [0m	report for downtown-street#downtown-street_2.11;1.0-SNAPSHOT compile produced in /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/resolution-cache/reports/downtown-street-downtown-street_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for downtown-street#downtown-street_2.11;1.0-SNAPSHOT runtime produced in /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/resolution-cache/reports/downtown-street-downtown-street_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for downtown-street#downtown-street_2.11;1.0-SNAPSHOT test produced in /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/resolution-cache/reports/downtown-street-downtown-street_2.11-test.xml[0m
@@ -7255,5 +7231,5 @@
 [0m[[0mdebug[0m] [0m	report for downtown-street#downtown-street_2.11;1.0-SNAPSHOT docs produced in /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/resolution-cache/reports/downtown-street-downtown-street_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for downtown-street#downtown-street_2.11;1.0-SNAPSHOT pom produced in /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/resolution-cache/reports/downtown-street-downtown-street_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for downtown-street#downtown-street_2.11;1.0-SNAPSHOT scala-tool produced in /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/resolution-cache/reports/downtown-street-downtown-street_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1735ms resolve - 39ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (3023ms resolve - 74ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

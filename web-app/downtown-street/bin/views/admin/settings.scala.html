@@ -1,54 +1,46 @@
-@(title: String, isLoggedIn: Boolean, settingsForm: Form[views.formdata.admin.SettingsForm], success: Boolean)
+@(title: String, isLoggedIn: Boolean, settingsForm: Form[views.formdata.admin.SettingsForm])
 
-@import views.html.admin._
 @import helper._
 @import views.html.bootstrap3._
 
 @backend(title, isLoggedIn) {
-
-	<h2><span class="glyphicon glyphicon-th-large"></span> @title <small> | Update your account preferences</small></h2>
+	
+	<h2><span class="glyphicon glyphicon-th-large"></span> @title <small> | Update your account settings</small></h2>
 	<hr>
-	@if(success){
-		<div class="row">
-			<div class="alert alert-success col-md-6 text-center">Your settings have been updated.</div>
-		</div>	
-	}
+	
 	<div class="col-md-6">
 		@form(routes.AdminController.updateSettings(), 'class -> "form-horizontal"){
-	    
-	        @text(settingsForm("username"),
-	        	label = "Your username",
-	        	placeholder = "Username (required)",
-	        	help="6-20 characters"
-	        	)
-		    
-		    @text(settingsForm("name"),
-	        	label = "Your Name",
-	        	placeholder = "Name (required)",
-	        	help="6-20 characters"
-	        	)
-				        	
-	        @email(settingsForm("email"),
-	        	label = "Email Address",
-	        	placeholder = "Email for people to contact you(required)")
-	        	
-	       	@password(settingsForm("oldPassword"),
-	        	label = "Old Password",
-	        	placeholder = "If you wish to change password",
-	        	help ="type in old password to change password")
-	       	
-	      	@password(settingsForm("newPassword"),
-	        	label = "New Password",
-	        	placeholder = "New Password if you wish to change",
-	        	help ="type new password if you wish to change password")
-	        	
-	       	@password(settingsForm("rePassword"),
-	        	label = "Password Again",
-	        	placeholder = "Type password again (required)")
-	       	
-	       	<button type="submit" class="btn-default btn btn-primary pull-right">Update Account</button>
-       	
-       	    
-	}	
+			
+				@text(settingsForm("username"),
+		        	label = "Username",
+		        	placeholder = "Username (required)")
+		        
+
+				@password(settingsForm("oldPassword"),
+		        	label = "Old Password",
+		        	placeholder = "Department Old password",
+		        	help = "6-20 characters"
+		        	)
+		        	
+	       		@password(settingsForm("password"),
+		        	label = "New Password",
+		        	placeholder = "Department's new password (required)",
+		        	help = "6-20 characters"
+		        	)
+		
+				@password(settingsForm("rePassword"),
+		        	label = "Password again",
+		        	placeholder = "Password again (required)")
+		        
+				@text(settingsForm("contact"),
+		        	label = "Contact",
+		        	placeholder = "Contact (required)")
+		        	
+				<button type="submit" class="btn-default btn btn-primary pull-right">Update Settings</button>			
+		}
+	</div>
+	
+	
+	
 	
 }

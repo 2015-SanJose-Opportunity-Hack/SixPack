@@ -23,7 +23,15 @@ POST   /settings					controllers.AdminController.updateSettings()
 
 GET    /error/not-found              controllers.AdminController.errorNotFound()
 
+GET    /request/:id                 controllers.AdminController.viewRequest(id: Integer)
+
 POST   /request/v1					controllers.ApplicationController.requestRestCall()
+
+POST   /request/:id                 controllers.AdminController.resolveRequest(id: Integer)
+
+GET    /request/unresolve/:id        controllers.AdminController.unresolveRequest(id: Integer)
+
+
 
 
 # Map static resources from the /public folder to the /assets URL path

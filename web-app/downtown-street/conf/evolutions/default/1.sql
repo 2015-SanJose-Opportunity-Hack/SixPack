@@ -17,6 +17,7 @@ create table request (
   first_name                varchar(255),
   last_name                 varchar(255),
   image                     varchar(255),
+  resolved_image            varchar(255),
   contact                   varchar(255),
   comment                   varchar(255),
   latitude                  varchar(255),

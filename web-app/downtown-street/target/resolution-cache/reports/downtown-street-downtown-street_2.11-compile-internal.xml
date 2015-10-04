@@ -7,16 +7,16 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20151003151656"/>
+		date="20151003225011"/>
 	<dependencies>
-		<module organisation="org.apache.poi" name="poi">
-			<revision name="3.13-beta1" status="release" pubdate="20150719161736" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://poi.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="68">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="3030" time="0" location="/Users/harshmalewar/.ivy2/cache/org.apache.poi/poi/ivy-3.13-beta1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/poi/poi/3.13-beta1/poi-3.13-beta1.pom"/>
-				<caller organisation="downtown-street" name="downtown-street_2.11" conf="compile-internal, compile, provided, optional" rev="3.13-beta1" rev-constraint-default="3.13-beta1" rev-constraint-dynamic="3.13-beta1" callerrev="1.0-SNAPSHOT"/>
+		<module organisation="net.coobird" name="thumbnailator">
+			<revision name="0.4.8" status="release" pubdate="20141201040525" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/thumbnailator" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="68">
+				<license name="The MIT License (MIT)" url="http://www.opensource.org/licenses/mit-license.html"/>
+				<metadata-artifact status="no" details="" size="3007" time="0" location="/Users/harshmalewar/.ivy2/cache/net.coobird/thumbnailator/ivy-0.4.8.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/coobird/thumbnailator/0.4.8/thumbnailator-0.4.8.pom"/>
+				<caller organisation="downtown-street" name="downtown-street_2.11" conf="compile-internal, compile, provided, optional" rev="0.4.8" rev-constraint-default="0.4.8" rev-constraint-dynamic="0.4.8" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="poi" type="jar" ext="jar" status="no" details="" size="2173705" time="0" location="/Users/harshmalewar/.ivy2/cache/org.apache.poi/poi/jars/poi-3.13-beta1.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/poi/poi/3.13-beta1/poi-3.13-beta1.jar"/>
+					<artifact name="thumbnailator" type="jar" ext="jar" status="no" details="" size="109720" time="0" location="/Users/harshmalewar/.ivy2/cache/net.coobird/thumbnailator/jars/thumbnailator-0.4.8.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/coobird/thumbnailator/0.4.8/thumbnailator-0.4.8.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -520,9 +520,8 @@
 			</revision>
 		</module>
 		<module organisation="commons-codec" name="commons-codec">
-			<revision name="1.9" status="release" pubdate="20131220195739" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+			<revision name="1.9" status="release" pubdate="20131220195739" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, master(*)" position="29">
 				<metadata-artifact status="no" details="" size="10419" time="0" location="/Users/harshmalewar/.ivy2/cache/commons-codec/commons-codec/ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.pom"/>
-				<caller organisation="org.apache.poi" name="poi" conf="default, compile, runtime, master" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="3.13-beta1"/>
 				<caller organisation="com.typesafe.play" name="play_2.11" conf="default, compile, runtime, master" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="2.3.8"/>
 				<caller organisation="oauth.signpost" name="signpost-core" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="1.2.1.2"/>
 				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="4.0.1"/>

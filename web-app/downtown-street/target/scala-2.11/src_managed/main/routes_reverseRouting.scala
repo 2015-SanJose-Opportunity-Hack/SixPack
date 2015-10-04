@@ -1,6 +1,6 @@
 // @SOURCE:/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/conf/routes
-// @HASH:f3fe5ee664547a443b571e3223003e2b04aa57a7
-// @DATE:Sat Oct 03 15:17:04 PDT 2015
+// @HASH:d09978da376513e9e9d5c0036cccc1a91c19163b
+// @DATE:Sat Oct 03 23:30:08 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,7 +15,10 @@ import _root_.play.libs.F
 import Router.queryString
 
 
+// @LINE:38
+// @LINE:32
 // @LINE:30
+// @LINE:28
 // @LINE:26
 // @LINE:24
 // @LINE:22
@@ -30,7 +33,7 @@ import Router.queryString
 // @LINE:3
 package controllers {
 
-// @LINE:26
+// @LINE:28
 // @LINE:11
 // @LINE:9
 // @LINE:7
@@ -46,7 +49,7 @@ def aboutProject(): Call = {
 }
                         
 
-// @LINE:26
+// @LINE:28
 def requestRestCall(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "request/v1")
@@ -84,11 +87,11 @@ def error(): Call = {
 }
                           
 
-// @LINE:30
+// @LINE:38
 class ReverseAssets {
 
 
-// @LINE:30
+// @LINE:38
 def at(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -98,6 +101,9 @@ def at(file:String): Call = {
 }
                           
 
+// @LINE:32
+// @LINE:30
+// @LINE:26
 // @LINE:24
 // @LINE:22
 // @LINE:20
@@ -121,6 +127,13 @@ def authenticateLogin(): Call = {
 }
                         
 
+// @LINE:26
+def viewRequest(id:Integer): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "request/" + implicitly[PathBindable[Integer]].unbind("id", id))
+}
+                        
+
 // @LINE:18
 def dashboard(): Call = {
    import ReverseRouteContext.empty
@@ -132,6 +145,20 @@ def dashboard(): Call = {
 def settings(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "settings")
+}
+                        
+
+// @LINE:32
+def unresolveRequest(id:Integer): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "request/unresolve/" + implicitly[PathBindable[Integer]].unbind("id", id))
+}
+                        
+
+// @LINE:30
+def resolveRequest(id:Integer): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "request/" + implicitly[PathBindable[Integer]].unbind("id", id))
 }
                         
 
@@ -155,7 +182,10 @@ def login(): Call = {
                   
 
 
+// @LINE:38
+// @LINE:32
 // @LINE:30
+// @LINE:28
 // @LINE:26
 // @LINE:24
 // @LINE:22
@@ -171,7 +201,7 @@ def login(): Call = {
 package controllers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:26
+// @LINE:28
 // @LINE:11
 // @LINE:9
 // @LINE:7
@@ -191,7 +221,7 @@ def aboutProject : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:26
+// @LINE:28
 def requestRestCall : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.ApplicationController.requestRestCall",
    """
@@ -249,11 +279,11 @@ def error : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:30
+// @LINE:38
 class ReverseAssets {
 
 
-// @LINE:30
+// @LINE:38
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
@@ -267,6 +297,9 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:32
+// @LINE:30
+// @LINE:26
 // @LINE:24
 // @LINE:22
 // @LINE:20
@@ -298,6 +331,17 @@ def authenticateLogin : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
+// @LINE:26
+def viewRequest : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.AdminController.viewRequest",
+   """
+      function(id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "request/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id)})
+      }
+   """
+)
+                        
+
 // @LINE:18
 def dashboard : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.AdminController.dashboard",
@@ -315,6 +359,28 @@ def settings : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "settings"})
+      }
+   """
+)
+                        
+
+// @LINE:32
+def unresolveRequest : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.AdminController.unresolveRequest",
+   """
+      function(id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "request/unresolve/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id)})
+      }
+   """
+)
+                        
+
+// @LINE:30
+def resolveRequest : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.AdminController.resolveRequest",
+   """
+      function(id) {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "request/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id)})
       }
    """
 )
@@ -348,7 +414,10 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:38
+// @LINE:32
 // @LINE:30
+// @LINE:28
 // @LINE:26
 // @LINE:24
 // @LINE:22
@@ -364,7 +433,7 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
-// @LINE:26
+// @LINE:28
 // @LINE:11
 // @LINE:9
 // @LINE:7
@@ -379,7 +448,7 @@ def aboutProject(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:26
+// @LINE:28
 def requestRestCall(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.ApplicationController.requestRestCall(), HandlerDef(this.getClass.getClassLoader, "", "controllers.ApplicationController", "requestRestCall", Seq(), "POST", """""", _prefix + """request/v1""")
 )
@@ -412,11 +481,11 @@ def error(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
-// @LINE:30
+// @LINE:38
 class ReverseAssets {
 
 
-// @LINE:30
+// @LINE:38
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -425,6 +494,9 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
+// @LINE:32
+// @LINE:30
+// @LINE:26
 // @LINE:24
 // @LINE:22
 // @LINE:20
@@ -446,6 +518,12 @@ def authenticateLogin(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRe
 )
                       
 
+// @LINE:26
+def viewRequest(id:Integer): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.AdminController.viewRequest(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "viewRequest", Seq(classOf[Integer]), "GET", """""", _prefix + """request/$id<[^/]+>""")
+)
+                      
+
 // @LINE:18
 def dashboard(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.AdminController.dashboard(), HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "dashboard", Seq(), "GET", """""", _prefix + """dashboard""")
@@ -455,6 +533,18 @@ def dashboard(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:20
 def settings(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.AdminController.settings(), HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "settings", Seq(), "GET", """""", _prefix + """settings""")
+)
+                      
+
+// @LINE:32
+def unresolveRequest(id:Integer): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.AdminController.unresolveRequest(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "unresolveRequest", Seq(classOf[Integer]), "GET", """""", _prefix + """request/unresolve/$id<[^/]+>""")
+)
+                      
+
+// @LINE:30
+def resolveRequest(id:Integer): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.AdminController.resolveRequest(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "resolveRequest", Seq(classOf[Integer]), "POST", """""", _prefix + """request/$id<[^/]+>""")
 )
                       
 

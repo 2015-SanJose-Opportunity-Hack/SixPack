@@ -55,7 +55,7 @@ Seq[Any](format.raw/*1.89*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Oct 03 15:17:04 PDT 2015
+                  DATE: Sat Oct 03 19:40:12 PDT 2015
                   SOURCE: /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/bootstrap3/decimal.scala.html
                   HASH: 75b84f5fa7e559c674337c172121539f48e11421
                   MATRIX: 756->1|931->88|961->92|1011->116|1038->135|1077->137|1117->147|1189->193|1214->198|1393->350|1407->355|1431->358|1481->381|1495->386|1521->391|1572->415|1586->420|1627->440|1683->469|1715->480|1779->517|1804->521|1871->561|1936->605

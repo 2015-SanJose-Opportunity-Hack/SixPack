@@ -47,3 +47,15 @@ cleanFiles
 reload
 compile
 run
+clean
+cleanFiles
+reload
+compile
+run
+reload
+compile
+clean
+cleanFiles
+reload
+compile
+run

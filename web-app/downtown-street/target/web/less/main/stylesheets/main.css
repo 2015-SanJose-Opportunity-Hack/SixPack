@@ -4,6 +4,7 @@ html {
 }
 body {
   background-color: #D5E1DD;
+  font-family: 'Titillium Web', sans-serif;
 }
 .dashboard-menu {
   position: absolute;
@@ -142,5 +143,144 @@ body {
   margin-top: 0;
   color: #2B3E42;
   text-align: center;
+}
+#map {
+  height: 500px;
+}
+.request-info-group {
+  clear: both;
+  padding-bottom: 10px;
+  font-size: 34px;
+  position: relative;
+  padding-top: 0;
+  color: #2B3E42;
+  font-weight: 300;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.main-container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: white;
+}
+.resolve-btn {
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+}
+.full-image {
+  width: 100%;
+}
+.image-title {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: auto;
+  background-color: black;
+  color: white;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+}
+.details {
+  padding: 30px;
+}
+tfoot {
+  display: table-header-group;
+}
+tfoot input {
+  width: 100%;
+  padding: 3px;
+  box-sizing: border-box;
+}
+.content {
+  padding-top: 7px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.stats {
+  height: 100%;
+  width: 60%;
+}
+nav {
+  background-color: #2B3E42;
+}
+.resolve {
+  background-color: rgba(39, 113, 39, 0.84);
+}
+.btn:hover.resolve {
+  background-color: #277127;
+}
+.unr {
+  background-color: rgba(163, 33, 33, 0.84);
+}
+.btn:hover.unr {
+  background-color: #a32121;
+}
+.logo-name {
+  padding-left: 10px !important;
+}
+.brand-logo {
+  font-size: 1.2rem;
+}
+/*
+.btn.stats {
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 70px;
+    max-height: 150px;
+    max-width: 150px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 2;
+    vertical-align: middle;
+}
+*/
+.stats-header {
+  font-size: 2.28rem;
+}
+.dataTables_filter > label {
+  font-size: large;
+}
+.dataTables_length > label {
+  font-size: large;
+  float: left;
+}
+.dataTables_length > label > select {
+  display: inline-block !important;
+  font-size: normal;
+  float: left;
+}
+table > tbody > tr:hover {
+  background-color: #d5e1dd !important;
+}
+@media only screen and (max-width: 600px) {
+  .btn.stats {
+    float: right;
+  }
+  .stats-header {
+    font-size: 1.28rem;
+    float: left;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .btn.stats {
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 70px;
+    max-height: 150px;
+    max-width: 150px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 2;
+    vertical-align: middle;
+  }
 }
 /*# sourceMappingURL=main.css.map */
