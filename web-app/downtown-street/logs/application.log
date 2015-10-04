@@ -1,127 +1,58 @@
-2015-10-04 04:18:01,317 - [INFO] - from play in pool-4-thread-2 
+2015-10-04 06:08:25,575 - [INFO] - from play in pool-4-thread-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-10-04 04:18:18,097 - [INFO] - from play in play-internal-execution-context-1 
+2015-10-04 06:10:21,594 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:mysql://localhost/downtown_street
 
-2015-10-04 04:18:18,580 - [INFO] - from application in play-internal-execution-context-1 
+2015-10-04 06:10:22,331 - [INFO] - from application in play-internal-execution-context-1 
 Application has started
 
-2015-10-04 04:18:18,584 - [INFO] - from play in play-internal-execution-context-1 
+2015-10-04 06:10:22,335 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-10-04 04:19:51,205 - [INFO] - from application in play-internal-execution-context-1 
+2015-10-04 06:13:50,968 - [INFO] - from application in play-internal-execution-context-2 
 Application shutdown...
 
-2015-10-04 04:19:51,398 - [INFO] - from play in play-internal-execution-context-1 
+2015-10-04 06:13:51,054 - [INFO] - from play in play-internal-execution-context-2 
 database [default] connected at jdbc:mysql://localhost/downtown_street
 
-2015-10-04 04:19:51,501 - [INFO] - from application in play-internal-execution-context-1 
+2015-10-04 06:13:51,103 - [INFO] - from application in play-internal-execution-context-2 
 Application has started
 
-2015-10-04 04:19:51,501 - [INFO] - from play in play-internal-execution-context-1 
+2015-10-04 06:13:51,103 - [INFO] - from play in play-internal-execution-context-2 
 Application started (Dev)
 
-2015-10-04 04:20:53,790 - [INFO] - from application in play-internal-execution-context-2 
+2015-10-04 06:14:17,706 - [INFO] - from application in play-internal-execution-context-2 
 Application shutdown...
 
-2015-10-04 04:20:53,891 - [INFO] - from play in play-internal-execution-context-2 
+2015-10-04 06:14:17,792 - [INFO] - from play in play-internal-execution-context-2 
 database [default] connected at jdbc:mysql://localhost/downtown_street
 
-2015-10-04 04:20:53,939 - [INFO] - from application in play-internal-execution-context-2 
+2015-10-04 06:14:17,838 - [INFO] - from application in play-internal-execution-context-2 
 Application has started
 
-2015-10-04 04:20:53,939 - [INFO] - from play in play-internal-execution-context-2 
+2015-10-04 06:14:17,838 - [INFO] - from play in play-internal-execution-context-2 
 Application started (Dev)
 
-2015-10-04 04:22:39,666 - [INFO] - from application in play-internal-execution-context-2 
-Application shutdown...
-
-2015-10-04 04:22:39,762 - [INFO] - from play in play-internal-execution-context-2 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 04:22:39,844 - [INFO] - from application in play-internal-execution-context-2 
-Application has started
-
-2015-10-04 04:22:39,845 - [INFO] - from play in play-internal-execution-context-2 
-Application started (Dev)
-
-2015-10-04 04:27:34,504 - [ERROR] - from application in New I/O worker #2 
+2015-10-04 06:14:17,882 - [ERROR] - from play in play-akka.actor.default-dispatcher-7 
+Cannot invoke the action, eventually got an error: javax.persistence.PersistenceException: Query threw SQLException:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 1 
+Bind values:[] 
+Query was:
+select t0.id c0, t0.first_name c1, t0.last_name c2, t0.image c3, t0.created_at c4, t0.resolved_image c5, t0.contact c6, t0.comment c7, t0.latitude c8, t0.longitude c9, t0.address c10, t0.email c11, t0.business c12, t0.is_resolved c13 from request t0 order by DESC 
 
 
-! @6nk75eopn - Internal server error, for (GET) [/dashboard] ->
 
-play.PlayExceptions$CompilationException: Compilation error[error: method render in class dashboard cannot be applied to given types;]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
-	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.8.jar:2.3.8]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.8.jar:2.3.8]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
-
-2015-10-04 04:29:51,829 - [INFO] - from application in play-internal-execution-context-2 
-Application shutdown...
-
-2015-10-04 04:29:51,908 - [INFO] - from play in play-internal-execution-context-2 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 04:29:51,976 - [INFO] - from application in play-internal-execution-context-2 
-Application has started
-
-2015-10-04 04:29:51,976 - [INFO] - from play in play-internal-execution-context-2 
-Application started (Dev)
-
-2015-10-04 04:30:27,597 - [INFO] - from application in play-internal-execution-context-2 
-Application shutdown...
-
-2015-10-04 04:30:27,664 - [INFO] - from play in play-internal-execution-context-2 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 04:30:27,696 - [INFO] - from application in play-internal-execution-context-2 
-Application has started
-
-2015-10-04 04:30:27,697 - [INFO] - from play in play-internal-execution-context-2 
-Application started (Dev)
-
-2015-10-04 04:51:26,462 - [INFO] - from application in play-internal-execution-context-5 
-Application shutdown...
-
-2015-10-04 04:51:26,568 - [INFO] - from play in play-internal-execution-context-5 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 04:51:26,688 - [INFO] - from application in play-internal-execution-context-5 
-Application has started
-
-2015-10-04 04:51:26,688 - [INFO] - from play in play-internal-execution-context-5 
-Application started (Dev)
-
-2015-10-04 04:51:26,715 - [ERROR] - from play in play-akka.actor.default-dispatcher-101 
-Cannot invoke the action, eventually got an error: java.lang.NullPointerException
-
-2015-10-04 04:51:26,729 - [ERROR] - from application in play-akka.actor.default-dispatcher-101 
+2015-10-04 06:14:17,896 - [ERROR] - from application in play-akka.actor.default-dispatcher-7 
 
 
-! @6nk78ibhh - Internal server error, for (GET) [/request/2] ->
+! @6nk7jf7c5 - Internal server error, for (GET) [/dashboard] ->
 
-play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+play.api.Application$$anon$1: Execution exception[[PersistenceException: Query threw SQLException:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 1 
+Bind values:[] 
+Query was:
+select t0.id c0, t0.first_name c1, t0.last_name c2, t0.image c3, t0.created_at c4, t0.resolved_image c5, t0.contact c6, t0.comment c7, t0.latitude c8, t0.longitude c9, t0.address c10, t0.email c11, t0.business c12, t0.is_resolved c13 from request t0 order by DESC 
+
+]]
 	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.8.jar:2.3.8]
 	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.8.jar:2.3.8]
 	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.8.jar:2.3.8]
@@ -144,13 +75,22 @@ play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
-Caused by: java.lang.NullPointerException: null
-	at views.html.admin.request$.apply(request.template.scala:48) ~[classes/:na]
-	at views.html.admin.request$.render(request.template.scala:201) ~[classes/:na]
-	at views.html.admin.request.render(request.template.scala) ~[classes/:na]
-	at controllers.AdminController.viewRequest(AdminController.java:129) ~[classes/:na]
-	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$12$$anonfun$apply$12.apply(routes_routing.scala:245) ~[classes/:na]
-	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$12$$anonfun$apply$12.apply(routes_routing.scala:245) ~[classes/:na]
+Caused by: javax.persistence.PersistenceException: Query threw SQLException:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 1 
+Bind values:[] 
+Query was:
+select t0.id c0, t0.first_name c1, t0.last_name c2, t0.image c3, t0.created_at c4, t0.resolved_image c5, t0.contact c6, t0.comment c7, t0.latitude c8, t0.longitude c9, t0.address c10, t0.email c11, t0.business c12, t0.is_resolved c13 from request t0 order by DESC 
+
+
+	at com.avaje.ebeaninternal.server.query.CQuery.createPersistenceException(CQuery.java:834) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.query.CQuery.createPersistenceException(CQuery.java:811) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.query.CQueryEngine.findMany(CQueryEngine.java:205) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.query.DefaultOrmQueryEngine.findMany(DefaultOrmQueryEngine.java:77) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.OrmQueryRequest.findList(OrmQueryRequest.java:263) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.findList(DefaultServer.java:1502) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.querydefn.DefaultOrmQuery.findList(DefaultOrmQuery.java:890) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at controllers.AdminController.dashboard(AdminController.java:65) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.apply(routes_routing.scala:213) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.apply(routes_routing.scala:213) ~[classes/:na]
 	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.8.jar:2.3.8]
 	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.8.jar:2.3.8]
 	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.8.jar:2.3.8]
@@ -184,217 +124,45 @@ Caused by: java.lang.NullPointerException: null
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
 	... 6 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_25]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_25]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_25]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408) ~[na:1.8.0_25]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.29.jar:na]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.29.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054) ~[mysql-connector-java-5.1.29.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237) ~[mysql-connector-java-5.1.29.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169) ~[mysql-connector-java-5.1.29.jar:na]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617) ~[mysql-connector-java-5.1.29.jar:na]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778) ~[mysql-connector-java-5.1.29.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2834) ~[mysql-connector-java-5.1.29.jar:na]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156) ~[mysql-connector-java-5.1.29.jar:na]
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2313) ~[mysql-connector-java-5.1.29.jar:na]
+	at com.jolbox.bonecp.PreparedStatementHandle.executeQuery(PreparedStatementHandle.java:174) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.avaje.ebeaninternal.server.query.CQuery.prepareBindExecuteQueryWithOption(CQuery.java:409) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.query.CQuery.prepareBindExecuteQuery(CQuery.java:368) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at com.avaje.ebeaninternal.server.query.CQueryEngine.findMany(CQueryEngine.java:165) ~[avaje-ebeanorm-3.3.4.jar:na]
+	... 45 common frames omitted
 
-2015-10-04 04:52:17,565 - [INFO] - from application in play-internal-execution-context-5 
+2015-10-04 06:15:39,378 - [INFO] - from application in play-internal-execution-context-2 
 Application shutdown...
 
-2015-10-04 04:52:17,716 - [INFO] - from play in play-internal-execution-context-5 
+2015-10-04 06:15:39,469 - [INFO] - from play in play-internal-execution-context-2 
 database [default] connected at jdbc:mysql://localhost/downtown_street
 
-2015-10-04 04:52:17,777 - [INFO] - from application in play-internal-execution-context-5 
+2015-10-04 06:15:39,543 - [INFO] - from application in play-internal-execution-context-2 
 Application has started
 
-2015-10-04 04:52:17,777 - [INFO] - from play in play-internal-execution-context-5 
+2015-10-04 06:15:39,543 - [INFO] - from play in play-internal-execution-context-2 
 Application started (Dev)
 
-2015-10-04 04:52:35,924 - [INFO] - from application in play-internal-execution-context-8 
-Application shutdown...
+2015-10-04 06:16:47,194 - [ERROR] - from application in New I/O worker #4 
 
-2015-10-04 04:52:35,994 - [INFO] - from play in play-internal-execution-context-8 
-database [default] connected at jdbc:mysql://localhost/downtown_street
 
-2015-10-04 04:52:36,045 - [INFO] - from application in play-internal-execution-context-8 
-Application has started
+! @6nk7jnk8f - Internal server error, for (GET) [/dashboard] ->
 
-2015-10-04 04:52:36,048 - [INFO] - from play in play-internal-execution-context-8 
-Application started (Dev)
-
-2015-10-04 04:53:18,946 - [INFO] - from application in play-internal-execution-context-8 
-Application shutdown...
-
-2015-10-04 04:53:19,029 - [INFO] - from play in play-internal-execution-context-8 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 04:53:19,097 - [INFO] - from application in play-internal-execution-context-8 
-Application has started
-
-2015-10-04 04:53:19,098 - [INFO] - from play in play-internal-execution-context-8 
-Application started (Dev)
-
-2015-10-04 04:54:38,390 - [INFO] - from application in play-internal-execution-context-9 
-Application shutdown...
-
-2015-10-04 04:54:38,505 - [INFO] - from play in play-internal-execution-context-9 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 04:54:38,657 - [INFO] - from application in play-internal-execution-context-9 
-Application has started
-
-2015-10-04 04:54:38,659 - [INFO] - from play in play-internal-execution-context-9 
-Application started (Dev)
-
-2015-10-04 04:56:17,436 - [INFO] - from application in play-internal-execution-context-9 
-Application shutdown...
-
-2015-10-04 04:56:17,537 - [INFO] - from play in play-internal-execution-context-9 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 04:56:17,716 - [INFO] - from application in play-internal-execution-context-9 
-Application has started
-
-2015-10-04 04:56:17,716 - [INFO] - from play in play-internal-execution-context-9 
-Application started (Dev)
-
-2015-10-04 04:57:18,752 - [INFO] - from application in play-internal-execution-context-11 
-Application shutdown...
-
-2015-10-04 04:57:18,843 - [INFO] - from play in play-internal-execution-context-11 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 04:57:18,921 - [INFO] - from application in play-internal-execution-context-11 
-Application has started
-
-2015-10-04 04:57:18,922 - [INFO] - from play in play-internal-execution-context-11 
-Application started (Dev)
-
-2015-10-04 04:57:50,586 - [INFO] - from application in play-internal-execution-context-11 
-Application shutdown...
-
-2015-10-04 04:57:50,652 - [INFO] - from play in play-internal-execution-context-11 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 04:57:50,734 - [INFO] - from application in play-internal-execution-context-11 
-Application has started
-
-2015-10-04 04:57:50,734 - [INFO] - from play in play-internal-execution-context-11 
-Application started (Dev)
-
-2015-10-04 04:59:05,903 - [INFO] - from application in play-internal-execution-context-13 
-Application shutdown...
-
-2015-10-04 04:59:05,999 - [INFO] - from play in play-internal-execution-context-13 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 04:59:06,097 - [INFO] - from application in play-internal-execution-context-13 
-Application has started
-
-2015-10-04 04:59:06,097 - [INFO] - from play in play-internal-execution-context-13 
-Application started (Dev)
-
-2015-10-04 04:59:36,958 - [INFO] - from application in play-internal-execution-context-13 
-Application shutdown...
-
-2015-10-04 04:59:37,025 - [INFO] - from play in play-internal-execution-context-13 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 04:59:37,073 - [INFO] - from application in play-internal-execution-context-13 
-Application has started
-
-2015-10-04 04:59:37,073 - [INFO] - from play in play-internal-execution-context-13 
-Application started (Dev)
-
-2015-10-04 05:00:19,477 - [INFO] - from application in play-internal-execution-context-13 
-Application shutdown...
-
-2015-10-04 05:00:19,541 - [INFO] - from play in play-internal-execution-context-13 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 05:00:19,602 - [INFO] - from application in play-internal-execution-context-13 
-Application has started
-
-2015-10-04 05:00:19,602 - [INFO] - from play in play-internal-execution-context-13 
-Application started (Dev)
-
-2015-10-04 05:03:44,266 - [INFO] - from application in play-internal-execution-context-14 
-Application shutdown...
-
-2015-10-04 05:03:44,337 - [INFO] - from play in play-internal-execution-context-14 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 05:03:44,419 - [INFO] - from application in play-internal-execution-context-14 
-Application has started
-
-2015-10-04 05:03:44,420 - [INFO] - from play in play-internal-execution-context-14 
-Application started (Dev)
-
-2015-10-04 05:04:15,043 - [INFO] - from application in play-internal-execution-context-14 
-Application shutdown...
-
-2015-10-04 05:04:15,116 - [INFO] - from play in play-internal-execution-context-14 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 05:04:15,205 - [INFO] - from application in play-internal-execution-context-14 
-Application has started
-
-2015-10-04 05:04:15,205 - [INFO] - from play in play-internal-execution-context-14 
-Application started (Dev)
-
-2015-10-04 05:06:46,747 - [INFO] - from application in play-internal-execution-context-14 
-Application shutdown...
-
-2015-10-04 05:06:46,809 - [INFO] - from play in play-internal-execution-context-14 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 05:06:46,862 - [INFO] - from application in play-internal-execution-context-14 
-Application has started
-
-2015-10-04 05:06:46,862 - [INFO] - from play in play-internal-execution-context-14 
-Application started (Dev)
-
-2015-10-04 05:21:53,039 - [INFO] - from application in play-internal-execution-context-16 
-Application shutdown...
-
-2015-10-04 05:21:53,158 - [INFO] - from play in play-internal-execution-context-16 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 05:21:53,257 - [INFO] - from application in play-internal-execution-context-16 
-Application has started
-
-2015-10-04 05:21:53,257 - [INFO] - from play in play-internal-execution-context-16 
-Application started (Dev)
-
-2015-10-04 05:22:04,863 - [INFO] - from application in play-internal-execution-context-16 
-Application shutdown...
-
-2015-10-04 05:22:04,983 - [INFO] - from play in play-internal-execution-context-16 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 05:22:05,031 - [INFO] - from application in play-internal-execution-context-16 
-Application has started
-
-2015-10-04 05:22:05,031 - [INFO] - from play in play-internal-execution-context-16 
-Application started (Dev)
-
-2015-10-04 05:24:51,406 - [INFO] - from application in play-internal-execution-context-16 
-Application shutdown...
-
-2015-10-04 05:24:51,467 - [INFO] - from play in play-internal-execution-context-16 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 05:24:51,508 - [INFO] - from application in play-internal-execution-context-16 
-Application has started
-
-2015-10-04 05:24:51,508 - [INFO] - from play in play-internal-execution-context-16 
-Application started (Dev)
-
-2015-10-04 05:25:30,634 - [INFO] - from application in play-internal-execution-context-16 
-Application shutdown...
-
-2015-10-04 05:25:30,691 - [INFO] - from play in play-internal-execution-context-16 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 05:25:30,736 - [INFO] - from application in play-internal-execution-context-16 
-Application has started
-
-2015-10-04 05:25:30,736 - [INFO] - from play in play-internal-execution-context-16 
-Application started (Dev)
-
-2015-10-04 05:28:11,037 - [ERROR] - from application in New I/O worker #2 
-
-
-! @6nk7ddmch - Internal server error, for (POST) [/settings] ->
-
-play.PlayExceptions$CompilationException: Compilation error[Not parsed?]
+play.PlayExceptions$CompilationException: Compilation error[value getCreatedAt is not a member of models.Request]
 	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
 	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
 	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
@@ -420,487 +188,75 @@ play.PlayExceptions$CompilationException: Compilation error[Not parsed?]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
 
-2015-10-04 05:28:58,868 - [ERROR] - from application in New I/O worker #2 
-
-
-! @6nk7dgf6a - Internal server error, for (POST) [/settings] ->
-
-play.PlayExceptions$CompilationException: Compilation error[Not parsed?]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
-	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.8.jar:2.3.8]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.8.jar:2.3.8]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
-
-2015-10-04 05:29:18,086 - [ERROR] - from application in New I/O worker #2 
-
-
-! @6nk7dhhhe - Internal server error, for (POST) [/settings] ->
-
-play.PlayExceptions$CompilationException: Compilation error[missing arguments for method error in object Predef;
-follow this method with `_' if you want to treat it as a partially applied function]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
-	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.8.jar:2.3.8]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.8.jar:2.3.8]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
-
-2015-10-04 05:29:47,706 - [ERROR] - from application in New I/O worker #2 
-
-
-! @6nk7dj9ck - Internal server error, for (POST) [/settings] ->
-
-play.PlayExceptions$CompilationException: Compilation error[missing arguments for method error in object Predef;
-follow this method with `_' if you want to treat it as a partially applied function]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
-	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.8.jar:2.3.8]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.8.jar:2.3.8]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
-
-2015-10-04 05:29:51,483 - [ERROR] - from application in New I/O worker #2 
-
-
-! @6nk7djf20 - Internal server error, for (POST) [/settings] ->
-
-play.PlayExceptions$CompilationException: Compilation error[missing arguments for method error in object Predef;
-follow this method with `_' if you want to treat it as a partially applied function]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
-	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.8.jar:2.3.8]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.8.jar:2.3.8]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
-
-2015-10-04 05:30:08,089 - [ERROR] - from application in New I/O worker #2 
-
-
-! @6nk7dkdgi - Internal server error, for (POST) [/settings] ->
-
-play.PlayExceptions$CompilationException: Compilation error[missing arguments for method error in object Predef;
-follow this method with `_' if you want to treat it as a partially applied function]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
-	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.8.jar:2.3.8]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.8.jar:2.3.8]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
-
-2015-10-04 05:30:28,933 - [ERROR] - from application in New I/O worker #2 
-
-
-! @6nk7dlicb - Internal server error, for (POST) [/settings] ->
-
-play.PlayExceptions$CompilationException: Compilation error[missing arguments for method error in object Predef;
-follow this method with `_' if you want to treat it as a partially applied function]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
-	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.8.jar:2.3.8]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.8.jar:2.3.8]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
-
-2015-10-04 05:30:55,803 - [ERROR] - from application in New I/O worker #2 
-
-
-! @6nk7dn65o - Internal server error, for (POST) [/settings] ->
-
-play.PlayExceptions$CompilationException: Compilation error[not found: value er]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
-	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.8.jar:2.3.8]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.8.jar:2.3.8]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
-
-2015-10-04 05:31:05,576 - [ERROR] - from application in New I/O worker #2 
-
-
-! @6nk7dnkhi - Internal server error, for (POST) [/settings] ->
-
-play.PlayExceptions$CompilationException: Compilation error[missing arguments for method error in object Predef;
-follow this method with `_' if you want to treat it as a partially applied function]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
-	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.8.jar:2.3.8]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.8.jar:2.3.8]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
-
-2015-10-04 05:31:35,053 - [ERROR] - from application in New I/O worker #2 
-
-
-! @6nk7dpc7e - Internal server error, for (POST) [/settings] ->
-
-play.PlayExceptions$CompilationException: Compilation error[Not parsed?]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
-	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.8.jar:2.3.8]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.8.jar:2.3.8]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
-
-2015-10-04 05:31:56,842 - [ERROR] - from application in New I/O worker #2 
-
-
-! @6nk7e0idf - Internal server error, for (POST) [/settings] ->
-
-play.PlayExceptions$CompilationException: Compilation error[Not parsed?]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
-	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
-	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
-	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61) ~[na:na]
-	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.8.jar:2.3.8]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.8.jar:2.3.8]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
-
-2015-10-04 05:32:05,975 - [INFO] - from application in play-internal-execution-context-16 
+2015-10-04 06:17:33,440 - [INFO] - from application in play-internal-execution-context-2 
 Application shutdown...
 
-2015-10-04 05:32:06,036 - [INFO] - from play in play-internal-execution-context-16 
+2015-10-04 06:17:33,516 - [INFO] - from play in play-internal-execution-context-2 
 database [default] connected at jdbc:mysql://localhost/downtown_street
 
-2015-10-04 05:32:06,101 - [INFO] - from application in play-internal-execution-context-16 
+2015-10-04 06:17:33,565 - [INFO] - from application in play-internal-execution-context-2 
 Application has started
 
-2015-10-04 05:32:06,101 - [INFO] - from play in play-internal-execution-context-16 
+2015-10-04 06:17:33,565 - [INFO] - from play in play-internal-execution-context-2 
 Application started (Dev)
 
-2015-10-04 05:33:18,760 - [INFO] - from application in play-internal-execution-context-16 
+2015-10-04 06:18:21,306 - [INFO] - from application in play-internal-execution-context-6 
 Application shutdown...
 
-2015-10-04 05:33:18,817 - [INFO] - from play in play-internal-execution-context-16 
+2015-10-04 06:18:21,392 - [INFO] - from play in play-internal-execution-context-6 
 database [default] connected at jdbc:mysql://localhost/downtown_street
 
-2015-10-04 05:33:18,855 - [INFO] - from application in play-internal-execution-context-16 
+2015-10-04 06:18:21,440 - [INFO] - from application in play-internal-execution-context-6 
 Application has started
 
-2015-10-04 05:33:18,855 - [INFO] - from play in play-internal-execution-context-16 
+2015-10-04 06:18:21,440 - [INFO] - from play in play-internal-execution-context-6 
 Application started (Dev)
 
-2015-10-04 05:39:44,410 - [INFO] - from application in play-internal-execution-context-16 
+2015-10-04 06:19:45,826 - [INFO] - from application in play-internal-execution-context-8 
 Application shutdown...
 
-2015-10-04 05:39:44,455 - [INFO] - from play in play-internal-execution-context-16 
+2015-10-04 06:19:45,937 - [INFO] - from play in play-internal-execution-context-8 
 database [default] connected at jdbc:mysql://localhost/downtown_street
 
-2015-10-04 05:39:44,514 - [INFO] - from application in play-internal-execution-context-16 
+2015-10-04 06:19:46,021 - [INFO] - from application in play-internal-execution-context-8 
 Application has started
 
-2015-10-04 05:39:44,514 - [INFO] - from play in play-internal-execution-context-16 
+2015-10-04 06:19:46,021 - [INFO] - from play in play-internal-execution-context-8 
 Application started (Dev)
 
-2015-10-04 05:41:57,229 - [INFO] - from application in play-internal-execution-context-16 
+2015-10-04 06:19:56,440 - [INFO] - from application in play-internal-execution-context-8 
 Application shutdown...
 
-2015-10-04 05:41:57,287 - [INFO] - from play in play-internal-execution-context-16 
+2015-10-04 06:19:56,516 - [INFO] - from play in play-internal-execution-context-8 
 database [default] connected at jdbc:mysql://localhost/downtown_street
 
-2015-10-04 05:41:57,330 - [INFO] - from application in play-internal-execution-context-16 
+2015-10-04 06:19:56,558 - [INFO] - from application in play-internal-execution-context-8 
 Application has started
 
-2015-10-04 05:41:57,330 - [INFO] - from play in play-internal-execution-context-16 
+2015-10-04 06:19:56,558 - [INFO] - from play in play-internal-execution-context-8 
 Application started (Dev)
 
-2015-10-04 05:43:05,767 - [INFO] - from application in play-internal-execution-context-16 
+2015-10-04 06:20:39,404 - [INFO] - from application in play-internal-execution-context-8 
 Application shutdown...
 
-2015-10-04 05:43:05,810 - [INFO] - from play in play-internal-execution-context-16 
+2015-10-04 06:20:39,484 - [INFO] - from play in play-internal-execution-context-8 
 database [default] connected at jdbc:mysql://localhost/downtown_street
 
-2015-10-04 05:43:05,853 - [INFO] - from application in play-internal-execution-context-16 
+2015-10-04 06:20:39,527 - [INFO] - from application in play-internal-execution-context-8 
 Application has started
 
-2015-10-04 05:43:05,853 - [INFO] - from play in play-internal-execution-context-16 
+2015-10-04 06:20:39,527 - [INFO] - from play in play-internal-execution-context-8 
 Application started (Dev)
 
-2015-10-04 05:49:05,418 - [INFO] - from application in play-internal-execution-context-16 
+2015-10-04 06:22:09,185 - [INFO] - from application in play-internal-execution-context-8 
 Application shutdown...
 
-2015-10-04 05:49:05,491 - [INFO] - from play in play-internal-execution-context-16 
+2015-10-04 06:22:09,253 - [INFO] - from play in play-internal-execution-context-8 
 database [default] connected at jdbc:mysql://localhost/downtown_street
 
-2015-10-04 05:49:05,589 - [INFO] - from application in play-internal-execution-context-16 
+2015-10-04 06:22:09,296 - [INFO] - from application in play-internal-execution-context-8 
 Application has started
 
-2015-10-04 05:49:05,590 - [INFO] - from play in play-internal-execution-context-16 
-Application started (Dev)
-
-2015-10-04 05:52:20,336 - [INFO] - from application in play-internal-execution-context-23 
-Application shutdown...
-
-2015-10-04 05:52:20,400 - [INFO] - from play in play-internal-execution-context-23 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 05:52:20,450 - [INFO] - from application in play-internal-execution-context-23 
-Application has started
-
-2015-10-04 05:52:20,450 - [INFO] - from play in play-internal-execution-context-23 
-Application started (Dev)
-
-2015-10-04 05:55:30,752 - [INFO] - from application in play-internal-execution-context-23 
-Application shutdown...
-
-2015-10-04 05:55:30,811 - [INFO] - from play in play-internal-execution-context-23 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 05:55:30,878 - [INFO] - from application in play-internal-execution-context-23 
-Application has started
-
-2015-10-04 05:55:30,878 - [INFO] - from play in play-internal-execution-context-23 
-Application started (Dev)
-
-2015-10-04 05:56:34,823 - [INFO] - from application in play-internal-execution-context-24 
-Application shutdown...
-
-2015-10-04 05:56:34,894 - [INFO] - from play in play-internal-execution-context-24 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 05:56:34,938 - [INFO] - from application in play-internal-execution-context-24 
-Application has started
-
-2015-10-04 05:56:34,938 - [INFO] - from play in play-internal-execution-context-24 
-Application started (Dev)
-
-2015-10-04 05:57:42,793 - [INFO] - from application in play-internal-execution-context-24 
-Application shutdown...
-
-2015-10-04 05:57:42,852 - [INFO] - from play in play-internal-execution-context-24 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 05:57:42,911 - [INFO] - from application in play-internal-execution-context-24 
-Application has started
-
-2015-10-04 05:57:42,911 - [INFO] - from play in play-internal-execution-context-24 
-Application started (Dev)
-
-2015-10-04 05:59:25,384 - [INFO] - from application in play-internal-execution-context-24 
-Application shutdown...
-
-2015-10-04 05:59:25,450 - [INFO] - from play in play-internal-execution-context-24 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 05:59:25,506 - [INFO] - from application in play-internal-execution-context-24 
-Application has started
-
-2015-10-04 05:59:25,506 - [INFO] - from play in play-internal-execution-context-24 
-Application started (Dev)
-
-2015-10-04 06:00:29,184 - [INFO] - from application in play-internal-execution-context-24 
-Application shutdown...
-
-2015-10-04 06:00:29,237 - [INFO] - from play in play-internal-execution-context-24 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 06:00:29,276 - [INFO] - from application in play-internal-execution-context-24 
-Application has started
-
-2015-10-04 06:00:29,276 - [INFO] - from play in play-internal-execution-context-24 
-Application started (Dev)
-
-2015-10-04 06:02:10,548 - [INFO] - from application in play-internal-execution-context-24 
-Application shutdown...
-
-2015-10-04 06:02:10,599 - [INFO] - from play in play-internal-execution-context-24 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 06:02:10,628 - [INFO] - from application in play-internal-execution-context-24 
-Application has started
-
-2015-10-04 06:02:10,628 - [INFO] - from play in play-internal-execution-context-24 
-Application started (Dev)
-
-2015-10-04 06:02:40,424 - [INFO] - from application in play-internal-execution-context-26 
-Application shutdown...
-
-2015-10-04 06:02:40,484 - [INFO] - from play in play-internal-execution-context-26 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 06:02:40,529 - [INFO] - from application in play-internal-execution-context-26 
-Application has started
-
-2015-10-04 06:02:40,529 - [INFO] - from play in play-internal-execution-context-26 
+2015-10-04 06:22:09,296 - [INFO] - from play in play-internal-execution-context-8 
 Application started (Dev)
 

@@ -37,7 +37,7 @@ jQuery(document).ready(function(){
 	
     // DataTable
     jQuery('#search-table').DataTable({
-        
+        "order": [[4, "desc"]]
     });
 });
 

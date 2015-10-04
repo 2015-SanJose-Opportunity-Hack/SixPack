@@ -155,6 +155,16 @@ public class Request extends Model{
 		this.resolvedImage = resolvedImage;
 	}
 	
+
+	public Date getCreatedAt() {
+		return createdAt;
+	}
+
+	public void setCreatedAt(Date createdAt) {
+		this.createdAt = createdAt;
+	}
+
+	
 	public static Finder<Integer, Request> find =  new Finder<Integer, Request>(Integer.class, Request.class);
 	
 }

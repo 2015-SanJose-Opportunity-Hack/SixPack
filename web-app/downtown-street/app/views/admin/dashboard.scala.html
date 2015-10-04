@@ -41,6 +41,7 @@
                                 <th class="text-center">Thumb</th>
                                 <th class="text-center">Name</th>
                                 <th class="text-center">Address</th>
+                                <th class="text-center">Time</th>
                                 <th class="text-center">Status</th>
                                 <th class="text-center">Details</th>
                             </tr>
@@ -53,22 +54,14 @@
 						<td><img class="thumb" src="/assets/images/request-thumbs/thumb-@request.getImage()"></td>
 						<td class="text-center">@request.getFirstName() @request.getLastName()</td>
 						<td>@request.getAddress()</td>
+						<td>@request.getCreatedAt()</td>
 						<td><span class="@if(request.isResolved()){status-resolved}else{status-pending}">@if(request.isResolved()){Resolved}else{Pending}</span></td>
 						<td><a href="@routes.AdminController.viewRequest(request.getId())" class="btn btn-default">Details</a></td>
 					</tr>
 				}
 							
 			</tbody>
-			<tfoot>
-                            <tr>
-                                <th class="text-center">ID</th>
-                                <th class="text-center">Thumb</th>
-                                <th class="text-center">Name</th>
-                                <th class="text-center">Address</th>
-                                <th class="text-center">Details</th>
-                                <th class="text-center">Status</th>
-                            </tr>
-                        </tfoot>
+			
 		</table>
 	</div>
 	

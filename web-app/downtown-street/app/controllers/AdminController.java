@@ -62,7 +62,7 @@ public class AdminController extends Controller {
 	@Security.Authenticated(SecuredAdmin.class)
 	public static Result dashboard() {
 		Admin admin = SecuredAdmin.getAdminInfo(ctx());
-		List<Request> requestList = Request.find.all();
+		List<Request> requestList = Request.find.where().orderBy("createdAt desc").findList();
 		int all = Request.find.findRowCount();
 		int resolved = Request.find.where().eq("is_resolved", "1").findRowCount();
 		int pending = all - resolved;
