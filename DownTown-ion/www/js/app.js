@@ -36,7 +36,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
       $cordovaCamera.getPicture(options).then(function (imageData) {
         $scope.imgURI = "data:image/jpeg;base64," + imageData;
         localStorage.setItem('image', $scope.imgURI);
-        window.location = 'preview.html'
+        window.location.href = 'preview.html'
 
       }, function (err) {
         // Show Error message to the user
