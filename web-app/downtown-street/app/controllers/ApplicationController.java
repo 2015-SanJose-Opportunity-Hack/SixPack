@@ -5,12 +5,9 @@ import java.io.IOException;
 import models.Admin;
 import models.Request;
 import modules.utilities.Setup;
-import modules.utilities.Utilities;
 import play.data.Form;
 import play.libs.Json;
 import play.mvc.Controller;
-import play.mvc.Http;
-import play.mvc.Http.MultipartFormData.FilePart;
 import play.mvc.Result;
 import views.formdata.admin.AdminLoginForm;
 
@@ -53,29 +50,35 @@ public class ApplicationController extends Controller {
     public static Result requestRestCall(){
       ObjectNode result = Json.newObject();
   	  JsonNode json = request().body().asJson();
-	  Http.MultipartFormData body = request().body().asMultipartFormData();
-	  String fileName = "";
-	  if( (fileName == null || fileName.length() == 0) && (body.getFiles() == null || body.getFiles().size() == 0)){
-        	Utilities.deleteFile(fileName);
-			fileName="";
-	   }else if(body.getFiles().size() == 1 ){
-		   FilePart pictureFile = body.getFile("picture");
-			fileName = Utilities.uploadItemPicture(pictureFile);
-	   }else{
-			fileName = "";
-	  }
 	  
-  	  String firstName = json.findPath("firstName").asText();
-  	  String lastName = json.findPath("lastName").asText();
-  	  String latitude = json.findPath("latitude").asText();
-  	  String longitude = json.findPath("longitude").asText();
-  	  String email = json.findPath("email").asText();
-  	  String business = json.findPath("business").asText();
-  	  String address = json.findPath("address").asText();
-  	  String imagePath = json.findPath("image").asText();
-  	  String comment = json.findPath("comment").asText();
+	  
+	  
+	  	String firstName = "";
+		String lastName= "";
+		String latitude= "";
+		String longitude= "";
+		String address= "";
+		String comment= "";
+		String email = "";
+		String image = "";
+		String business = "";
+	
+	try {
+		  firstName = json.findPath("firstName").asText();
+		  lastName = json.findPath("lastName").asText();
+		  latitude = json.findPath("latitude").asText();
+		  longitude = json.findPath("longitude").asText();
+		  email = json.findPath("email").asText();
+		  //business = json.findPath("business").asText();
+		  //address = json.findPath("address").asText();
+		  image = json.findPath("image").asText();
+		  //comment = json.findPath("comment").asText();
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
   	
-  	  if(latitude.equals("") || longitude.equals("")){
+  	 if(latitude.equals("") || longitude.equals("")){
   		  result.put("error", "No longitude/latitude");
   		 return badRequest(result);
   	  }
@@ -86,8 +89,10 @@ public class ApplicationController extends Controller {
   	  request.setLastName(lastName);
   	  request.setLatitude(latitude);
   	  request.setLongitude(longitude);
-  	  request.setAddress(address);
-  	  request.setComment(comment);
+  	  
+  	  //request.setAddress(address);
+  	  //request.setComment(comment);
+  	  request.setImage(image);
   	  request.save();
   	  
   	  result.put("success", "success");

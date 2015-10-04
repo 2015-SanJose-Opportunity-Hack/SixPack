@@ -2,8 +2,11 @@ package controllers;
 
 import java.io.File;
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
 
 import models.Admin;
+import models.Request;
 import modules.utilities.Utilities;
 import play.data.Form;
 import play.mvc.Controller;
@@ -47,8 +50,9 @@ public class AdminController extends Controller {
 	@Security.Authenticated(SecuredAdmin.class)
 	public static Result dashboard() {
 		Admin admin = SecuredAdmin.getAdminInfo(ctx());
+		List<Request> requestList = Request.find.all();
 		return ok(views.html.admin.dashboard.render("Dashboard",
-				SecuredAdmin.isLoggedIn(ctx()), admin));
+				SecuredAdmin.isLoggedIn(ctx()), admin, requestList));
 	}
 	
 	@Security.Authenticated(SecuredAdmin.class)

@@ -20,14 +20,14 @@ import play.mvc.Http.Context.Implicit._
 import views.html._
 
 /**/
-object dashboard extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template3[String,Boolean,models.Admin,play.twirl.api.HtmlFormat.Appendable] {
+object dashboard extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template4[String,Boolean,models.Admin,List[models.Request],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(title: String, isLoggedIn: Boolean, department: models.Admin):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(title: String, isLoggedIn: Boolean, department: models.Admin, requestList: List[models.Request]):play.twirl.api.HtmlFormat.Appendable = {
       _display_ {import helper._
 import views.html.bootstrap3._
 
-Seq[Any](format.raw/*1.64*/("""
+Seq[Any](format.raw/*1.99*/("""
 
 """),format.raw/*5.1*/("""
 """),_display_(/*6.2*/backend(title, isLoggedIn)/*6.28*/ {_display_(Seq[Any](format.raw/*6.30*/("""
@@ -66,121 +66,23 @@ Seq[Any](format.raw/*1.64*/("""
 				</tr>
 			</thead>
 			<tbody>
+				"""),_display_(/*42.6*/for(request <- requestList) yield /*42.33*/{_display_(Seq[Any](format.raw/*42.34*/("""
+					"""),format.raw/*43.6*/("""<tr>
+						<td><strong>"""),_display_(/*44.20*/request/*44.27*/.getId()),format.raw/*44.35*/("""</strong></td>
+						<td><img src=""""),_display_(/*45.22*/request/*45.29*/.getImage()),format.raw/*45.40*/(""""</td>
+						<td class="text-center">"""),_display_(/*46.32*/request/*46.39*/.getFirstName()),format.raw/*46.54*/(""" """),_display_(/*46.56*/request/*46.63*/.getLastName()),format.raw/*46.77*/("""</td>
+						<td>"""),_display_(/*47.12*/request/*47.19*/.getAddress()),format.raw/*47.32*/("""</td>
+						<td>"""),_display_(/*48.12*/request/*48.19*/.getComment()),format.raw/*48.32*/("""</td>
+						
+						<td><a href="#" class="btn btn-default">Resolve</a></td>
+						
+						<td><a href="#" class="btn btn-default">Resolve</a></td>
+					</tr>
+				""")))}),format.raw/*54.6*/("""
+					
 				
-					<tr>
-						<td><strong>1</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
 						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					<tr>
-						<td><strong>2</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					
-					<tr>
-						<td><strong>3</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					
-					<tr>
-						<td><strong>4</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					
-					<tr>
-						<td><strong>5</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					
-					<tr>
-						<td><strong>6</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					
-					<tr>
-						<td><strong>7</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					<tr>
-						<td><strong>8</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					<tr>
-						<td><strong>9</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-						
-			</tbody>
+			"""),format.raw/*58.4*/("""</tbody>
 		</table>
 	</div>
 	
@@ -189,39 +91,39 @@ Seq[Any](format.raw/*1.64*/("""
 	
 	
    <script type="text/javascript">
-     	jQuery(document).ready(function()"""),format.raw/*165.40*/("""{"""),format.raw/*165.41*/("""
-     		"""),format.raw/*166.8*/("""jQuery(".table-responsive").fadeIn(1000);
-     		jQuery('#search-table').dataTable("""),format.raw/*167.42*/("""{"""),format.raw/*167.43*/("""
-     			"""),format.raw/*168.9*/(""""scrollY":        800,
+     	jQuery(document).ready(function()"""),format.raw/*67.40*/("""{"""),format.raw/*67.41*/("""
+     		"""),format.raw/*68.8*/("""jQuery(".table-responsive").fadeIn(1000);
+     		jQuery('#search-table').dataTable("""),format.raw/*69.42*/("""{"""),format.raw/*69.43*/("""
+     			"""),format.raw/*70.9*/(""""scrollY":        800,
      	        "scrollCollapse": true,
      			"jQueryUI":       true,
      			"autoWidth": false
-     		"""),format.raw/*172.8*/("""}"""),format.raw/*172.9*/("""				
-     		"""),format.raw/*173.8*/(""");
+     		"""),format.raw/*74.8*/("""}"""),format.raw/*74.9*/("""				
+     		"""),format.raw/*75.8*/(""");
      		
-     	"""),format.raw/*175.7*/("""}"""),format.raw/*175.8*/(""");
+     	"""),format.raw/*77.7*/("""}"""),format.raw/*77.8*/(""");
      </script>
 	</div>
 	
 	
-""")))}),format.raw/*180.2*/("""
+""")))}),format.raw/*82.2*/("""
 """))}
   }
 
-  def render(title:String,isLoggedIn:Boolean,department:models.Admin): play.twirl.api.HtmlFormat.Appendable = apply(title,isLoggedIn,department)
+  def render(title:String,isLoggedIn:Boolean,department:models.Admin,requestList:List[models.Request]): play.twirl.api.HtmlFormat.Appendable = apply(title,isLoggedIn,department,requestList)
 
-  def f:((String,Boolean,models.Admin) => play.twirl.api.HtmlFormat.Appendable) = (title,isLoggedIn,department) => apply(title,isLoggedIn,department)
+  def f:((String,Boolean,models.Admin,List[models.Request]) => play.twirl.api.HtmlFormat.Appendable) = (title,isLoggedIn,department,requestList) => apply(title,isLoggedIn,department,requestList)
 
   def ref: this.type = this
 
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Oct 03 15:43:00 PDT 2015
+                  DATE: Sat Oct 03 17:23:55 PDT 2015
                   SOURCE: /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/admin/dashboard.scala.html
-                  HASH: b6bd987256b91a4bb03d249acfa9b8e45c69c902
-                  MATRIX: 754->1|950->63|978->114|1005->116|1039->142|1078->144|1110->150|5186->4197|5216->4198|5252->4206|5364->4289|5394->4290|5431->4299|5586->4426|5615->4427|5655->4439|5700->4456|5729->4457|5791->4488
-                  LINES: 26->1|30->1|32->5|33->6|33->6|33->6|35->8|192->165|192->165|193->166|194->167|194->167|195->168|199->172|199->172|200->173|202->175|202->175|207->180
+                  HASH: 3861ec61d0095001d16f994be1b1b6a51e4e89f7
+                  MATRIX: 775->1|1006->98|1034->149|1061->151|1095->177|1134->179|1166->185|2118->1111|2161->1138|2200->1139|2233->1145|2284->1169|2300->1176|2329->1184|2392->1220|2408->1227|2440->1238|2505->1276|2521->1283|2557->1298|2586->1300|2602->1307|2637->1321|2681->1338|2697->1345|2731->1358|2775->1375|2791->1382|2825->1395|3017->1557|3066->1579|3211->1696|3240->1697|3275->1705|3386->1788|3415->1789|3451->1798|3605->1925|3633->1926|3672->1938|3716->1955|3744->1956|3805->1987
+                  LINES: 26->1|30->1|32->5|33->6|33->6|33->6|35->8|69->42|69->42|69->42|70->43|71->44|71->44|71->44|72->45|72->45|72->45|73->46|73->46|73->46|73->46|73->46|73->46|74->47|74->47|74->47|75->48|75->48|75->48|81->54|85->58|94->67|94->67|95->68|96->69|96->69|97->70|101->74|101->74|102->75|104->77|104->77|109->82
                   -- GENERATED --
               */
           

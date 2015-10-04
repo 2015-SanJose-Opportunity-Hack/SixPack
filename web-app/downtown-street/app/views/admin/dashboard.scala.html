@@ -1,4 +1,4 @@
-@(title: String, isLoggedIn: Boolean, department: models.Admin)
+@(title: String, isLoggedIn: Boolean, department: models.Admin, requestList: List[models.Request])
 
 @import helper._
 @import views.html.bootstrap3._
@@ -39,119 +39,21 @@
 				</tr>
 			</thead>
 			<tbody>
+				@for(request <- requestList){
+					<tr>
+						<td><strong>@request.getId()</strong></td>
+						<td><img src="@request.getImage()"</td>
+						<td class="text-center">@request.getFirstName() @request.getLastName()</td>
+						<td>@request.getAddress()</td>
+						<td>@request.getComment()</td>
+						
+						<td><a href="#" class="btn btn-default">Resolve</a></td>
+						
+						<td><a href="#" class="btn btn-default">Resolve</a></td>
+					</tr>
+				}
+					
 				
-					<tr>
-						<td><strong>1</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					<tr>
-						<td><strong>2</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					
-					<tr>
-						<td><strong>3</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					
-					<tr>
-						<td><strong>4</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					
-					<tr>
-						<td><strong>5</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					
-					<tr>
-						<td><strong>6</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					
-					<tr>
-						<td><strong>7</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					<tr>
-						<td><strong>8</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
-					
-					<tr>
-						<td><strong>9</strong></td>
-						<td>IMG</td>
-						<td class="text-center">John Doe</td>
-						<td>2211 N 1st Street</td>
-						<td>Some comments ...</td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
-					</tr>
 						
 			</tbody>
 		</table>

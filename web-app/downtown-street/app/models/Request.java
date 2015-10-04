@@ -7,6 +7,7 @@ import javax.persistence.Table;
 
 import play.data.validation.Constraints.Required;
 import play.db.ebean.Model;
+import play.db.ebean.Model.Finder;
 
 @Entity
 @Table(name="request")
@@ -25,18 +26,38 @@ public class Request extends Model{
 	private String lastName;
 	
 	@Required
-	private String imgPath;
+	private String image;
 	
-	private String contact;
+	private String contact = "";
 	
-	private String comment;
+	private String comment = "";
 	
-	private String latitude;
+	private String latitude = "";
 	
-	private String longitude;
+	private String longitude = "";
 	
-	private String address;
+	private String address = "";
 	
+	private String email = "";
+	
+	private String business = "";
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getBusiness() {
+		return business;
+	}
+
+	public void setBusiness(String business) {
+		this.business = business;
+	}
+
 	private boolean isResolved = false;
 
 	public int getId() {
@@ -87,12 +108,12 @@ public class Request extends Model{
 		this.lastName = lastName;
 	}
 
-	public String getImgPath() {
-		return imgPath;
+	public String getImage() {
+		return image;
 	}
 
-	public void setImgPath(String imgPath) {
-		this.imgPath = imgPath;
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 	public String getContact() {
@@ -119,5 +140,6 @@ public class Request extends Model{
 		this.isResolved = isResolved;
 	}
 	
+	public static Finder<Integer, Request> find =  new Finder<Integer, Request>(Integer.class, Request.class);
 	
 }
