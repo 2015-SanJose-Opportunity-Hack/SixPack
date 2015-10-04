@@ -5,61 +5,64 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic', 'ngCordova'])
 
-.run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if(window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+  .run(function ($ionicPlatform) {
+    $ionicPlatform.ready(function () {
+      // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+      // for form inputs)
+      if (window.cordova && window.cordova.plugins.Keyboard) {
+        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+      }
+      if (window.StatusBar) {
+        StatusBar.styleDefault();
+      }
+    });
+  })
+
+  .controller("ExampleController", function ($scope, $cordovaCamera) {
+
+    $scope.takePhoto = function () {
+
+      var options = {
+        quality: 75,
+        destinationType: Camera.DestinationType.DATA_URL,
+        sourceType: Camera.PictureSourceType.CAMERA,
+        allowEdit: true,
+        encodingType: Camera.EncodingType.JPEG,
+        targetWidth: 300,
+        targetHeight: 300,
+        popoverOptions: CameraPopoverOptions,
+        saveToPhotoAlbum: false
+      };
+      $cordovaCamera.getPicture(options).then(function (imageData) {
+        $scope.imgURI = "data:image/jpeg;base64," + imageData;
+        localStorage.setItem('image', $scope.imgURI);
+        window.location = 'preview.html'
+
+      }, function (err) {
+        // Show Error message to the user
+      });
+
     }
-    if(window.StatusBar) {
-      StatusBar.styleDefault();
+
+    $scope.choosePhoto = function () {
+      var options = {
+        quality: 75,
+        destinationType: Camera.DestinationType.DATA_URL,
+        sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+        allowEdit: true,
+        encodingType: Camera.EncodingType.JPEG,
+        targetWidth: 300,
+        targetHeight: 300,
+        popoverOptions: CameraPopoverOptions,
+        saveToPhotoAlbum: false
+      };
+
+      $cordovaCamera.getPicture(options).then(function (imageData) {
+        $scope.imgURI = "data:image/jpeg;base64," + imageData;
+        localStorage.setItem('image', $scope.imgURI);
+        window.location = 'preview.html'
+      }, function (err) {
+        // Show Error message to the user
+      });
     }
   });
-})
-
-.controller("ExampleController", function ($scope, $cordovaCamera) {
-
-                $scope.takePhoto = function () {
-                    
-                  var options = {
-                    quality: 75,
-                    destinationType: Camera.DestinationType.DATA_URL,
-                    sourceType: Camera.PictureSourceType.CAMERA,
-                    allowEdit: true,
-                    encodingType: Camera.EncodingType.JPEG,
-                    targetWidth: 300,
-                    targetHeight: 300,
-                    popoverOptions: CameraPopoverOptions,
-                    saveToPhotoAlbum: false
-                };
-                    $cordovaCamera.getPicture(options).then(function (imageData) {
-                        $scope.imgURI = "data:image/jpeg;base64," + imageData;
-                        localStorage.setItem('image',$scope.imgURI );
-                    }, function (err) {
-                        // Show Error message to the user
-                    });
-                    
-                }
-
-                $scope.choosePhoto = function () {
-                  var options = {
-                    quality: 75,
-                    destinationType: Camera.DestinationType.DATA_URL,
-                    sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
-                    allowEdit: true,
-                    encodingType: Camera.EncodingType.JPEG,
-                    targetWidth: 300,
-                    targetHeight: 300,
-                    popoverOptions: CameraPopoverOptions,
-                    saveToPhotoAlbum: false
-                };
-
-                    $cordovaCamera.getPicture(options).then(function (imageData) {
-                        $scope.imgURI = "data:image/jpeg;base64," + imageData;
-                        localStorage.setItem('image',$scope.imgURI );
-                    }, function (err) {
-                        // Show Error message to the user
-                    });
-                }
-            });
