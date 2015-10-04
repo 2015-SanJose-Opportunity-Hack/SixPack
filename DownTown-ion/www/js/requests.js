@@ -1,4 +1,4 @@
-var server = 'http://192.168.90.206';
+var server = 'http://192.168.84.239';
 var port = ':9000';
 
 function getServerURL() {
@@ -44,7 +44,6 @@ function getFormData() {
     formData.append("email", localStorage.getItem('email') || '');
     formData.append("contact", localStorage.getItem('contact') || '');
     formData.append("business", localStorage.getItem('business') || '');
-
     try {
       setLatLongs();
 
@@ -52,11 +51,8 @@ function getFormData() {
     catch (err) {
       alert(err);
     }
-
     formData.append("latitude", localStorage.getItem('latitude') || '');
     formData.append("longitude", localStorage.getItem('longitude') || '');
-
-
     formData.append("location", localStorage.getItem('location') || '');
     formData.append("comments", localStorage.getItem('comments') || '');
     var blob = dataURItoBlob(localStorage.getItem('image'));
@@ -70,7 +66,6 @@ function getFormData() {
     alert(error.message)
   }
   return formData;
-
 }
 
 
