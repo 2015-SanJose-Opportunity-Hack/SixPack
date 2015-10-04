@@ -79,7 +79,7 @@ Seq[Any](format.raw/*1.56*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Oct 03 19:40:12 PDT 2015
+                  DATE: Sun Oct 04 06:00:28 PDT 2015
                   SOURCE: /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/main/login.scala.html
                   HASH: 1b026e549a0059b7a2b433af4c5493dba28c2015
                   MATRIX: 763->1|951->55|979->106|1006->108|1037->131|1076->133|1105->136|2350->1351

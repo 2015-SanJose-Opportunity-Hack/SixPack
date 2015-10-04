@@ -1,13 +1,13 @@
 package models;
 
-import javax.persistence.Column;
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 import play.data.validation.Constraints.Required;
 import play.db.ebean.Model;
-import play.db.ebean.Model.Finder;
 
 @Entity
 @Table(name="request")
@@ -28,6 +28,8 @@ public class Request extends Model{
 	@Required
 	private String image;
 	
+	private Date createdAt = new Date();
+	
 	private String resolvedImage;
 
 	private String contact = "";
@@ -43,6 +45,8 @@ public class Request extends Model{
 	private String email = "";
 	
 	private String business = "";
+	
+	
 	
 	public String getEmail() {
 		return email;

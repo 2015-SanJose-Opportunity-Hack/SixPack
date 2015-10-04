@@ -32,11 +32,12 @@ Seq[Any](format.raw/*1.32*/("""
 
 <html>
     <head>
-        <title>"""),_display_(/*7.17*/title),format.raw/*7.22*/("""</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>"""),_display_(/*8.17*/title),format.raw/*8.22*/("""</title>
          <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         
-        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*10.59*/routes/*10.65*/.Assets.at("images/favicon.png")),format.raw/*10.97*/("""">
-        <script src=""""),_display_(/*11.23*/routes/*11.29*/.Assets.at("javascripts/hello.js")),format.raw/*11.63*/("""" type="text/javascript"></script>
+        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*11.59*/routes/*11.65*/.Assets.at("images/favicon.png")),format.raw/*11.97*/("""">
+        <script src=""""),_display_(/*12.23*/routes/*12.29*/.Assets.at("javascripts/hello.js")),format.raw/*12.63*/("""" type="text/javascript"></script>
         
         
        
@@ -46,7 +47,7 @@ Seq[Any](format.raw/*1.32*/("""
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 		<!-- End Bootstrap imports -->
 		
-		<link rel="stylesheet" media="screen" href=""""),_display_(/*21.48*/routes/*21.54*/.Assets.at("stylesheets/main.css")),format.raw/*21.88*/("""">
+		<link rel="stylesheet" media="screen" href=""""),_display_(/*22.48*/routes/*22.54*/.Assets.at("stylesheets/main.css")),format.raw/*22.88*/("""">
     </head>
     <body>
     
@@ -56,7 +57,7 @@ Seq[Any](format.raw/*1.32*/("""
 		    <div class="navbar-header">
 		      
 		        <ul class="nav navbar-nav">
-   		      		<li><a href=""""),_display_(/*31.28*/routes/*31.34*/.ApplicationController.index()),format.raw/*31.64*/(""""><strong>Downtown Street</strong> <span style="font-size: 9px">Beta v1.0</span></a></li>
+   		      		<li><a href=""""),_display_(/*32.28*/routes/*32.34*/.ApplicationController.index()),format.raw/*32.64*/(""""><strong>Downtown Street</strong> <span style="font-size: 9px">Beta v1.0</span></a></li>
 		        </ul>
 		      
 		    </div>
@@ -70,8 +71,8 @@ Seq[Any](format.raw/*1.32*/("""
 	</nav>
 	
 	<div class="container">
-	    """),_display_(/*45.7*/content),format.raw/*45.14*/("""
-	"""),format.raw/*46.2*/("""</div>
+	    """),_display_(/*46.7*/content),format.raw/*46.14*/("""
+	"""),format.raw/*47.2*/("""</div>
     
         
         
@@ -90,11 +91,11 @@ Seq[Any](format.raw/*1.32*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Oct 03 19:40:12 PDT 2015
+                  DATE: Sun Oct 04 06:00:28 PDT 2015
                   SOURCE: /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/main/main.scala.html
-                  HASH: 80e8fda044ef65a1a36dc01c70d70e4dc0e9ed7b
-                  MATRIX: 732->1|850->31|878->33|955->84|980->89|1155->237|1170->243|1223->275|1275->300|1290->306|1345->340|1857->825|1872->831|1927->865|2214->1125|2229->1131|2280->1161|2545->1400|2573->1407|2602->1409
-                  LINES: 26->1|29->1|31->3|35->7|35->7|38->10|38->10|38->10|39->11|39->11|39->11|49->21|49->21|49->21|59->31|59->31|59->31|73->45|73->45|74->46
+                  HASH: ab297eee5215f8abaf58099fd154f07b488cc583
+                  MATRIX: 732->1|850->31|878->33|1028->157|1053->162|1228->310|1243->316|1296->348|1348->373|1363->379|1418->413|1930->898|1945->904|2000->938|2287->1198|2302->1204|2353->1234|2618->1473|2646->1480|2675->1482
+                  LINES: 26->1|29->1|31->3|36->8|36->8|39->11|39->11|39->11|40->12|40->12|40->12|50->22|50->22|50->22|60->32|60->32|60->32|74->46|74->46|75->47
                   -- GENERATED --
               */
           

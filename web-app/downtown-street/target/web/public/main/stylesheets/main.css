@@ -165,12 +165,20 @@ body {
   background-color: white;
 }
 .resolve-btn {
-  padding: 15px;
-  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  font-size: 18px;
   width: 100%;
+  margin-top: 20px;
 }
 .full-image {
   width: 100%;
+}
+.resolve {
+  background-color: rgba(39, 113, 39, 0.84);
+}
+.btn:hover.resolve {
+  background-color: #277127;
 }
 .image-title {
   position: absolute;
@@ -182,6 +190,7 @@ body {
   display: block;
   font-size: 20px;
   padding: 10px;
+  z-index: 100;
 }
 .details {
   padding: 30px;
@@ -206,12 +215,6 @@ tfoot input {
 nav {
   background-color: #2B3E42;
 }
-.resolve {
-  background-color: rgba(39, 113, 39, 0.84);
-}
-.btn:hover.resolve {
-  background-color: #277127;
-}
 .unr {
   background-color: rgba(163, 33, 33, 0.84);
 }
@@ -220,17 +223,15 @@ nav {
 }
 .logo-name {
   padding-left: 10px !important;
+  font-size: 1.2rem;
 }
 .brand-logo {
   font-size: 1.2rem;
 }
 /*
 .btn.stats {
-    border-radius: 50%;
     font-weight: 400;
     font-size: 70px;
-    max-height: 150px;
-    max-width: 150px;
     margin: 0 auto;
     padding: 0;
     padding-top: 0;
@@ -241,7 +242,7 @@ nav {
 }
 */
 .stats-header {
-  font-size: 2.28rem;
+  font-size: 1.7rem;
 }
 .dataTables_filter > label {
   font-size: large;
@@ -249,6 +250,8 @@ nav {
 .dataTables_length > label {
   font-size: large;
   float: left;
+  width: 200px;
+  position: relative;
 }
 .dataTables_length > label > select {
   display: inline-block !important;
@@ -260,7 +263,7 @@ table > tbody > tr:hover {
 }
 @media only screen and (max-width: 600px) {
   .btn.stats {
-    float: right;
+    width: 100%;
   }
   .stats-header {
     font-size: 1.28rem;
@@ -269,18 +272,58 @@ table > tbody > tr:hover {
 }
 @media only screen and (min-width: 600px) {
   .btn.stats {
-    border-radius: 50%;
     font-weight: 400;
     font-size: 70px;
-    max-height: 150px;
-    max-width: 150px;
     margin: 0 auto;
     padding: 0;
     padding-top: 0;
     height: 100%;
     width: 100%;
-    line-height: 2;
+    line-height: 1.6;
     vertical-align: middle;
   }
+}
+.stats {
+  display: block;
+}
+.stats-container {
+  margin-top: 20px;
+}
+.status-resolved {
+  color: #43a047;
+}
+.status-pending {
+  color: #dd2c00;
+}
+h2 {
+  font-size: 1.8rem;
+}
+.modal-content h4 {
+  text-align: center;
+}
+.modal-resolve {
+  margin-bottom: 16px !important;
+  margin-right: 15px !important;
+}
+.request-container {
+  margin-top: 25px;
+}
+select[name=search-table_length] {
+  width: 35%;
+  position: absolute;
+  right: 0;
+  top: -8px;
+}
+.help-block {
+  font-size: 12px;
+  font-style: italic;
+}
+.er-msg {
+  padding: 10px;
+  display: block;
+  font-size: 13px;
+}
+.image-container {
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */

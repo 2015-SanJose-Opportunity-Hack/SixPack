@@ -1,43 +1,51 @@
-@(title: String, isLoggedIn: Boolean, department: models.Admin, requestList: List[models.Request])
+@(title: String, isLoggedIn: Boolean, department: models.Admin, requestList: List[models.Request],  all: Integer,  resolved: Integer, pending: Integer)
 
 @import helper._
 @import views.html.bootstrap3._
 
 @backend(title, isLoggedIn) {
 
-    <h2 class="welcome">Welcome Admin!</h2>
-    <hr>
     
-    <div class="col-md-12 text-center">
-	    <div class="col-md-4">
-	    	<h3>Total Requests</h3>
-	    	<h1>100</h1>
-	    </div>
-	    <div class="col-md-4">
-	    	<h3>Resolved</h3>
-	    	<h1>143</h1>
-	    </div>
-	    <div class="col-md-4">
-	    	<h3>Unresolved</h3>
-	    	<h1>10</h1>
-	    </div>
-    </div>
+    <div class="row stats-container">
+                    <div class="col s12 m4 l4 center-align">
+						<div class="">
+							
+						</div>
+                        
+                        <div class="stats waves-effect waves-light btn stats center-align">
+							<span class="stats-header">All </span> @all</div>
+
+                    </div>
+                    <div class="col s12 m4 l4 center-align">
+                    <div class="">
+                        
+                        <div class="stats waves-effect waves-light btn stats green darken-1"><span class="stats-header"> Resolved </span> @resolved</div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4 l4 center-align">
+                    <div class="">
+                        
+                        <div class="stats waves-effect waves-light btn stats unr amber accent-4"><span class="stats-header"> Pending </span> @pending</div>
+					</div>
+                    </div>
+                </div>
     
   	<div class="col-md-12 charts">
-  	<div class="col-md-12 table-responsive" style="display: none">
+  	<div class="col-md-12 table-responsive">
 	
-		<table class="table table-bordered table-striped table-hover text-center display"  id="search-table" width="100%">
+		<table class="table bordered striped highlight display responsive nowrap" cellspacing="0" width="100%" id="search-table">
 			<thead>
-				<tr>
-					<th class="text-center">ID</th>
-					<th class="text-center">Thumb</th>
-					<th class="text-center">Name</th>
-					<th class="text-center">Address</th>
-					<th class="text-center">Comment</th>
-					<th class="text-center">Details</th>
-					<th class="text-center">Action</th>
-				</tr>
-			</thead>
+                            <tr>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">Thumb</th>
+                                <th class="text-center">Name</th>
+                                <th class="text-center">Address</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">Details</th>
+                            </tr>
+                        </thead>
+                        
 			<tbody>
 				@for(request <- requestList){
 					<tr>
@@ -45,35 +53,28 @@
 						<td><img class="thumb" src="/assets/images/request-thumbs/thumb-@request.getImage()"></td>
 						<td class="text-center">@request.getFirstName() @request.getLastName()</td>
 						<td>@request.getAddress()</td>
-						<td>@request.getComment()</td>
-						
+						<td><span class="@if(request.isResolved()){status-resolved}else{status-pending}">@if(request.isResolved()){Resolved}else{Pending}</span></td>
 						<td><a href="@routes.AdminController.viewRequest(request.getId())" class="btn btn-default">Details</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
 					</tr>
 				}
 							
 			</tbody>
+			<tfoot>
+                            <tr>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">Thumb</th>
+                                <th class="text-center">Name</th>
+                                <th class="text-center">Address</th>
+                                <th class="text-center">Details</th>
+                                <th class="text-center">Status</th>
+                            </tr>
+                        </tfoot>
 		</table>
 	</div>
 	
 	</hr>
 	
 	
-	
-   <script type="text/javascript">
-     	jQuery(document).ready(function(){
-     		jQuery(".table-responsive").fadeIn(1000);
-     		jQuery('#search-table').dataTable({
-     			"scrollY":        800,
-     	        "scrollCollapse": true,
-     			"jQueryUI":       true
-     			
-     		}				
-     		);
-     		
-     	});
-     </script>
 	</div>
 	
 	

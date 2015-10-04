@@ -4,27 +4,22 @@
 
 <html>
     <head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>@title</title>
-        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-        
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
-        
-        
-         <!-- Bootstrap imports -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-		
-		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-		<link rel="stylesheet" href="https://cdn.datatables.net/plug-ins/1.10.7/integration/jqueryui/dataTables.jqueryui.css">
-		
 		<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
 		
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-		
 		<!-- Data Tables -->		
-		<script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
-        <script src="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js"></script>
-       <!-- End Data Tables -->
+		
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+	    <script src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+	    <script src="https://cdn.datatables.net/responsive/1.0.7/js/dataTables.responsive.min.js"></script>
+	    <script src="https://cdn.datatables.net/responsive/1.0.7/css/responsive.dataTables.min.css"></script>
+	   <!-- End Data Tables -->
        
        <!--  Google Maps  -->
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -41,40 +36,38 @@
 	
     </head>
     <body>
-    <nav class="navbar navbar-inverse navbar-static-top">
-         <div class="container-fluid">
-		    <div class="navbar-header col-md-12">
-		     
-		        <ul class="nav navbar-nav col-md-12">
-		        	<li>
- 		  				<a href="@if(isLoggedIn){ @routes.AdminController.dashboard() }else{ / }"><strong>Downtown Street</strong> <span style="font-size: 9px">Beta v1.0</span></a>
-	      			</li>
-	      			
-   		      		@if(isLoggedIn){
-   		      			<li role="presentation" class="dropdown pull-right">
-						    <a class="dropdown-toggle pull-right" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-						      <li class="pull-right"><span class="glyphicon glyphicon-user"></span>  My Account <span class="caret"></span>
-						    </a>
-						    <ul class="dropdown-menu" role="menu">
-						    	<li><a href="@routes.AdminController.settings()" >Settings</a></li>
-					  			<li class=""><a href="@routes.ApplicationController.logout()">Logout</a></li>
-						    </ul>
-						</li>
-						
-   		      		}
-		        </ul>
-		      
-		    </div>
-		  </div>
-    	</nav>
+    
+    	
+    	<div class="navbar-fixed">
+	        <nav>
+	            <div class="nav-wrapper">
+	                <a href="@if(isLoggedIn){ @routes.AdminController.dashboard() }else{ / }" class=" logo-name">Downtown Street <span style="font-size: 9px">Beta v1.0</span></a>
+	                @if(isLoggedIn){
+		                <ul id="nav-mobile" class="right">
+		                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><span class="glyphicon glyphicon-user"></span>  My Account<i class="material-icons right">arrow_drop_down</i> </a></li>
+		
+		                    <ul id="dropdown1" class="dropdown-content">
+		                        <li><a href="/settings">Settings</a></li>
+		                        <li><a href="/logout">logout</a></li>
+		
+		                    </ul>
+		                </ul>
+	                }
+	            </div>
+	        </nav>
+	    </div>
 	
-	<div class="main-container @if(isLoggedIn){ container-fluid } else{ container }">
+	<div class="main-container content">
 		<div class="dashboard-content @if(isLoggedIn){ full-width }">
-			<div class="col-md-12">
+			<div class="row">
 				@content
 			</div>
 		</div>
 	</div>    
-        
+     
+     <footer>
+     	
+     </footer>
+     
     </body>
 </html>

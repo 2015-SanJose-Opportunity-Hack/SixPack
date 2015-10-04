@@ -13,6 +13,7 @@
              }
              placeholder="@placeholder" />
       <span class="help-block">@help</span>
-      <span class="help-block">@{field.error.map { error => error.message }}</span>
+      <span class="help-block @if(field.hasErrors){ er-msg red lighten-4 }">
+      @{field.error.map { error => error.message }}</span>
     </div>
   </div>

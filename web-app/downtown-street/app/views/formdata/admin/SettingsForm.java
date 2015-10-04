@@ -20,11 +20,17 @@ public class SettingsForm {
 	
 	public String username="";
 	
+	public String email = "";
+	
 	public List<ValidationError> validate(){
 		List<ValidationError> errors = new ArrayList<ValidationError>();
 		
 		if( contact == null || contact.length() == 0 ){
 			errors.add(new ValidationError("adminPhone", "Admin contact cannot be left blank"));
+		}
+		
+		if( email == null || email.length() == 0 ){
+			errors.add(new ValidationError("email", "Email cannot be left blank"));
 		}
 		
 		if( username.length() > 0 && !Utilities.isValidUsername(username) ){

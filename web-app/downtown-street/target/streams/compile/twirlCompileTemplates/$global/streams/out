@@ -1,4 +1,4 @@
-[0m[[31merror[0m] [0m/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/admin/request.scala.html:123: Expected '}' but found 'EOF'[0m
-[0m[[31merror[0m] [0m}[0m
-[0m[[31merror[0m] [0m ^[0m
+[0m[[31merror[0m] [0m/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/bootstrap3/text.scala.html:16: Not parsed?[0m
+[0m[[31merror[0m] [0m      <span class="help-block @if(field.hasErrors) {er-msg}">@{field.error.map { error => error.message }}</span>[0m
+[0m[[31merror[0m] [0m                                                                                                         ^[0m
 [0m[[31merror[0m] [0m(compile:[31mtwirlCompileTemplates[0m) Twirl compilation failed[0m

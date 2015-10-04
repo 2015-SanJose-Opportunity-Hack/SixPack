@@ -20,108 +20,109 @@ import play.mvc.Http.Context.Implicit._
 import views.html._
 
 /**/
-object dashboard extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template4[String,Boolean,models.Admin,List[models.Request],play.twirl.api.HtmlFormat.Appendable] {
+object dashboard extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template7[String,Boolean,models.Admin,List[models.Request],Integer,Integer,Integer,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(title: String, isLoggedIn: Boolean, department: models.Admin, requestList: List[models.Request]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(title: String, isLoggedIn: Boolean, department: models.Admin, requestList: List[models.Request],  all: Integer,  resolved: Integer, pending: Integer):play.twirl.api.HtmlFormat.Appendable = {
       _display_ {import helper._
 import views.html.bootstrap3._
 
-Seq[Any](format.raw/*1.99*/("""
+Seq[Any](format.raw/*1.152*/("""
 
 """),format.raw/*5.1*/("""
 """),_display_(/*6.2*/backend(title, isLoggedIn)/*6.28*/ {_display_(Seq[Any](format.raw/*6.30*/("""
 
-    """),format.raw/*8.5*/("""<h2 class="welcome">Welcome Admin!</h2>
-    <hr>
     
-    <div class="col-md-12 text-center">
-	    <div class="col-md-4">
-	    	<h3>Total Requests</h3>
-	    	<h1>100</h1>
-	    </div>
-	    <div class="col-md-4">
-	    	<h3>Resolved</h3>
-	    	<h1>143</h1>
-	    </div>
-	    <div class="col-md-4">
-	    	<h3>Unresolved</h3>
-	    	<h1>10</h1>
-	    </div>
-    </div>
+    """),format.raw/*9.5*/("""<div class="row stats-container">
+                    <div class="col s12 m4 l4 center-align">
+						<div class="">
+							
+						</div>
+                        
+                        <div class="stats waves-effect waves-light btn stats center-align">
+							<span class="stats-header">All </span> """),_display_(/*16.48*/all),format.raw/*16.51*/("""</div>
+
+                    </div>
+                    <div class="col s12 m4 l4 center-align">
+                    <div class="">
+                        
+                        <div class="stats waves-effect waves-light btn stats green darken-1"><span class="stats-header"> Resolved </span> """),_display_(/*22.140*/resolved),format.raw/*22.148*/("""</div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4 l4 center-align">
+                    <div class="">
+                        
+                        <div class="stats waves-effect waves-light btn stats unr amber accent-4"><span class="stats-header"> Pending </span> """),_display_(/*29.143*/pending),format.raw/*29.150*/("""</div>
+					</div>
+                    </div>
+                </div>
     
   	<div class="col-md-12 charts">
-  	<div class="col-md-12 table-responsive" style="display: none">
+  	<div class="col-md-12 table-responsive">
 	
-		<table class="table table-bordered table-striped table-hover text-center display"  id="search-table" width="100%">
+		<table class="table bordered striped highlight display responsive nowrap" cellspacing="0" width="100%" id="search-table">
 			<thead>
-				<tr>
-					<th class="text-center">ID</th>
-					<th class="text-center">Thumb</th>
-					<th class="text-center">Name</th>
-					<th class="text-center">Address</th>
-					<th class="text-center">Comment</th>
-					<th class="text-center">Details</th>
-					<th class="text-center">Action</th>
-				</tr>
-			</thead>
+                            <tr>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">Thumb</th>
+                                <th class="text-center">Name</th>
+                                <th class="text-center">Address</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">Details</th>
+                            </tr>
+                        </thead>
+                        
 			<tbody>
-				"""),_display_(/*42.6*/for(request <- requestList) yield /*42.33*/{_display_(Seq[Any](format.raw/*42.34*/("""
-					"""),format.raw/*43.6*/("""<tr>
-						<td><strong>"""),_display_(/*44.20*/request/*44.27*/.getId()),format.raw/*44.35*/("""</strong></td>
-						<td><img class="thumb" src="/assets/images/request-thumbs/thumb-"""),_display_(/*45.72*/request/*45.79*/.getImage()),format.raw/*45.90*/(""""></td>
-						<td class="text-center">"""),_display_(/*46.32*/request/*46.39*/.getFirstName()),format.raw/*46.54*/(""" """),_display_(/*46.56*/request/*46.63*/.getLastName()),format.raw/*46.77*/("""</td>
-						<td>"""),_display_(/*47.12*/request/*47.19*/.getAddress()),format.raw/*47.32*/("""</td>
-						<td>"""),_display_(/*48.12*/request/*48.19*/.getComment()),format.raw/*48.32*/("""</td>
-						
-						<td><a href=""""),_display_(/*50.21*/routes/*50.27*/.AdminController.viewRequest(request.getId())),format.raw/*50.72*/("""" class="btn btn-default">Details</a></td>
-						
-						<td><a href="#" class="btn btn-default">Resolve</a></td>
+				"""),_display_(/*50.6*/for(request <- requestList) yield /*50.33*/{_display_(Seq[Any](format.raw/*50.34*/("""
+					"""),format.raw/*51.6*/("""<tr>
+						<td><strong>"""),_display_(/*52.20*/request/*52.27*/.getId()),format.raw/*52.35*/("""</strong></td>
+						<td><img class="thumb" src="/assets/images/request-thumbs/thumb-"""),_display_(/*53.72*/request/*53.79*/.getImage()),format.raw/*53.90*/(""""></td>
+						<td class="text-center">"""),_display_(/*54.32*/request/*54.39*/.getFirstName()),format.raw/*54.54*/(""" """),_display_(/*54.56*/request/*54.63*/.getLastName()),format.raw/*54.77*/("""</td>
+						<td>"""),_display_(/*55.12*/request/*55.19*/.getAddress()),format.raw/*55.32*/("""</td>
+						<td><span class=""""),_display_(/*56.25*/if(request.isResolved())/*56.49*/{_display_(Seq[Any](format.raw/*56.50*/("""status-resolved""")))}/*56.66*/else/*56.70*/{_display_(Seq[Any](format.raw/*56.71*/("""status-pending""")))}),format.raw/*56.86*/("""">"""),_display_(/*56.89*/if(request.isResolved())/*56.113*/{_display_(Seq[Any](format.raw/*56.114*/("""Resolved""")))}/*56.123*/else/*56.127*/{_display_(Seq[Any](format.raw/*56.128*/("""Pending""")))}),format.raw/*56.136*/("""</span></td>
+						<td><a href=""""),_display_(/*57.21*/routes/*57.27*/.AdminController.viewRequest(request.getId())),format.raw/*57.72*/("""" class="btn btn-default">Details</a></td>
 					</tr>
-				""")))}),format.raw/*54.6*/("""
+				""")))}),format.raw/*59.6*/("""
 							
-			"""),format.raw/*56.4*/("""</tbody>
+			"""),format.raw/*61.4*/("""</tbody>
+			<tfoot>
+                            <tr>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">Thumb</th>
+                                <th class="text-center">Name</th>
+                                <th class="text-center">Address</th>
+                                <th class="text-center">Details</th>
+                                <th class="text-center">Status</th>
+                            </tr>
+                        </tfoot>
 		</table>
 	</div>
 	
 	</hr>
 	
 	
-	
-   <script type="text/javascript">
-     	jQuery(document).ready(function()"""),format.raw/*65.40*/("""{"""),format.raw/*65.41*/("""
-     		"""),format.raw/*66.8*/("""jQuery(".table-responsive").fadeIn(1000);
-     		jQuery('#search-table').dataTable("""),format.raw/*67.42*/("""{"""),format.raw/*67.43*/("""
-     			"""),format.raw/*68.9*/(""""scrollY":        800,
-     	        "scrollCollapse": true,
-     			"jQueryUI":       true
-     			
-     		"""),format.raw/*72.8*/("""}"""),format.raw/*72.9*/("""				
-     		"""),format.raw/*73.8*/(""");
-     		
-     	"""),format.raw/*75.7*/("""}"""),format.raw/*75.8*/(""");
-     </script>
 	</div>
 	
 	
-""")))}),format.raw/*80.2*/("""
+""")))}),format.raw/*81.2*/("""
 """))}
   }
 
-  def render(title:String,isLoggedIn:Boolean,department:models.Admin,requestList:List[models.Request]): play.twirl.api.HtmlFormat.Appendable = apply(title,isLoggedIn,department,requestList)
+  def render(title:String,isLoggedIn:Boolean,department:models.Admin,requestList:List[models.Request],all:Integer,resolved:Integer,pending:Integer): play.twirl.api.HtmlFormat.Appendable = apply(title,isLoggedIn,department,requestList,all,resolved,pending)
 
-  def f:((String,Boolean,models.Admin,List[models.Request]) => play.twirl.api.HtmlFormat.Appendable) = (title,isLoggedIn,department,requestList) => apply(title,isLoggedIn,department,requestList)
+  def f:((String,Boolean,models.Admin,List[models.Request],Integer,Integer,Integer) => play.twirl.api.HtmlFormat.Appendable) = (title,isLoggedIn,department,requestList,all,resolved,pending) => apply(title,isLoggedIn,department,requestList,all,resolved,pending)
 
   def ref: this.type = this
 
 }
               /*
                   -- GENERATED --
-                  DATE: Sun Oct 04 00:24:17 PDT 2015
+                  DATE: Sun Oct 04 06:02:39 PDT 2015
                   SOURCE: /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/admin/dashboard.scala.html
-                  HASH: 0d30bf20c48e40e7413352f95ce0e3718c073bc9
-                  MATRIX: 775->1|1006->98|1034->149|1061->151|1095->177|1134->179|1166->185|2118->1111|2161->1138|2200->1139|2233->1145|2284->1169|2300->1176|2329->1184|2442->1270|2458->1277|2490->1288|2556->1327|2572->1334|2608->1349|2637->1351|2653->1358|2688->1372|2732->1389|2748->1396|2782->1409|2826->1426|2842->1433|2876->1446|2936->1479|2951->1485|3017->1530|3176->1659|3215->1671|3360->1788|3389->1789|3424->1797|3535->1880|3564->1881|3600->1890|3735->1998|3763->1999|3802->2011|3846->2028|3874->2029|3935->2060
-                  LINES: 26->1|30->1|32->5|33->6|33->6|33->6|35->8|69->42|69->42|69->42|70->43|71->44|71->44|71->44|72->45|72->45|72->45|73->46|73->46|73->46|73->46|73->46|73->46|74->47|74->47|74->47|75->48|75->48|75->48|77->50|77->50|77->50|81->54|83->56|92->65|92->65|93->66|94->67|94->67|95->68|99->72|99->72|100->73|102->75|102->75|107->80
+                  HASH: a275a09ac234b042218f0ed6526d797352f15418
+                  MATRIX: 799->1|1084->151|1112->202|1139->204|1173->230|1212->232|1249->243|1577->544|1601->547|1924->842|1954->850|2311->1179|2340->1186|3199->2019|3242->2046|3281->2047|3314->2053|3365->2077|3381->2084|3410->2092|3523->2178|3539->2185|3571->2196|3637->2235|3653->2242|3689->2257|3718->2259|3734->2266|3769->2280|3813->2297|3829->2304|3863->2317|3920->2347|3953->2371|3992->2372|4027->2388|4040->2392|4079->2393|4125->2408|4155->2411|4189->2435|4229->2436|4258->2445|4272->2449|4312->2450|4352->2458|4412->2491|4427->2497|4493->2542|4582->2601|4621->2613|5219->3181
+                  LINES: 26->1|30->1|32->5|33->6|33->6|33->6|36->9|43->16|43->16|49->22|49->22|56->29|56->29|77->50|77->50|77->50|78->51|79->52|79->52|79->52|80->53|80->53|80->53|81->54|81->54|81->54|81->54|81->54|81->54|82->55|82->55|82->55|83->56|83->56|83->56|83->56|83->56|83->56|83->56|83->56|83->56|83->56|83->56|83->56|83->56|83->56|84->57|84->57|84->57|86->59|88->61|108->81
                   -- GENERATED --
               */
           

@@ -33,96 +33,106 @@ Seq[Any](format.raw/*1.63*/("""
 """),_display_(/*6.2*/backend(title, isLoggedIn)/*6.28*/ {_display_(Seq[Any](format.raw/*6.30*/("""
 
     
-    """),format.raw/*9.5*/("""<div class="request-container col-md-12">
-    	<div class="maps col-md-6">
+    """),format.raw/*9.5*/("""<div class="request-container col m12">
+    	<div class="maps col m6">
     		<div id="map">
         	</div>
     	</div>
-    	<div class="maps col-md-6">
+    	<div class="maps col m6">
     	<div class="request-info-group">
-    			<div class="col-md-6">
+    			<div class="col m6 image-container">
     			<p class="image-title">Before</p>
-    				<img class="full-image" src=""""),_display_(/*18.39*/routes/*18.45*/.Assets.at("images/request-images/" + request.getImage())),format.raw/*18.102*/("""">
+    			
+    				<img class="full-image materialboxed" src=""""),_display_(/*19.53*/routes/*19.59*/.Assets.at("images/request-images/" + request.getImage())),format.raw/*19.116*/("""">
+   				
     			</div>
-    			<div class="col-md-6">
-    			<p class="image-title">After</p>
-    			<img class="full-image" src=""""),_display_(/*22.38*/routes/*22.44*/.Assets.at("images/request-images/" + request.getResolvedImage())),format.raw/*22.109*/("""">
-    			</div>
-    		</div>
-    		
-    		<div class="request-info-group col-md-12">
+    			<div class="col m6 image-container">
     			
-    			"""),_display_(/*28.9*/request/*28.16*/.getFirstName()),format.raw/*28.31*/(""" """),_display_(/*28.33*/request/*28.40*/.getLastName()),format.raw/*28.54*/("""
+    				
+   				"""),_display_(/*25.9*/if(request.getResolvedImage())/*25.39*/{_display_(Seq[Any](format.raw/*25.40*/("""
+   					"""),format.raw/*26.9*/("""<p class="image-title">After</p>	
+   					
+   						<img class="full-image materialboxed" src=""""),_display_(/*28.54*/routes/*28.60*/.Assets.at("images/request-images/" + request.getResolvedImage())),format.raw/*28.125*/("""">
+   					
+    				
+    			""")))}/*31.9*/else/*31.13*/{_display_(Seq[Any](format.raw/*31.14*/("""
+    				"""),format.raw/*32.9*/("""<p class="image-title">No After Image</p>	
+   					
+					<img class="full-image" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20viewBox%3D'0%200%201400%20933'%3E%3Cdefs%3E%3Csymbol%20id%3D'a'%20viewBox%3D'0%200%2090%2066'%20opacity%3D'0.3'%3E%3Cpath%20d%3D'M85%205v56H5V5h80m5-5H0v66h90V0z'%2F%3E%3Ccircle%20cx%3D'18'%20cy%3D'20'%20r%3D'6'%2F%3E%3Cpath%20d%3D'M56%2014L37%2039l-8-6-17%2023h67z'%2F%3E%3C%2Fsymbol%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20width%3D'20%25'%20x%3D'40%25'%2F%3E%3C%2Fsvg%3E">
+   					
+    			""")))}),format.raw/*36.9*/("""
     			
-    		"""),format.raw/*30.7*/("""</div>
-    		
-    		<div class="request-info-group col-md-12">
-    			+1800800800
+    			"""),format.raw/*38.8*/("""</div>
     		</div>
     		
-    		<div class="request-info-group col-md-12">
-    			usermail.com	
-    		</div>
-    		
-    		<div class="request-info-group col-md-12">
-    			2211 N 1 st, San Jose, 95112
-    		</div>
-    		
-    		"""),_display_(/*44.8*/if(request.isResolved())/*44.32*/{_display_(Seq[Any](format.raw/*44.33*/("""
-    			"""),format.raw/*45.8*/("""<a href=""""),_display_(/*45.18*/routes/*45.24*/.AdminController.unresolveRequest(request.getId())),format.raw/*45.74*/("""" class="btn btn-success resolved resolve-btn">"""),_display_(/*45.122*/if(request.isResolved)/*45.144*/{_display_(Seq[Any](format.raw/*45.145*/(""" """),format.raw/*45.146*/("""Resolved """)))}/*45.156*/else/*45.160*/{_display_(Seq[Any](format.raw/*45.161*/(""" """),format.raw/*45.162*/("""Unresolved """)))}),format.raw/*45.174*/(""" """),format.raw/*45.175*/("""</a>
-    		""")))}/*46.8*/else/*46.12*/{_display_(Seq[Any](format.raw/*46.13*/("""
+    		<div class="request-info-group col m12">
     			
-    			"""),format.raw/*48.8*/("""<a href="#" class="btn btn-warning unresolved resolve-btn"  data-toggle="modal" data-target="#resolveModal">Unresolved</a>
-    		""")))}),format.raw/*49.8*/("""
+    			"""),_display_(/*43.9*/request/*43.16*/.getFirstName()),format.raw/*43.31*/(""" """),_display_(/*43.33*/request/*43.40*/.getLastName()),format.raw/*43.54*/("""
+    			
+    		"""),format.raw/*45.7*/("""</div>
     		
-    	"""),format.raw/*51.6*/("""</div>
+    		<div class="request-info-group col m12">
+    			"""),_display_(/*48.9*/request/*48.16*/.getContact()),format.raw/*48.29*/("""
+    		"""),format.raw/*49.7*/("""</div>
+    		
+    		<div class="request-info-group col m12">
+    			"""),_display_(/*52.9*/request/*52.16*/.getEmail()),format.raw/*52.27*/("""
+    		"""),format.raw/*53.7*/("""</div>
+    		
+    		<div class="request-info-group col m12">
+    			"""),_display_(/*56.9*/request/*56.16*/.getAddress()),format.raw/*56.29*/("""
+    		"""),format.raw/*57.7*/("""</div>
+    		
+    		"""),_display_(/*59.8*/if(request.isResolved())/*59.32*/{_display_(Seq[Any](format.raw/*59.33*/("""
+    			"""),format.raw/*60.8*/("""<a href=""""),_display_(/*60.18*/routes/*60.24*/.AdminController.unresolveRequest(request.getId())),format.raw/*60.74*/("""" class="waves-effect green darken-1 waves-light btn resolved resolve-btn">"""),_display_(/*60.150*/if(request.isResolved)/*60.172*/{_display_(Seq[Any](format.raw/*60.173*/(""" """),format.raw/*60.174*/("""Resolved """)))}/*60.184*/else/*60.188*/{_display_(Seq[Any](format.raw/*60.189*/(""" """),format.raw/*60.190*/("""Unresolved """)))}),format.raw/*60.202*/(""" """),format.raw/*60.203*/("""</a>
+    		""")))}/*61.8*/else/*61.12*/{_display_(Seq[Any](format.raw/*61.13*/("""
+    			
+    			"""),format.raw/*63.8*/("""<a class="waves-effect waves-light btn unresolved resolve-btn modal-trigger amber accent-4" href="#modal1">Unresolved</a>
+    		""")))}),format.raw/*64.8*/("""
+    		
+    	"""),format.raw/*66.6*/("""</div>
     	
-    	<hr>
+
     	
     	
 	</div>
-	<div class="details col-md-12">
+	<div class="details col m12">
 		<h2>Comments</h2>
 		<p>	
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			"""),_display_(/*75.5*/if(request.getComment())/*75.29*/{_display_(Seq[Any](format.raw/*75.30*/("""
+				"""),_display_(/*76.6*/request/*76.13*/.getComment()),format.raw/*76.26*/("""
+			""")))}/*77.5*/else/*77.9*/{_display_(Seq[Any](format.raw/*77.10*/("""
+				"""),format.raw/*78.5*/("""No comments
+			""")))}),format.raw/*79.5*/("""
 		
-		</p>
+		"""),format.raw/*81.3*/("""</p>
 	</div>
 	
-	"""),_display_(/*65.3*/if(!request.isResolved())/*65.28*/{_display_(Seq[Any](format.raw/*65.29*/("""
-		"""),format.raw/*66.3*/("""<div class="modal fade" id="resolveModal">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		    <form action=""""),_display_(/*69.22*/routes/*69.28*/.AdminController.resolveRequest(request.getId())),format.raw/*69.76*/("""" method="POST" enctype="multipart/form-data">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title">Do you have an image?</h4>
-		      </div>
-		      <div class="modal-body">
-		        <div class="form-group">
-				    <label class="col-sm-3 control-label" for="picture">Picture</label>
-				    <div class="col-sm-9">
-				    
-				    	<input type="file" id="resolvedImage" name="resolvedImage" data-max-size='4m' accept="image/*" />
+	  
+	
+	"""),_display_(/*86.3*/if(!request.isResolved())/*86.28*/{_display_(Seq[Any](format.raw/*86.29*/("""
+	
+		"""),format.raw/*88.3*/("""<!-- Modal Structure -->
+		  <div id="modal1" class="modal">
+		  <form action=""""),_display_(/*90.20*/routes/*90.26*/.AdminController.resolveRequest(request.getId())),format.raw/*90.74*/("""" method="POST" enctype="multipart/form-data">
+			    <div class="modal-content">
+			      <h4>Want to upload a picture?</h4>
+			      <input type="file" id="resolvedImage" name="resolvedImage" data-max-size='4m' accept="image/*" />
 				      	<span class="help-block">Upload a picture. 4MB max size(optional)</span>
 				    
-				      
-				    </div>
-				  </div>
-		        	
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		        <button type="submit" class="btn btn-primary">Upload and Save</button>
-		      </div>
-		      </form>
-		    </div><!-- /.modal-content -->
-		    </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-	""")))}),format.raw/*95.3*/("""
+			    </div>
+			    <div class="modal-footer">
+			      <button type="submit" class="modal-action modal-close waves-effect waves-green btn modal-resolve">Resolve</button>
+			    </div>
+		    </form>
+		  </div>
+  
+  
+		
+	""")))}),format.raw/*105.3*/("""
 	
-	"""),_display_(/*97.3*/if(!request.getImage().equals(""))/*97.37*/{_display_(Seq[Any](format.raw/*97.38*/("""
-		"""),format.raw/*98.3*/("""<div class="modal fade" id="beforeImageModal">
+	"""),_display_(/*107.3*/if(!request.getImage().equals(""))/*107.37*/{_display_(Seq[Any](format.raw/*107.38*/("""
+		"""),format.raw/*108.3*/("""<div class="modal fade" id="beforeImageModal">
 		  <div class="modal-dialog">
 		    <div class="modal-content">
 		    
@@ -132,8 +142,8 @@ Seq[Any](format.raw/*1.63*/("""
 		      </div>
 		      <div class="modal-body">
 		        <div class="form-group">
-				    <label class="col-sm-3 control-label" for="picture">Picture</label>
-				    <div class="col-sm-9">
+				    <label class="col s3 control-label" for="picture">Picture</label>
+				    <div class="col s9">
 				    
 				    	<img src="">
 				      
@@ -149,46 +159,56 @@ Seq[Any](format.raw/*1.63*/("""
 		    </div><!-- /.modal-content -->
 		    </div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
-	""")))}),format.raw/*125.3*/("""
+	""")))}),format.raw/*135.3*/("""
 	
 	
-	"""),format.raw/*128.2*/("""<script src=""""),_display_(/*128.16*/routes/*128.22*/.Assets.at("javascripts/file-validator.js")),format.raw/*128.65*/("""" type="text/javascript"></script>
+	"""),format.raw/*138.2*/("""<script src=""""),_display_(/*138.16*/routes/*138.22*/.Assets.at("javascripts/file-validator.js")),format.raw/*138.65*/("""" type="text/javascript"></script>
 	
 	
 	 
 	    <script type="text/javascript">
 	    	//google maps
-	      function initialize() """),format.raw/*134.30*/("""{"""),format.raw/*134.31*/("""
-	        """),format.raw/*135.10*/("""var mapCanvas = document.getElementById('map');
-	        var mapOptions = """),format.raw/*136.27*/("""{"""),format.raw/*136.28*/("""
-	          """),format.raw/*137.12*/("""center: new google.maps.LatLng(44.5403, -78.5463),
-	          zoom: 8,
-	          mapTypeId: google.maps.MapTypeId.ROADMAP
-	        """),format.raw/*140.10*/("""}"""),format.raw/*140.11*/("""
-	        """),format.raw/*141.10*/("""var map = new google.maps.Map(mapCanvas, mapOptions)
-	      """),format.raw/*142.8*/("""}"""),format.raw/*142.9*/("""
-	      """),format.raw/*143.8*/("""google.maps.event.addDomListener(window, 'load', initialize);
+	      function initialize() """),format.raw/*144.30*/("""{"""),format.raw/*144.31*/("""
+	    		"""),format.raw/*145.8*/("""//37.3351874,-121.8832655
+	    	  var myLatLng = """),format.raw/*146.24*/("""{"""),format.raw/*146.25*/("""lat: 37.3351874, lng: -121.8832655"""),format.raw/*146.59*/("""}"""),format.raw/*146.60*/(""";
+
+	    	  var map = new google.maps.Map(document.getElementById('map'), """),format.raw/*148.71*/("""{"""),format.raw/*148.72*/("""
+	    	    """),format.raw/*149.11*/("""zoom: 17,
+	    	    center: myLatLng
+	    	  """),format.raw/*151.9*/("""}"""),format.raw/*151.10*/(""");
+
+	    	  var marker = new google.maps.Marker("""),format.raw/*153.45*/("""{"""),format.raw/*153.46*/("""
+	    	    """),format.raw/*154.11*/("""position: myLatLng,
+	    	    map: map,
+	    	    title: 'Hello World!'
+	    	  """),format.raw/*157.9*/("""}"""),format.raw/*157.10*/(""");
+	      """),format.raw/*158.8*/("""}"""),format.raw/*158.9*/("""
+	      """),format.raw/*159.8*/("""google.maps.event.addDomListener(window, 'load', initialize);
 	      
-	      jQuery(document).ready(function() """),format.raw/*145.42*/("""{"""),format.raw/*145.43*/("""
-			  """),format.raw/*146.6*/("""jQuery( "input[type=file]" ).fileValidator("""),format.raw/*146.49*/("""{"""),format.raw/*146.50*/("""
-				  """),format.raw/*147.7*/("""onValidation: function(files)"""),format.raw/*147.36*/("""{"""),format.raw/*147.37*/("""      """),format.raw/*147.43*/("""$(this).attr('class','');          """),format.raw/*147.78*/("""}"""),format.raw/*147.79*/(""",
-				  onInvalid:    function(type, file)"""),format.raw/*148.41*/("""{"""),format.raw/*148.42*/(""" 
-					  					"""),format.raw/*149.13*/("""$(this).addClass('invalid '+type); 
-				  						jQuery("form").on("submit",function()"""),format.raw/*150.50*/("""{"""),format.raw/*150.51*/("""
-				  							"""),format.raw/*151.14*/("""alert("File size is too big. Please use an image lesser than MB");
+	      jQuery(document).ready(function() """),format.raw/*161.42*/("""{"""),format.raw/*161.43*/("""
+			  """),format.raw/*162.6*/("""jQuery( "input[type=file]" ).fileValidator("""),format.raw/*162.49*/("""{"""),format.raw/*162.50*/("""
+				  """),format.raw/*163.7*/("""onValidation: function(files)"""),format.raw/*163.36*/("""{"""),format.raw/*163.37*/("""      """),format.raw/*163.43*/("""$(this).attr('class','');          """),format.raw/*163.78*/("""}"""),format.raw/*163.79*/(""",
+				  onInvalid:    function(type, file)"""),format.raw/*164.41*/("""{"""),format.raw/*164.42*/(""" 
+					  					"""),format.raw/*165.13*/("""$(this).addClass('invalid '+type); 
+				  						jQuery("form").on("submit",function()"""),format.raw/*166.50*/("""{"""),format.raw/*166.51*/("""
+				  							"""),format.raw/*167.14*/("""alert("File size is too big. Please use an image lesser than MB");
 				  							return false;
-				  						"""),format.raw/*153.13*/("""}"""),format.raw/*153.14*/(""")
-		  						"""),format.raw/*154.11*/("""}"""),format.raw/*154.12*/(""",
+				  						"""),format.raw/*169.13*/("""}"""),format.raw/*169.14*/(""")
+		  						"""),format.raw/*170.11*/("""}"""),format.raw/*170.12*/(""",
 				  maxSize:      '4m',
 				  type:         'image' //optional
-				"""),format.raw/*157.5*/("""}"""),format.raw/*157.6*/(""");
-	      """),format.raw/*158.8*/("""}"""),format.raw/*158.9*/(""");
+				"""),format.raw/*173.5*/("""}"""),format.raw/*173.6*/(""");
+			  
+			  jQuery(".modal-trigger").leanModal();
+	      """),format.raw/*176.8*/("""}"""),format.raw/*176.9*/(""");
+	      
+	      
 				
 	    </script>
 	
 	
 	
-""")))}),format.raw/*164.2*/("""
+""")))}),format.raw/*184.2*/("""
 """))}
   }
 
@@ -201,11 +221,11 @@ Seq[Any](format.raw/*1.63*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sun Oct 04 00:10:04 PDT 2015
+                  DATE: Sun Oct 04 05:49:03 PDT 2015
                   SOURCE: /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/admin/request.scala.html
-                  HASH: 6ef01c90495f0cb92976a2ca0cdea79880afbc05
-                  MATRIX: 754->1|949->62|977->113|1004->115|1038->141|1077->143|1114->154|1445->458|1460->464|1539->521|1690->645|1705->651|1792->716|1920->818|1936->825|1972->840|2001->842|2017->849|2052->863|2094->878|2424->1182|2457->1206|2496->1207|2531->1215|2568->1225|2583->1231|2654->1281|2730->1329|2762->1351|2802->1352|2832->1353|2862->1363|2876->1367|2916->1368|2946->1369|2990->1381|3020->1382|3050->1394|3063->1398|3102->1399|3145->1415|3305->1545|3345->1558|4074->2261|4108->2286|4147->2287|4177->2290|4333->2419|4348->2425|4417->2473|5529->3555|5560->3560|5603->3594|5642->3595|5672->3598|6663->4558|6697->4564|6739->4578|6755->4584|6820->4627|6977->4755|7007->4756|7046->4766|7149->4840|7179->4841|7220->4853|7381->4985|7411->4986|7450->4996|7538->5056|7567->5057|7603->5065|7743->5176|7773->5177|7807->5183|7879->5226|7909->5227|7944->5234|8002->5263|8032->5264|8067->5270|8131->5305|8161->5306|8232->5348|8262->5349|8305->5363|8419->5448|8449->5449|8492->5463|8627->5569|8657->5570|8698->5582|8728->5583|8827->5654|8856->5655|8894->5665|8923->5666|8984->5696
-                  LINES: 26->1|30->1|32->5|33->6|33->6|33->6|36->9|45->18|45->18|45->18|49->22|49->22|49->22|55->28|55->28|55->28|55->28|55->28|55->28|57->30|71->44|71->44|71->44|72->45|72->45|72->45|72->45|72->45|72->45|72->45|72->45|72->45|72->45|72->45|72->45|72->45|72->45|73->46|73->46|73->46|75->48|76->49|78->51|92->65|92->65|92->65|93->66|96->69|96->69|96->69|122->95|124->97|124->97|124->97|125->98|152->125|155->128|155->128|155->128|155->128|161->134|161->134|162->135|163->136|163->136|164->137|167->140|167->140|168->141|169->142|169->142|170->143|172->145|172->145|173->146|173->146|173->146|174->147|174->147|174->147|174->147|174->147|174->147|175->148|175->148|176->149|177->150|177->150|178->151|180->153|180->153|181->154|181->154|184->157|184->157|185->158|185->158|191->164
+                  HASH: 911f40f7cb171604fb8c2ca10b8f23ea9b7c104e
+                  MATRIX: 754->1|949->62|977->113|1004->115|1038->141|1077->143|1114->154|1475->488|1490->494|1569->551|1689->645|1728->675|1767->676|1803->685|1926->781|1941->787|2028->852|2075->881|2088->885|2127->886|2163->895|2829->1531|2872->1547|2988->1637|3004->1644|3040->1659|3069->1661|3085->1668|3120->1682|3162->1697|3257->1766|3273->1773|3307->1786|3341->1793|3436->1862|3452->1869|3484->1880|3518->1887|3613->1956|3629->1963|3663->1976|3697->1983|3744->2004|3777->2028|3816->2029|3851->2037|3888->2047|3903->2053|3974->2103|4078->2179|4110->2201|4150->2202|4180->2203|4210->2213|4224->2217|4264->2218|4294->2219|4338->2231|4368->2232|4398->2244|4411->2248|4450->2249|4493->2265|4652->2394|4692->2407|4814->2503|4847->2527|4886->2528|4918->2534|4934->2541|4968->2554|4991->2559|5003->2563|5042->2564|5074->2569|5120->2585|5153->2591|5202->2614|5236->2639|5275->2640|5307->2645|5414->2725|5429->2731|5498->2779|6077->3327|6109->3332|6153->3366|6193->3367|6224->3370|7211->4326|7245->4332|7287->4346|7303->4352|7368->4395|7525->4523|7555->4524|7591->4532|7669->4581|7699->4582|7762->4616|7792->4617|7894->4690|7924->4691|7964->4702|8037->4747|8067->4748|8144->4796|8174->4797|8214->4808|8322->4888|8352->4889|8390->4899|8419->4900|8455->4908|8595->5019|8625->5020|8659->5026|8731->5069|8761->5070|8796->5077|8854->5106|8884->5107|8919->5113|8983->5148|9013->5149|9084->5191|9114->5192|9157->5206|9271->5291|9301->5292|9344->5306|9479->5412|9509->5413|9550->5425|9580->5426|9679->5497|9708->5498|9795->5557|9824->5558|9901->5604
+                  LINES: 26->1|30->1|32->5|33->6|33->6|33->6|36->9|46->19|46->19|46->19|52->25|52->25|52->25|53->26|55->28|55->28|55->28|58->31|58->31|58->31|59->32|63->36|65->38|70->43|70->43|70->43|70->43|70->43|70->43|72->45|75->48|75->48|75->48|76->49|79->52|79->52|79->52|80->53|83->56|83->56|83->56|84->57|86->59|86->59|86->59|87->60|87->60|87->60|87->60|87->60|87->60|87->60|87->60|87->60|87->60|87->60|87->60|87->60|87->60|88->61|88->61|88->61|90->63|91->64|93->66|102->75|102->75|102->75|103->76|103->76|103->76|104->77|104->77|104->77|105->78|106->79|108->81|113->86|113->86|113->86|115->88|117->90|117->90|117->90|132->105|134->107|134->107|134->107|135->108|162->135|165->138|165->138|165->138|165->138|171->144|171->144|172->145|173->146|173->146|173->146|173->146|175->148|175->148|176->149|178->151|178->151|180->153|180->153|181->154|184->157|184->157|185->158|185->158|186->159|188->161|188->161|189->162|189->162|189->162|190->163|190->163|190->163|190->163|190->163|190->163|191->164|191->164|192->165|193->166|193->166|194->167|196->169|196->169|197->170|197->170|200->173|200->173|203->176|203->176|211->184
                   -- GENERATED --
               */
           

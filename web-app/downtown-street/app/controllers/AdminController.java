@@ -1,5 +1,6 @@
 package controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import models.Admin;
@@ -9,12 +10,15 @@ import modules.utilities.Utilities;
 import org.json.JSONArray;
 
 import play.data.Form;
+import play.libs.F.Callback;
+import play.libs.F.Callback0;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Http;
+import play.mvc.Http.MultipartFormData.FilePart;
 import play.mvc.Result;
 import play.mvc.Security;
-import play.mvc.Http.MultipartFormData.FilePart;
+import play.mvc.WebSocket;
 import views.formdata.admin.AdminLoginForm;
 import views.formdata.admin.SettingsForm;
 
@@ -26,6 +30,9 @@ public class AdminController extends Controller {
 
 	private final static String directoryPath = play.Play.application()
 			.configuration().getString("inventory.imagePath");
+	
+	private static ArrayList<WebSocket.Out> channels=new ArrayList<WebSocket.Out>();
+
 	
 	
  	// Function to authenticate login
@@ -56,8 +63,11 @@ public class AdminController extends Controller {
 	public static Result dashboard() {
 		Admin admin = SecuredAdmin.getAdminInfo(ctx());
 		List<Request> requestList = Request.find.all();
+		int all = Request.find.findRowCount();
+		int resolved = Request.find.where().eq("is_resolved", "1").findRowCount();
+		int pending = all - resolved;
 		return ok(views.html.admin.dashboard.render("Dashboard",
-				SecuredAdmin.isLoggedIn(ctx()), admin, requestList));
+				SecuredAdmin.isLoggedIn(ctx()), admin, requestList, all, resolved, pending));
 	}
 	
 	@Security.Authenticated(SecuredAdmin.class)
@@ -72,6 +82,7 @@ public class AdminController extends Controller {
 		SettingsForm tempForm = new SettingsForm();
 		tempForm.username = admin.getUsername();
 		tempForm.contact = admin.getContact();
+		tempForm.email = admin.getEmail();
 		Form<SettingsForm> settingsForm = Form.form(SettingsForm.class).fill(
 				tempForm);
 		return ok(views.html.admin.settings.render("Settings",
@@ -90,23 +101,27 @@ public class AdminController extends Controller {
 			return badRequest(views.html.admin.settings.render("Settings",
 					SecuredAdmin.isLoggedIn(ctx()), settingsForm));
 		}
-		admin.setUsername(settingsForm.get().username);
-		
-		admin.setContact(settingsForm.get().contact);
-		
-		admin.update();
 		if (settingsForm.get().oldPassword.length() > 6
 				&& (settingsForm.get().rePassword
 						.equals(settingsForm.get().newPassword))) {
 			admin
 					.setPassword(Utilities.getMD5Hash(settingsForm.get().newPassword));
 		}
+		admin.setUsername(settingsForm.get().username);
+		admin.setEmail(settingsForm.get().email);
+		admin.setContact(settingsForm.get().contact);
+		
+		admin.update();
+		
 		return redirect(routes.AdminController.settings());
 	}
 	
 	//view request details
 	@Security.Authenticated(SecuredAdmin.class)
 	public static Result viewRequest(int id){
+		for(WebSocket.Out channel : channels){
+            channel.write("blah");
+        }
 		Request request = Request.find.byId(id);
 		if(request == null){
 			return redirect(routes.AdminController.errorNotFound());
@@ -142,7 +157,6 @@ public class AdminController extends Controller {
 	
 	@Security.Authenticated(SecuredAdmin.class)
 	public static Result resolveRequest(int id){
-		System.out.println("herer");
 		Http.MultipartFormData body = request().body().asMultipartFormData();
 		Request request = Request.find.byId(id);
 		if(request == null){
@@ -168,6 +182,18 @@ public class AdminController extends Controller {
 		request.setResolved(false);
 		request.update();
 		return redirect(routes.AdminController.viewRequest(id));
+	}
+	
+	public static WebSocket<String> index() {
+		  return new WebSocket<String>() {
+		      
+		    public void onReady(WebSocket.In<String> in, WebSocket.Out<String> out) {
+		      out.write("Hello!");
+		      System.out.println("Running");
+		      out.close();
+		    }
+		    
+		  };
 	}
 	
 	

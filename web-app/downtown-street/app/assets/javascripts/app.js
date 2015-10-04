@@ -14,28 +14,31 @@ jQuery(document).ready(function(){
 	
 	setTimeout(fadeAlertMessage, 5000);
 	jQuery(".unresolved").hover(function(){
-			jQuery(this).removeClass("btn-warning");
-			jQuery(this).addClass("btn-success");
+			jQuery(this).removeClass("amber accent-4");
+			jQuery(this).addClass("green darken-1");
 			jQuery(this).text("Resolve");
 		},
 		function(){
-			jQuery(this).removeClass("btn-success");
-			jQuery(this).addClass("btn-warning");
+			jQuery(this).removeClass("green darken-1");
+			jQuery(this).addClass("amber accent-4");
 			jQuery(this).text("Unresolved");
 		});
 	
 	jQuery(".resolved").hover(function(){
-		jQuery(this).removeClass("btn-success");
-		jQuery(this).addClass("btn-warning");
+		jQuery(this).removeClass("green darken-1");
+		jQuery(this).addClass("orange amber-4");
 		jQuery(this).text("Unresolve");
 	},
 	function(){
-		jQuery(this).removeClass("btn-warning");
-		jQuery(this).addClass("btn-success");
+		jQuery(this).removeClass("amber accent-4");
+		jQuery(this).addClass("green darken-1");
 		jQuery(this).text("Resolved");
 	});
 	
-	
+    // DataTable
+    jQuery('#search-table').DataTable({
+        
+    });
 });
 
 function fadeAlertMessage(){
