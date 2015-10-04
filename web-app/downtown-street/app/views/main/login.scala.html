@@ -1,0 +1,42 @@
+@(loginForm: Form[views.formdata.admin.AdminLoginForm])
+
+@import helper._
+@import views.html.bootstrap3._
+
+@main("Downtown Street") {
+
+	<div class="col-md-6 login-form-container">
+			<div class="login-form">
+				  <h3 class="login-title"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Staff Login</h3>
+			    	<form action="/authenticate" method="POST" class="form-horizontal">
+    				
+					  <div class="form-group ">
+					    
+					    <div class="col-sm-12">
+					      <input type="text" class="form-control" id="username" name="username" value="" placeholder="Username">
+					      <span class="help-block"></span>
+					      <span class="help-block"></span>
+					    </div>
+					  </div>
+					
+											        	
+									       	
+					
+					  <div class="form-group ">
+					    
+					    <div class="col-sm-12">
+					      <input type="password" class="form-control" id="password" name="password" value="" placeholder="Password">
+					      <span class="help-block"></span>
+					      <span class="help-block"></span>
+					    </div>
+					  </div>
+					
+					<button type="submit" class="btn-default btn btn-primary">Login</button>
+						<div class="forgot-password-container">
+						    
+						</div>
+					</form>
+			</div>
+						  
+	</div>
+}

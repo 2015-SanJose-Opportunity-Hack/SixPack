@@ -1,0 +1,94 @@
+/* Empty. Add your own CSS if you like */
+
+
+.pic-preview{
+margin:auto;
+text-align: center;
+}
+
+.img-prev{
+
+        max-height: 50%;
+        margin:auto;
+        min-width: 200px;
+        min-height: 200px;
+        max-width:50%;
+        border-style: solid;
+        border-width: 1px;
+
+
+}
+
+.home-page{
+  background-image: url('../img/cover.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.home-content{
+
+  margin-top: 40%;
+
+}
+
+.logo{
+
+  text-align: center;
+}
+
+.lite-bg{
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+
+}
+
+.comments{
+    border:1px solid;
+    border-color: #EF473A;
+    width: 100%;
+
+}
+
+
+.preview-view{
+
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+
+}
+/*
+input[type="text"]{
+    border:1px solid;
+    border-color: #EF473A;
+    width: 100%;
+    padding-top: 5px;
+}*/
+
+.input-group.input-group-unstyled input.form-control {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.input-group-unstyled .input-group-addon {
+  border-radius: 4px;
+  border: 0px;
+  background-color: transparent;
+}
+
+.shadow{
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+

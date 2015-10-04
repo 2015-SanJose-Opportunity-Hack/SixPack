@@ -1,0 +1,204 @@
+@(title: String, isLoggedIn: Boolean, request: models.Request)
+
+@import helper._
+@import views.html.bootstrap3._
+
+@backend(title, isLoggedIn) {
+
+    
+    <div class="request-container col m12">
+    	<div class="maps col m6">
+    		<div id="map">
+        	</div>
+    	</div>
+    	<div class="maps col m6">
+    	<div class="request-info-group">
+    			<div class="col m6 image-container">
+    			<p class="image-title">Before</p>
+    			
+    				<img class="full-image materialboxed" src="@routes.Assets.at("images/request-images/" + request.getImage())">
+   				
+    			</div>
+    			<div class="col m6 image-container">
+    			
+    				
+   				@if(request.getResolvedImage()){
+   					<p class="image-title">After</p>	
+   					
+   						<img class="full-image materialboxed" src="@routes.Assets.at("images/request-images/" + request.getResolvedImage())">
+   					
+    				
+    			}else{
+    				<p class="image-title">No After Image</p>	
+   					
+					<img class="full-image" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%20viewBox%3D'0%200%201400%20933'%3E%3Cdefs%3E%3Csymbol%20id%3D'a'%20viewBox%3D'0%200%2090%2066'%20opacity%3D'0.3'%3E%3Cpath%20d%3D'M85%205v56H5V5h80m5-5H0v66h90V0z'%2F%3E%3Ccircle%20cx%3D'18'%20cy%3D'20'%20r%3D'6'%2F%3E%3Cpath%20d%3D'M56%2014L37%2039l-8-6-17%2023h67z'%2F%3E%3C%2Fsymbol%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D'%23a'%20width%3D'20%25'%20x%3D'40%25'%2F%3E%3C%2Fsvg%3E">
+   					
+    			}
+    			
+    			</div>
+    		</div>
+    		
+    		<div class="request-info-group col m12">
+    			
+    			@request.getFirstName() @request.getLastName()
+    			
+    		</div>
+    		
+    		<div class="request-info-group col m12">
+    			@request.getContact()
+    		</div>
+    		
+    		<div class="request-info-group col m12">
+    			@request.getEmail()
+    		</div>
+    		
+    		<div class="request-info-group col m12">
+    			@request.getAddress()
+    		</div>
+    		
+    		<div class="request-info-group col m12">
+    			@request.getCreatedAt()
+    		</div>
+    		
+    		
+    		@if(request.isResolved()){
+    			<a href="@routes.AdminController.unresolveRequest(request.getId())" class="waves-effect green darken-1 waves-light btn resolved resolve-btn">@if(request.isResolved){ Resolved }else{ Unresolved } </a>
+    		}else{
+    			
+    			<a class="waves-effect waves-light btn unresolved resolve-btn modal-trigger amber accent-4" href="#modal1">Unresolved</a>
+    		}
+    		
+    	</div>
+    	
+
+    	
+    	
+	</div>
+	<div class="details col m12">
+		<h2>Comments</h2>
+		<p>	
+			@if(request.getComment()){
+				@request.getComment()
+			}else{
+				No comments
+			}
+		
+		</p>
+	</div>
+	
+	  
+	
+	@if(!request.isResolved()){
+	
+		<!-- Modal Structure -->
+		  <div id="modal1" class="modal">
+		  <form action="@routes.AdminController.resolveRequest(request.getId())" method="POST" enctype="multipart/form-data">
+			    <div class="modal-content">
+			      <h4>Want to upload a picture?</h4>
+			      <input type="file" id="resolvedImage" name="resolvedImage" data-max-size='4m' accept="image/*" />
+				      	<span class="help-block">Upload a picture. 4MB max size(optional)</span>
+				    
+			    </div>
+			    <div class="modal-footer">
+			      <button type="submit" class="modal-action modal-close waves-effect waves-green btn modal-resolve">Resolve</button>
+			    </div>
+		    </form>
+		  </div>
+  
+  
+		
+	}
+	
+	@if(!request.getImage().equals("")){
+		<div class="modal fade" id="beforeImageModal">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		    
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">Before Image</h4>
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+				    <label class="col s3 control-label" for="picture">Picture</label>
+				    <div class="col s9">
+				    
+				    	<img src="">
+				      
+				    </div>
+				  </div>
+		        	
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="submit" class="btn btn-primary">Upload and Save</button>
+		      </div>
+		      
+		    </div><!-- /.modal-content -->
+		    </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+	}
+	
+	
+	<script src="@routes.Assets.at("javascripts/file-validator.js")" type="text/javascript"></script>
+	
+	
+	 
+	    <script type="text/javascript">
+	    	//google maps
+	      function initialize() {
+	    		//37.3351874,-121.8832655
+	    		@if(request.getLatitude() && request.getLongitude()){
+	    			 var myLatLng = {lat: @request.getLatitude(), lng: @request.getLongitude()};
+
+		   	    	  var map = new google.maps.Map(document.getElementById('map'), {
+		   	    	    zoom: 17,
+		   	    	    center: myLatLng
+		   	    	  });
+	
+		   	    	  var marker = new google.maps.Marker({
+		   	    	    position: myLatLng,
+		   	    	    map: map,
+		   	    	    title: 'Hello World!'
+		   	    	  });
+	    		}	
+	    	 
+	      }
+	      google.maps.event.addDomListener(window, 'load', initialize);
+	      
+	      jQuery(document).ready(function() {
+			  jQuery( "input[type=file]" ).fileValidator({
+				  onValidation: function(files){      $(this).attr('class','');          },
+				  onInvalid:    function(type, file){ 
+					  					$(this).addClass('invalid '+type); 
+				  						jQuery("form").on("submit",function(){
+				  							alert("File size is too big. Please use an image lesser than MB");
+				  							return false;
+				  						})
+		  						},
+				  maxSize:      '4m',
+				  type:         'image' //optional
+				});
+			  
+			  jQuery(".modal-trigger").leanModal();
+	      });
+	      var time = new Date().getTime();
+           jQuery(document.body).bind("mousemove keypress", function(e) {
+               time = new Date().getTime();
+           });
+
+           function refresh() {
+               if(new Date().getTime() - time >= 60000) 
+                   window.location.reload(true);
+               else 
+                   setTimeout(refresh, 10000);
+           }
+
+           setTimeout(refresh, 10000);
+	      
+				
+	    </script>
+	
+	
+	
+}

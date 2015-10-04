@@ -1,0 +1,329 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  background-color: #D5E1DD;
+  font-family: 'Titillium Web', sans-serif;
+}
+.dashboard-menu {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  max-width: 180px;
+  width: 100%;
+  background-color: #243743;
+  height: 100%;
+  color: #FAFAFA;
+}
+.dashboard-menu .list-group {
+  margin: 0;
+  cursor: pointer;
+}
+.dashboard-menu .list-group-item-text {
+  font-size: 11px;
+  color: #C5D0C1;
+  padding-left: 29px;
+  font-style: italic;
+  padding-right: 10px;
+  margin-bottom: 7px;
+}
+.dashboard-menu .list-group-item {
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+  background-color: #243743;
+  font-size: 13px;
+  color: #FAFAFA;
+}
+.dashboard-menu .list-group-item .list-group-item {
+  padding-left: 29px;
+  font-style: italic;
+  font-size: 12px;
+}
+.dashboard-menu .list-group-item .glyphicon {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.dashboard-menu .list-group-item:first-child {
+  padding-top: 10px;
+  border-radius: 0 0 0 0;
+}
+.dashboard-menu .list-group-item:last-child {
+  border-radius: 0 0 0 0;
+}
+.full-width .department .panel {
+  background-color: #BFCFCC;
+  color: white;
+}
+.full-width .department .panel-footer {
+  color: black;
+}
+.full-width .department .main-glyphicon {
+  top: 20%;
+  position: absolute;
+  font-size: 35px;
+}
+.all-department thead {
+  background-color: #f3f3f3;
+}
+.all-department thead th {
+  text-align: center;
+}
+.dashboard-content h1,
+.dashboard-content h2,
+.dashboard-content h3,
+.dashboard-content h4 {
+  color: #485C5A;
+}
+.dashboard-content .department-summary {
+  margin-top: 25px;
+}
+.lol {
+  display: none;
+}
+.log-container ul {
+  list-style: none;
+}
+.log-container ul li {
+  font-size: 11px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.log-container ul li .log-activity,
+.log-container ul li .log-user,
+.log-container ul li .log-date {
+  font-weight: 600;
+}
+.table > tr > td {
+  vertical-align: middle;
+}
+.full-width-modal .modal-dialog {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.full-width-modal .modal-content {
+  height: 100%;
+  border-radius: 0;
+  color: white;
+  overflow: auto;
+}
+.item-image {
+  cursor: pointer;
+}
+.login-form {
+  background-color: white;
+  padding: 25px;
+}
+.login-form input {
+  height: 50px;
+}
+.login-form button[type=submit] {
+  width: 100%;
+  padding: 10px;
+}
+.login-form .forgot-password-container {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+.welcome {
+  text-align: center;
+}
+.login-form-container {
+  margin: 0 auto;
+  float: none;
+  margin-top: 50px;
+}
+.login-title {
+  margin-bottom: 25px;
+  margin-top: 0;
+  color: #2B3E42;
+  text-align: center;
+}
+#map {
+  height: 500px;
+}
+.request-info-group {
+  clear: both;
+  padding-bottom: 10px;
+  font-size: 34px;
+  position: relative;
+  padding-top: 0;
+  color: #2B3E42;
+  font-weight: 300;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.main-container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: white;
+}
+.resolve-btn {
+  height: auto;
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 20px;
+}
+.full-image {
+  width: 100%;
+}
+.resolve {
+  background-color: rgba(39, 113, 39, 0.84);
+}
+.btn:hover.resolve {
+  background-color: #277127;
+}
+.image-title {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: auto;
+  background-color: black;
+  color: white;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  z-index: 100;
+}
+.details {
+  padding: 30px;
+}
+tfoot {
+  display: table-header-group;
+}
+tfoot input {
+  width: 100%;
+  padding: 3px;
+  box-sizing: border-box;
+}
+.content {
+  padding-top: 7px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.stats {
+  height: 100%;
+  width: 60%;
+}
+nav {
+  background-color: #2B3E42;
+}
+.unr {
+  background-color: rgba(163, 33, 33, 0.84);
+}
+.btn:hover.unr {
+  background-color: #a32121;
+}
+.logo-name {
+  padding-left: 10px !important;
+  font-size: 1.2rem;
+}
+.brand-logo {
+  font-size: 1.2rem;
+}
+/*
+.btn.stats {
+    font-weight: 400;
+    font-size: 70px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 2;
+    vertical-align: middle;
+}
+*/
+.stats-header {
+  font-size: 1.7rem;
+}
+.dataTables_filter > label {
+  font-size: large;
+}
+.dataTables_length > label {
+  font-size: large;
+  float: left;
+  width: 200px;
+  position: relative;
+}
+.dataTables_length > label > select {
+  display: inline-block !important;
+  font-size: normal;
+  float: left;
+}
+table > tbody > tr:hover {
+  background-color: #d5e1dd !important;
+}
+@media only screen and (max-width: 600px) {
+  .btn.stats {
+    width: 100%;
+  }
+  .stats-header {
+    font-size: 1.28rem;
+    float: left;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .btn.stats {
+    font-weight: 400;
+    font-size: 70px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 1.6;
+    vertical-align: middle;
+  }
+}
+.stats {
+  display: block;
+}
+.stats-container {
+  margin-top: 20px;
+}
+.status-resolved {
+  color: #43a047;
+}
+.status-pending {
+  color: #dd2c00;
+}
+h2 {
+  font-size: 1.8rem;
+}
+.modal-content h4 {
+  text-align: center;
+}
+.modal-resolve {
+  margin-bottom: 16px !important;
+  margin-right: 15px !important;
+}
+.request-container {
+  margin-top: 25px;
+}
+select[name=search-table_length] {
+  width: 35%;
+  position: absolute;
+  right: 0;
+  top: -8px;
+}
+.help-block {
+  font-size: 12px;
+  font-style: italic;
+}
+.er-msg {
+  padding: 10px;
+  display: block;
+  font-size: 13px;
+}
+.image-container {
+  position: relative;
+}
+/*# sourceMappingURL=main.css.map */

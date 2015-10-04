@@ -1,0 +1,82 @@
+@(title: String, isLoggedIn: Boolean, department: models.Admin, requestList: List[models.Request])
+
+@import helper._
+@import views.html.bootstrap3._
+
+@backend(title, isLoggedIn) {
+
+    <h2 class="welcome">Welcome Admin!</h2>
+    <hr>
+    
+    <div class="col-md-12 text-center">
+	    <div class="col-md-4">
+	    	<h3>Total Requests</h3>
+	    	<h1>100</h1>
+	    </div>
+	    <div class="col-md-4">
+	    	<h3>Resolved</h3>
+	    	<h1>143</h1>
+	    </div>
+	    <div class="col-md-4">
+	    	<h3>Unresolved</h3>
+	    	<h1>10</h1>
+	    </div>
+    </div>
+    
+  	<div class="col-md-12 charts">
+  	<div class="col-md-12 table-responsive" style="display: none">
+	
+		<table class="table table-bordered table-striped table-hover text-center display"  id="search-table" width="100%">
+			<thead>
+				<tr>
+					<th class="text-center">ID</th>
+					<th class="text-center">Thumb</th>
+					<th class="text-center">Name</th>
+					<th class="text-center">Address</th>
+					<th class="text-center">Comment</th>
+					<th class="text-center">Details</th>
+					<th class="text-center">Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				@for(request <- requestList){
+					<tr>
+						<td><strong>@request.getId()</strong></td>
+						<td><img class="thumb" src="/assets/images/request-images/@request.getImage()"></td>
+						<td class="text-center">@request.getFirstName() @request.getLastName()</td>
+						<td>@request.getAddress()</td>
+						<td>@request.getComment()</td>
+						
+						<td><a href="#" class="btn btn-default">Resolve</a></td>
+						
+						<td><a href="#" class="btn btn-default">Resolve</a></td>
+					</tr>
+				}
+					
+				
+						
+			</tbody>
+		</table>
+	</div>
+	
+	</hr>
+	
+	
+	
+   <script type="text/javascript">
+     	jQuery(document).ready(function(){
+     		jQuery(".table-responsive").fadeIn(1000);
+     		jQuery('#search-table').dataTable({
+     			"scrollY":        800,
+     	        "scrollCollapse": true,
+     			"jQueryUI":       true,
+     			"autoWidth": false
+     		}				
+     		);
+     		
+     	});
+     </script>
+	</div>
+	
+	
+}

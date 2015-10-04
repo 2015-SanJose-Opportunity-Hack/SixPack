@@ -1,0 +1,6 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/conf/application.conf,/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/conf/evolutions,/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/conf/routes,/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/conf/evolutions/default,/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/conf/evolutions/default/1.sql,/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/scala-2.11/classes/evolutions/default/1.sql)[0m

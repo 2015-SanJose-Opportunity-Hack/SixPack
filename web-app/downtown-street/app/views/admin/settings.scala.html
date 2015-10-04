@@ -1,0 +1,51 @@
+@(title: String, isLoggedIn: Boolean, settingsForm: Form[views.formdata.admin.SettingsForm])
+
+@import helper._
+@import views.html.bootstrap3._
+
+@backend(title, isLoggedIn) {
+	
+	<h2>@title <small> | Update your account settings</small></h2>
+	<hr>
+	
+	<div class="col m6">
+		@form(routes.AdminController.updateSettings(), 'class -> "form-horizontal"){
+			
+				@text(settingsForm("username"),
+		        	label = "Username",
+		        	placeholder = "Username (required)")
+		        
+
+				@password(settingsForm("oldPassword"),
+		        	label = "Old Password",
+		        	placeholder = "Department Old password",
+		        	help = "6-20 characters"
+		        	)
+		        	
+	       		@password(settingsForm("newPassword"),
+		        	label = "New Password",
+		        	placeholder = "Department's new password (required)",
+		        	help = "6-20 characters"
+		        	)
+		
+				@password(settingsForm("rePassword"),
+		        	label = "Password again",
+		        	placeholder = "Password again (required)")
+				
+				@email(settingsForm("email"),
+					label = "Email",
+					placeholder = "Email"
+				)
+						        
+				@text(settingsForm("contact"),
+		        	label = "Contact",
+		        	placeholder = "Contact (required)")
+		        	
+				<button type="submit" class="btn-default btn btn-primary pull-right">Update Settings</button>			
+		}
+	</div>
+	
+	
+	
+	
+}
