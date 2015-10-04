@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" media="screen" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" />
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+      <script src="js/external.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="js/ng-cordova.min.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+      
+  </head>
+  <body ng-app="starter">
+      <form>
+    <ion-pane ng-init="showHome = true">
+        
+      <ion-header-bar class="bar-assertive">
+          <h1 class="title">Photos</h1>
+        </ion-header-bar>
+        <ion-view view-title="Home" ng-show="showHome">
+        <ion-content id="capture-content" ng-controller="ExampleController" padding="true">
+            <button class="button button-full button-assertive" ng-click="takePhoto()">
+                Take Photo
+            </button>
+            <button class="button button-full button-assertive" ng-click="choosePhoto()">
+                Choose Photo
+            </button>
+            <span class="pic-preview">
+                <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" class="img-prev"></span>
+            <textarea id="comments" ng-show="imgURI !== undefined" class="comments" rows="3" placeholder="comments"></textarea>
+            <button ng-show="imgURI !== undefined" class="button button-full button-assertive" onClick="loadForm()">
+                Upload
+            </button>
+        </ion-content>
+        </ion-view>
+    </ion-pane>
+      </form>
+  </body>
+</html>
