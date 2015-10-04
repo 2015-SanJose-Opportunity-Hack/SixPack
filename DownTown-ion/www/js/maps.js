@@ -19,8 +19,6 @@ function getCurrentLocation() {
 
 
 function setLatLongs() {
-
-
   try {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address);
@@ -39,7 +37,6 @@ function setLatLongs() {
   catch (err) {
     console.log(err.message);
   }
-
 }
 
 

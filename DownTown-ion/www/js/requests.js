@@ -1,5 +1,5 @@
-var server = 'http://192.168.84.239';
-var port = ':9000';
+var server = 'http://ec2-54-153-97-140.us-west-1.compute.amazonaws.com';
+var port = ':9000/';
 
 function getServerURL() {
   return server + port;
@@ -7,7 +7,6 @@ function getServerURL() {
 
 
 function submitRequest(formdata) {
-
 
   var url = getServerURL() + '/request/v1';
   try {
@@ -44,13 +43,6 @@ function getFormData() {
     formData.append("email", localStorage.getItem('email') || '');
     formData.append("contact", localStorage.getItem('contact') || '');
     formData.append("business", localStorage.getItem('business') || '');
-    try {
-      setLatLongs();
-
-    }
-    catch (err) {
-      alert(err);
-    }
     formData.append("latitude", localStorage.getItem('latitude') || '');
     formData.append("longitude", localStorage.getItem('longitude') || '');
     formData.append("location", localStorage.getItem('location') || '');
