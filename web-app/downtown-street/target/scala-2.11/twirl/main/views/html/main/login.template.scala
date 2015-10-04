@@ -60,7 +60,7 @@ Seq[Any](format.raw/*1.56*/("""
 					
 					<button type="submit" class="btn-default btn btn-primary">Login</button>
 						<div class="forgot-password-container">
-						    <a href="#" title="Forgot Password" class="forgot-password">Forgot Password</a>
+						    
 						</div>
 					</form>
 			</div>
@@ -79,10 +79,10 @@ Seq[Any](format.raw/*1.56*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sun Oct 04 06:00:28 PDT 2015
+                  DATE: Sun Oct 04 11:41:51 PDT 2015
                   SOURCE: /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/main/login.scala.html
-                  HASH: 1b026e549a0059b7a2b433af4c5493dba28c2015
-                  MATRIX: 763->1|951->55|979->106|1006->108|1037->131|1076->133|1105->136|2350->1351
+                  HASH: d463ff01e09e0a10661f6fd8fd8b9bef8c8d432c
+                  MATRIX: 763->1|951->55|979->106|1006->108|1037->131|1076->133|1105->136|2271->1272
                   LINES: 26->1|30->1|32->5|33->6|33->6|33->6|35->8|69->42
                   -- GENERATED --
               */

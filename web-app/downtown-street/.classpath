@@ -16,7 +16,7 @@
 	<classpathentry kind="lib" path="lib/poi-ooxml-3.12-20150511.jar"/>
 	<classpathentry kind="lib" path="lib/poi-ooxml-3.5-FINAL.jar"/>
 	<classpathentry kind="lib" path="lib/poi-scratchpad-3.12-20150511.jar"/>
-	<classpathentry kind="lib" path="lib/resty-0.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/resty-0.3.2.jar" sourcepath="/Users/harshmalewar/.m2/repository/us/monoid/web/resty/0.3.2/resty-0.3.2-sources.jar"/>
 	<classpathentry kind="lib" path="lib/unirest-java-1.4.6-SNAPSHOT-jar-with-dependencies.jar"/>
 	<classpathentry kind="lib" path="lib/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>

@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@244d332e[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56ca3386[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.1 in sbt-chain[0m
@@ -1084,6 +1084,306 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.twilio.sdk#twilio-java-sdk;5.2.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twilio.sdk#twilio-java-sdk;5.2.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/com.twilio.sdk/twilio-java-sdk/5.2.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.twilio.sdk#twilio-java-sdk;5.2.1[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/com.twilio.sdk/twilio-java-sdk/5.2.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for com.twilio.sdk#twilio-java-sdk;5.2.1[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/com.twilio.sdk/twilio-java-sdk/5.2.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.twilio.sdk#twilio-java-sdk;5.2.1[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twilio/sdk/twilio-java-sdk/5.2.1/twilio-java-sdk-5.2.1.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.twilio.sdk#twilio-java-sdk;5.2.1[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/twilio/sdk/twilio-java-sdk/5.2.1/twilio-java-sdk-5.2.1.pom (5.2.1)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/twilio/sdk/twilio-java-sdk/5.2.1/twilio-java-sdk-5.2.1.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twilio/sdk/twilio-java-sdk/5.2.1/twilio-java-sdk-5.2.1.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twilio/sdk/twilio-java-sdk/5.2.1/twilio-java-sdk-5.2.1.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twilio/sdk/twilio-java-sdk/5.2.1/twilio-java-sdk-5.2.1.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twilio.sdk#twilio-java-sdk;5.2.1!twilio-java-sdk.pom(pom.original) (159ms)[0m
+[0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;7 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.sonatype.oss#oss-parent;7[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/com.twilio.sdk/twilio-java-sdk/5.2.1/jars/twilio-java-sdk.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/com.twilio.sdk/twilio-java-sdk/5.2.1/jars/twilio-java-sdk.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/com.twilio.sdk/twilio-java-sdk/5.2.1/jars/twilio-java-sdk.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twilio/sdk/twilio-java-sdk/5.2.1/twilio-java-sdk-5.2.1.jar[0m
+[0m[[0mdebug[0m] [0m	found com.twilio.sdk#twilio-java-sdk;5.2.1 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpclient;4.2.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpclient;4.2.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/org.apache.httpcomponents/httpclient/4.2.6/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.httpcomponents#httpclient;4.2.6[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpclient/4.2.6/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for org.apache.httpcomponents#httpclient;4.2.6[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpclient/4.2.6/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.apache.httpcomponents#httpclient;4.2.6[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.apache.httpcomponents#httpclient;4.2.6[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.pom (4.2.6)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpclient;4.2.6!httpclient.pom(pom.original) (80ms)[0m
+[0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpcomponents-client;4.2.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpcomponents-client;4.2.6 {}[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/org.apache.httpcomponents/httpcomponents-client/4.2.6/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.httpcomponents#httpcomponents-client;4.2.6[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpcomponents-client/4.2.6/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for org.apache.httpcomponents#httpcomponents-client;4.2.6[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpcomponents-client/4.2.6/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.apache.httpcomponents#httpcomponents-client;4.2.6[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.2.6/httpcomponents-client-4.2.6.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.apache.httpcomponents#httpcomponents-client;4.2.6[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.2.6/httpcomponents-client-4.2.6.pom (4.2.6)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.2.6/httpcomponents-client-4.2.6.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.2.6/httpcomponents-client-4.2.6.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.2.6/httpcomponents-client-4.2.6.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.2.6/httpcomponents-client-4.2.6.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpcomponents-client;4.2.6!httpcomponents-client.pom(pom.original) (100ms)[0m
+[0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#project;7 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#project;7 {}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#project;7[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.httpcomponents#project;7[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/org.apache.httpcomponents/httpcomponents-client/4.2.6/jars/httpcomponents-client.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpcomponents-client/4.2.6/jars/httpcomponents-client.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpcomponents-client/4.2.6/jars/httpcomponents-client.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.2.6/httpcomponents-client-4.2.6.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.2.6/httpcomponents-client-4.2.6.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/apache/httpcomponents/httpcomponents-client/4.2.6/httpcomponents-client-4.2.6.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/apache/httpcomponents/httpcomponents-client/4.2.6/httpcomponents-client-4.2.6.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/org.apache.httpcomponents/httpcomponents-client/4.2.6/jars/httpcomponents-client.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.apache.httpcomponents/httpcomponents-client/4.2.6/jars/httpcomponents-client.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/releases/org/apache/httpcomponents/httpcomponents-client/4.2.6/httpcomponents-client-4.2.6.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/releases/org/apache/httpcomponents/httpcomponents-client/4.2.6/httpcomponents-client-4.2.6.jar[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/org.apache.httpcomponents/httpclient/4.2.6/jars/httpclient.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpclient/4.2.6/jars/httpclient.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpclient/4.2.6/jars/httpclient.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar[0m
+[0m[[0mdebug[0m] [0m	found org.apache.httpcomponents#httpclient;4.2.6 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpcore;4.2.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpcore;4.2.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/org.apache.httpcomponents/httpcore/4.2.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.httpcomponents#httpcore;4.2.5[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpcore/4.2.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for org.apache.httpcomponents#httpcore;4.2.5[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpcore/4.2.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.apache.httpcomponents#httpcore;4.2.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.apache.httpcomponents#httpcore;4.2.5[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.pom (4.2.5)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpcore;4.2.5!httpcore.pom(pom.original) (80ms)[0m
+[0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpcomponents-core;4.2.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpcomponents-core;4.2.5 {}[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/org.apache.httpcomponents/httpcomponents-core/4.2.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.httpcomponents#httpcomponents-core;4.2.5[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpcomponents-core/4.2.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for org.apache.httpcomponents#httpcomponents-core;4.2.5[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpcomponents-core/4.2.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.apache.httpcomponents#httpcomponents-core;4.2.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.2.5/httpcomponents-core-4.2.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.apache.httpcomponents#httpcomponents-core;4.2.5[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.2.5/httpcomponents-core-4.2.5.pom (4.2.5)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.2.5/httpcomponents-core-4.2.5.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.2.5/httpcomponents-core-4.2.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.2.5/httpcomponents-core-4.2.5.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.2.5/httpcomponents-core-4.2.5.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpcomponents-core;4.2.5!httpcomponents-core.pom(pom.original) (82ms)[0m
+[0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#project;7 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#project;7 {}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#project;7[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.httpcomponents#project;7[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/org.apache.httpcomponents/httpcomponents-core/4.2.5/jars/httpcomponents-core.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpcomponents-core/4.2.5/jars/httpcomponents-core.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpcomponents-core/4.2.5/jars/httpcomponents-core.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.2.5/httpcomponents-core-4.2.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.2.5/httpcomponents-core-4.2.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/apache/httpcomponents/httpcomponents-core/4.2.5/httpcomponents-core-4.2.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/apache/httpcomponents/httpcomponents-core/4.2.5/httpcomponents-core-4.2.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/org.apache.httpcomponents/httpcomponents-core/4.2.5/jars/httpcomponents-core.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.apache.httpcomponents/httpcomponents-core/4.2.5/jars/httpcomponents-core.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/releases/org/apache/httpcomponents/httpcomponents-core/4.2.5/httpcomponents-core-4.2.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/releases/org/apache/httpcomponents/httpcomponents-core/4.2.5/httpcomponents-core-4.2.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/org.apache.httpcomponents/httpcore/4.2.5/jars/httpcore.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpcore/4.2.5/jars/httpcore.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.apache.httpcomponents/httpcore/4.2.5/jars/httpcore.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar[0m
+[0m[[0mdebug[0m] [0m	found org.apache.httpcomponents#httpcore;4.2.5 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-lang3;3.3.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.commons#commons-lang3;3.3.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.commons#commons-lang3;3.3.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.commons#commons-lang3;3.3.2[0m
+[0m[[0mdebug[0m] [0m	found org.apache.commons#commons-lang3;3.3.2 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.googlecode.json-simple#json-simple;1.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.googlecode.json-simple#json-simple;1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/com.googlecode.json-simple/json-simple/1.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.googlecode.json-simple#json-simple;1.1[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/com.googlecode.json-simple/json-simple/1.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for com.googlecode.json-simple#json-simple;1.1[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/com.googlecode.json-simple/json-simple/1.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.googlecode.json-simple#json-simple;1.1[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.googlecode.json-simple#json-simple;1.1[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.pom (1.1)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.googlecode.json-simple#json-simple;1.1!json-simple.pom(pom.original) (355ms)[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/com.googlecode.json-simple/json-simple/1.1/jars/json-simple.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/com.googlecode.json-simple/json-simple/1.1/jars/json-simple.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/com.googlecode.json-simple/json-simple/1.1/jars/json-simple.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar[0m
+[0m[[0mdebug[0m] [0m	found com.googlecode.json-simple#json-simple;1.1 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.codehaus.jackson#jackson-core-asl;1.9.3 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.codehaus.jackson#jackson-core-asl;1.9.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/org.codehaus.jackson/jackson-core-asl/1.9.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.codehaus.jackson#jackson-core-asl;1.9.3[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.codehaus.jackson/jackson-core-asl/1.9.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for org.codehaus.jackson#jackson-core-asl;1.9.3[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.codehaus.jackson/jackson-core-asl/1.9.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.codehaus.jackson#jackson-core-asl;1.9.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.codehaus.jackson#jackson-core-asl;1.9.3[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.pom (1.9.3)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.codehaus.jackson#jackson-core-asl;1.9.3!jackson-core-asl.pom(pom.original) (296ms)[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/org.codehaus.jackson/jackson-core-asl/1.9.3/jars/jackson-core-asl.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.codehaus.jackson/jackson-core-asl/1.9.3/jars/jackson-core-asl.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.codehaus.jackson/jackson-core-asl/1.9.3/jars/jackson-core-asl.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.jar[0m
+[0m[[0mdebug[0m] [0m	found org.codehaus.jackson#jackson-core-asl;1.9.3 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.codehaus.jackson#jackson-mapper-asl;1.9.3 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.codehaus.jackson#jackson-mapper-asl;1.9.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/org.codehaus.jackson/jackson-mapper-asl/1.9.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.codehaus.jackson#jackson-mapper-asl;1.9.3[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.codehaus.jackson/jackson-mapper-asl/1.9.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for org.codehaus.jackson#jackson-mapper-asl;1.9.3[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.codehaus.jackson/jackson-mapper-asl/1.9.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.codehaus.jackson#jackson-mapper-asl;1.9.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.codehaus.jackson#jackson-mapper-asl;1.9.3[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.pom (1.9.3)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.codehaus.jackson#jackson-mapper-asl;1.9.3!jackson-mapper-asl.pom(pom.original) (463ms)[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/org.codehaus.jackson/jackson-mapper-asl/1.9.3/jars/jackson-mapper-asl.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.codehaus.jackson/jackson-mapper-asl/1.9.3/jars/jackson-mapper-asl.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/org.codehaus.jackson/jackson-mapper-asl/1.9.3/jars/jackson-mapper-asl.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.jar[0m
+[0m[[0mdebug[0m] [0m	found org.codehaus.jackson#jackson-mapper-asl;1.9.3 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving joda-time#joda-time;2.8.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: joda-time#joda-time;2.8.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/joda-time/joda-time/2.8.2/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for joda-time#joda-time;2.8.2[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/joda-time/joda-time/2.8.2/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for joda-time#joda-time;2.8.2[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/joda-time/joda-time/2.8.2/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for joda-time#joda-time;2.8.2[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for joda-time#joda-time;2.8.2[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.pom (2.8.2)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] joda-time#joda-time;2.8.2!joda-time.pom(pom.original) (131ms)[0m
+[0m[[0mdebug[0m] [0m		tried /Users/harshmalewar/.ivy2/local/joda-time/joda-time/2.8.2/jars/joda-time.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/joda-time/joda-time/2.8.2/jars/joda-time.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/harshmalewar/Library/activator-1.3.2/repository/joda-time/joda-time/2.8.2/jars/joda-time.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.jar[0m
+[0m[[0mdebug[0m] [0m	found joda-time#joda-time;2.8.2 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [compile][0m
@@ -1709,6 +2009,72 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [runtime][0m
@@ -2335,6 +2701,72 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.8 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-test_2.11;2.3.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-test_2.11;2.3.8 {test=[default(compile)]}[0m
@@ -3083,7 +3515,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.3.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.3.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.httpcomponents#httpclient;4.3.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: commons-io#commons-io;2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: commons-io#commons-io;2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -3572,7 +4006,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-collections#commons-collections;3.2.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.3.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.3.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.httpcomponents#httpclient;4.3.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.httpcomponents#httpclient;4.3.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.httpcomponents#httpmime;4.3.1 [runtime->runtime(*)][0m
@@ -4309,6 +4744,72 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -4937,6 +5438,72 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for downtown-street#downtown-street_2.11;1.0-SNAPSHOT [test-internal][0m
@@ -5565,6 +6132,72 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->net.coobird#thumbnailator;0.4.8 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;4.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.9 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.apache.commons#commons-lang3;3.3.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->com.googlecode.json-simple#json-simple;1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->org.codehaus.jackson#jackson-mapper-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.3->org.codehaus.jackson#jackson-core-asl;1.9.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.twilio.sdk#twilio-java-sdk;5.2.1->joda-time#joda-time;2.8.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.twilio.sdk#twilio-java-sdk;5.2.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.8 [test->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.8 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.8 [test->compile][0m
@@ -5995,7 +6628,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: com.google.guava#guava;15.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.3.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.3.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.httpcomponents#httpclient;4.3.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: commons-io#commons-io;2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: commons-io#commons-io;2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -6519,7 +7154,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->commons-collections#commons-collections;3.2.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.3.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.commons#commons-lang3;3.3.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.httpcomponents#httpclient;4.3.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.httpcomponents#httpclient;4.3.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sourceforge.htmlunit#htmlunit;2.13->org.apache.httpcomponents#httpmime;4.3.1 [runtime->runtime(*)][0m
@@ -7071,8 +7707,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [scala-tool->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies downtown-street#downtown-street_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [scala-tool->optional(default)][0m
-[0m[[0mdebug[0m] [0mcircular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-compiler;2.11.0->...[0m
-[0m[[0mdebug[0m] [0mcircular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.modules#scala-xml_2.11;1.0.2->...[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for commons-logging#commons-logging;1.1.1: evicting too[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for commons-logging#commons-logging;1.1.1: evicting too[0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
@@ -7087,6 +7721,12 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-ws_2.11;2.3.8!play-java-ws_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] mysql#mysql-connector-java;5.1.29!mysql-connector-java.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.coobird#thumbnailator;0.4.8!thumbnailator.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twilio/sdk/twilio-java-sdk/5.2.1/twilio-java-sdk-5.2.1.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/twilio/sdk/twilio-java-sdk/5.2.1/twilio-java-sdk-5.2.1.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twilio/sdk/twilio-java-sdk/5.2.1/twilio-java-sdk-5.2.1.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twilio/sdk/twilio-java-sdk/5.2.1/twilio-java-sdk-5.2.1.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twilio/sdk/twilio-java-sdk/5.2.1/twilio-java-sdk-5.2.1.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.twilio.sdk#twilio-java-sdk;5.2.1!twilio-java-sdk.jar (963ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.1!commons-lang3.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#build-link;2.3.8!build-link.jar[0m
@@ -7144,9 +7784,44 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.ning#async-http-client;1.8.15!async-http-client.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] oauth.signpost#signpost-core;1.2.1.2!signpost-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] oauth.signpost#signpost-commonshttp4;1.2.1.2!signpost-commonshttp4.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.0.1!httpcore.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.0.1!httpclient.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-logging#commons-logging;1.1.1!commons-logging.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpclient;4.2.6!httpclient.jar (1012ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpcore;4.2.5!httpcore.jar (508ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.3.2!commons-lang3.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.googlecode.json-simple#json-simple;1.1!json-simple.jar (101ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.3/jackson-core-asl-1.9.3.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.codehaus.jackson#jackson-core-asl;1.9.3!jackson-core-asl.jar (435ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.3/jackson-mapper-asl-1.9.3.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.codehaus.jackson#jackson-mapper-asl;1.9.3!jackson-mapper-asl.jar (1294ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/joda-time/joda-time/2.8.2/joda-time-2.8.2.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] joda-time#joda-time;2.8.2!joda-time.jar (292ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-test_2.11;2.3.8!play-test_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit;4.11!junit.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.specs2#specs2-core_2.11;2.3.12!specs2-core_2.11.jar[0m
@@ -7217,7 +7892,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.1!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.11!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3023ms :: artifacts dl 74ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 8751ms :: artifacts dl 4653ms[0m
 [0m[[0mdebug[0m] [0m	report for downtown-street#downtown-street_2.11;1.0-SNAPSHOT compile produced in /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/resolution-cache/reports/downtown-street-downtown-street_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for downtown-street#downtown-street_2.11;1.0-SNAPSHOT runtime produced in /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/resolution-cache/reports/downtown-street-downtown-street_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for downtown-street#downtown-street_2.11;1.0-SNAPSHOT test produced in /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/resolution-cache/reports/downtown-street-downtown-street_2.11-test.xml[0m
@@ -7231,5 +7906,5 @@
 [0m[[0mdebug[0m] [0m	report for downtown-street#downtown-street_2.11;1.0-SNAPSHOT docs produced in /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/resolution-cache/reports/downtown-street-downtown-street_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for downtown-street#downtown-street_2.11;1.0-SNAPSHOT pom produced in /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/resolution-cache/reports/downtown-street-downtown-street_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for downtown-street#downtown-street_2.11;1.0-SNAPSHOT scala-tool produced in /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/resolution-cache/reports/downtown-street-downtown-street_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (3023ms resolve - 74ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (8751ms resolve - 4653ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

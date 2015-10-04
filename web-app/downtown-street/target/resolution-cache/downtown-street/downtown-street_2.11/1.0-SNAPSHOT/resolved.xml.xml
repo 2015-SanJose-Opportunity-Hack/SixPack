@@ -4,7 +4,7 @@
 		module="downtown-street_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20151003225011"
+		publication="20151004110107"
 	>
 		<description>
 		downtown-street
@@ -45,5 +45,6 @@
 		<dependency org="com.typesafe.play" name="play-java-ws_2.11" rev="2.3.8" conf="compile->default(compile)"/>
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.29" conf="compile->default(compile)"/>
 		<dependency org="net.coobird" name="thumbnailator" rev="0.4.8" conf="compile->default(compile)"/>
+		<dependency org="com.twilio.sdk" name="twilio-java-sdk" rev="5.2.1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

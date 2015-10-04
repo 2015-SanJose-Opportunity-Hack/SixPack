@@ -16,13 +16,20 @@ import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
+import javax.mail.BodyPart;
 import javax.mail.Message;
 import javax.mail.MessagingException;
+import javax.mail.Multipart;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -33,8 +40,7 @@ import play.mvc.Http.MultipartFormData.FilePart;
 
 import com.twilio.sdk.TwilioRestClient;
 import com.twilio.sdk.TwilioRestException;
-import com.twilio.sdk.resource.factory.SmsFactory;
-import com.twilio.sdk.resource.instance.Sms;
+import com.twilio.sdk.resource.factory.MessageFactory;
 
 public class Utilities {
 	
@@ -42,7 +48,7 @@ public class Utilities {
 	private static final String username = play.Play.application().configuration().getString("mail.username");
 	private static final String password = play.Play.application().configuration().getString("mail.password");
 	private static final String ACCOUNT_SID = play.Play.application().configuration().getString("twilio.account_sid");
-	private static final String AUTH_TOKEN = play.Play.application().configuration().getString("twilio.autho_token");
+	private static final String AUTH_TOKEN = play.Play.application().configuration().getString("twilio.auth_token");
 
 	
 	/**
@@ -188,7 +194,7 @@ public class Utilities {
 	}
     
 	
-	public void sendMessage(String mobilenumber,String message) throws TwilioRestException
+	public static void sendMessage(String mobilenumber,String message) throws TwilioRestException
 	{
 		TwilioRestClient client = new TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN);
 		 Map maps = new HashMap<String, String>();
@@ -206,9 +212,82 @@ public class Utilities {
 	    maps.put("To",mobilenumber);
 	    maps.put("From", "+15106835602");
 	     
-	    SmsFactory smsFactory = client.getAccount().getSmsFactory();
-	    Sms message1 = smsFactory.create(maps);
-	    System.out.println(message1.getSid());
+	    /*SmsFactory smsFactory = client.getAccount().getSmsFactory();
+	    Sms message1 = smsFactory.create(maps);*/
+	    
+	    MessageFactory messageFactory = client.getAccount().getMessageFactory();
+	    com.twilio.sdk.resource.instance.Message message1 = messageFactory.create(params);
 
+	}
+	
+	public static void sendEmailwithAttach(String subject, String to, String message1,String filename) {
+		
+		Properties props = new Properties();
+		props.put("mail.smtp.auth", "true");
+		props.put("mail.smtp.starttls.enable", "true");
+		props.put("mail.smtp.host", "smtp.gmail.com");
+		props.put("mail.smtp.port", "587");
+
+		Session session = Session.getInstance(props,
+				new javax.mail.Authenticator() {
+					protected PasswordAuthentication getPasswordAuthentication() {
+						return new PasswordAuthentication(username, password);
+					}
+				});
+
+		try {
+
+			// Create a default MimeMessage object.
+	         Message message = new MimeMessage(session);
+
+	         // Set From: header field of the header.
+	         message.setFrom(new InternetAddress("downtownstreetsdemo@gmail.com"));
+
+	         // Set To: header field of the header.
+	         message.setRecipients(Message.RecipientType.TO,
+	            InternetAddress.parse(to));
+
+	         // Set Subject: header field
+	         message.setSubject(subject);
+
+	         // Create the message part
+	         BodyPart messageBodyPart = new MimeBodyPart();
+
+	         // Now set the actual message
+	         messageBodyPart.setText(message1);
+
+	         // Create a multipar message
+	         Multipart multipart = new MimeMultipart();
+
+	         // Set text message part
+	         multipart.addBodyPart(messageBodyPart);
+
+	         // Part two is attachment
+	         messageBodyPart = new MimeBodyPart();
+	         //String filename = "C:\\Users\\amoghrao\\Pictures\\Desert.jpg";
+	         DataSource source = new FileDataSource(filename);
+	         messageBodyPart.setDataHandler(new DataHandler(source));
+	         messageBodyPart.setFileName(filename);
+	         multipart.addBodyPart(messageBodyPart);
+	         
+	         //for html
+	         MimeBodyPart htmlPart = new MimeBodyPart();
+	         htmlPart.setContent("<html> <body> <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=P8T325CM86T6J&lc=US&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted'> <img src='https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif' width='140' height='60'>  </body> </html> ", "text/html");
+	         multipart.addBodyPart(htmlPart);
+
+	         // Send the complete message parts
+	         message.setContent(multipart);
+
+	         // Send message
+	         Transport.send(message);
+
+	         System.out.println("Sent message successfully....");
+			
+
+			System.out.println("Done");
+
+		} catch (MessagingException e) {
+			throw new RuntimeException(e);
+		}
 	}
 }

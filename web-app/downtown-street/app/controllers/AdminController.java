@@ -8,17 +8,15 @@ import models.Request;
 import modules.utilities.Utilities;
 
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 import play.data.Form;
-import play.libs.F.Callback;
-import play.libs.F.Callback0;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Http;
 import play.mvc.Http.MultipartFormData.FilePart;
 import play.mvc.Result;
 import play.mvc.Security;
-import play.mvc.WebSocket;
 import views.formdata.admin.AdminLoginForm;
 import views.formdata.admin.SettingsForm;
 
@@ -29,10 +27,7 @@ import controllers.security.SecuredAdmin;
 public class AdminController extends Controller {
 
 	private final static String directoryPath = play.Play.application()
-			.configuration().getString("inventory.imagePath");
-	
-	private static ArrayList<WebSocket.Out> channels=new ArrayList<WebSocket.Out>();
-
+			.configuration().getString("request.imageDirectory");
 	
 	
  	// Function to authenticate login
@@ -119,9 +114,7 @@ public class AdminController extends Controller {
 	//view request details
 	@Security.Authenticated(SecuredAdmin.class)
 	public static Result viewRequest(int id){
-		for(WebSocket.Out channel : channels){
-            channel.write("blah");
-        }
+		
 		Request request = Request.find.byId(id);
 		if(request == null){
 			return redirect(routes.AdminController.errorNotFound());
@@ -135,10 +128,11 @@ public class AdminController extends Controller {
 	public static Result allRequestAjax(){
 		ObjectNode result = Json.newObject();
 		
-		JSONArray requestArray = new JSONArray();
-		ObjectNode requestJSON = Json.newObject();
+		JSONObject requestJSON = new JSONObject();
+		JSONArray requestArray=null;
 		List<Request> requestList = Request.find.all();
 		for(Request request : requestList){
+			requestArray = new JSONArray();
 			requestJSON.put("firstName", request.getFirstName());
 			requestJSON.put("lastName", request.getLastName());
 			requestJSON.put("latitude", request.getLatitude());
@@ -150,19 +144,20 @@ public class AdminController extends Controller {
 			requestJSON.put("address", request.getAddress());
 			requestArray.put(requestJSON);
 		}
-		//result.put("data", requestArray);
-		//result.putArray(requestArray);
-		return ok();
+		
+		result.put("data", Json.toJson(Request.find.all()));
+		return ok(result);
 	}
 	
 	@Security.Authenticated(SecuredAdmin.class)
 	public static Result resolveRequest(int id){
 		Http.MultipartFormData body = request().body().asMultipartFormData();
 		Request request = Request.find.byId(id);
+		
 		if(request == null){
 			return redirect(routes.AdminController.errorNotFound());
 		}
-		
+		String email = request.getEmail();
 		FilePart pictureFile = body.getFile("resolvedImage");
   	  	String fileName = Utilities.uploadItemPicture(pictureFile);
   	  	
@@ -170,11 +165,16 @@ public class AdminController extends Controller {
 	  	request.setResolved(true);
 		request.update();
 		try {
-			Thread.sleep(500);
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.println(email + " " + email.equals(""));
+		if(!email.equals("")){
+			  System.out.println("Sending mail with attachment...");
+	  		  Utilities.sendEmailwithAttach("Your issues has been resolved", email, "Hi, Thank you for sending us a request. Your issue has been resolved by our volunteer. Please find an image attached to this mail.", directoryPath + request.getImage());
+	  	}
 		return redirect(routes.AdminController.viewRequest(id));
 	}
 	
@@ -189,17 +189,24 @@ public class AdminController extends Controller {
 		return redirect(routes.AdminController.viewRequest(id));
 	}
 	
-	public static WebSocket<String> index() {
-		  return new WebSocket<String>() {
-		      
-		    public void onReady(WebSocket.In<String> in, WebSocket.Out<String> out) {
-		      out.write("Hello!");
-		      System.out.println("Running");
-		      out.close();
-		    }
-		    
-		  };
+	@Security.Authenticated(SecuredAdmin.class)
+	public static Result visualizations(){
+		List<Request> requestList = Request.find.all();
+		return ok(views.html.admin.visualizations
+				.render("Visualization", SecuredAdmin.isLoggedIn(ctx()), requestList));
 	}
 	
-	
+	@Security.Authenticated(SecuredAdmin.class)
+	public static Result locations(){
+		ObjectNode result = Json.newObject();
+		List<String> locationList = new ArrayList<String>();
+		List<Request> requestList = Request.find.all();
+		for(Request request: requestList){
+			if(!request.getLatitude().equals("") && !request.getLongitude().equals("")){
+				locationList.add(request.getLatitude()+"," + request.getLongitude());
+			}
+		}
+		result.put("locations", Json.toJson(locationList));
+		return ok(result);
+	}
 }

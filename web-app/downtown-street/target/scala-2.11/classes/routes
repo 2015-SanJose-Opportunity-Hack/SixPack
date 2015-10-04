@@ -31,8 +31,11 @@ POST   /request/:id                 controllers.AdminController.resolveRequest(i
 
 GET    /request/unresolve/:id        controllers.AdminController.unresolveRequest(id: Integer)
 
+GET	   /visualize					controllers.AdminController.visualizations()
 
+GET   /locations					controllers.AdminController.locations()
 
+GET	   /request						controllers.AdminController.allRequestAjax()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

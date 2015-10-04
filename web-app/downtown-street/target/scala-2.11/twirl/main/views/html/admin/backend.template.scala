@@ -45,8 +45,8 @@ Seq[Any](format.raw/*1.53*/("""
 	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
 	    <script src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
-	    <script src="https://cdn.datatables.net/responsive/1.0.7/js/dataTables.responsive.min.js"></script>
-	    <script src="https://cdn.datatables.net/responsive/1.0.7/css/responsive.dataTables.min.css"></script>
+	    <!-- <script src="https://cdn.datatables.net/responsive/1.0.7/js/dataTables.responsive.min.js"></script>
+	    <link rel="stylesheet" grf="https://cdn.datatables.net/responsive/1.0.7/css/responsive.dataTables.min.css"> -->
 	    
 	   <!-- End Data Tables -->
        
@@ -76,8 +76,8 @@ Seq[Any](format.raw/*1.53*/("""
 		                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><span class="glyphicon glyphicon-user"></span>  My Account<i class="material-icons right">arrow_drop_down</i> </a></li>
 		
 		                    <ul id="dropdown1" class="dropdown-content">
-		                        <li><a href="/settings">Settings</a></li>
-		                        <li><a href="/logout">logout</a></li>
+		                        <li><a href=""""),_display_(/*51.41*/routes/*51.47*/.AdminController.settings()),format.raw/*51.74*/("""">Settings</a></li>
+		                        <li><a href=""""),_display_(/*52.41*/routes/*52.47*/.ApplicationController.logout()),format.raw/*52.78*/("""">logout</a></li>
 		
 		                    </ul>
 		                </ul>
@@ -112,11 +112,11 @@ Seq[Any](format.raw/*1.53*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sun Oct 04 06:22:07 PDT 2015
+                  DATE: Sun Oct 04 11:07:35 PDT 2015
                   SOURCE: /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/admin/backend.scala.html
-                  HASH: 6c841a0e568ca412022a3cf443e3475ce1e10608
-                  MATRIX: 744->1|883->52|911->54|1062->179|1087->184|1252->322|1267->328|1320->360|2740->1753|2755->1759|2810->1793|2894->1850|2909->1856|2962->1888|3077->1976|3092->1982|3147->2016|3326->2168|3349->2182|3388->2183|3417->2185|3432->2191|3481->2219|3502->2221|3515->2225|3554->2226|3583->2227|3617->2230|3749->2335|3772->2349|3811->2350|3858->2369|4409->2889|4451->2903|4586->3011|4609->3025|4648->3026|4677->3027|4720->3039|4775->3068|4803->3075|4834->3079
-                  LINES: 26->1|29->1|31->3|36->8|36->8|38->10|38->10|38->10|60->32|60->32|60->32|61->33|61->33|61->33|64->36|64->36|64->36|73->45|73->45|73->45|73->45|73->45|73->45|73->45|73->45|73->45|73->45|73->45|74->46|74->46|74->46|75->47|84->56|85->57|90->62|90->62|90->62|90->62|90->62|92->64|92->64|93->65
+                  HASH: 294ff7674581f438f14b48a02f839a7040930ae9
+                  MATRIX: 744->1|883->52|911->54|1062->179|1087->184|1252->322|1267->328|1320->360|2755->1768|2770->1774|2825->1808|2909->1865|2924->1871|2977->1903|3092->1991|3107->1997|3162->2031|3341->2183|3364->2197|3403->2198|3432->2200|3447->2206|3496->2234|3517->2236|3530->2240|3569->2241|3598->2242|3632->2245|3764->2350|3787->2364|3826->2365|3873->2384|4255->2739|4270->2745|4318->2772|4405->2832|4420->2838|4472->2869|4594->2960|4636->2974|4771->3082|4794->3096|4833->3097|4862->3098|4905->3110|4960->3139|4988->3146|5019->3150
+                  LINES: 26->1|29->1|31->3|36->8|36->8|38->10|38->10|38->10|60->32|60->32|60->32|61->33|61->33|61->33|64->36|64->36|64->36|73->45|73->45|73->45|73->45|73->45|73->45|73->45|73->45|73->45|73->45|73->45|74->46|74->46|74->46|75->47|79->51|79->51|79->51|80->52|80->52|80->52|84->56|85->57|90->62|90->62|90->62|90->62|90->62|92->64|92->64|93->65
                   -- GENERATED --
               */
           

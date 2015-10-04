@@ -18,5 +18,5 @@ libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.29"
 
 libraryDependencies += "net.coobird" % "thumbnailator" % "0.4.8"
 
-
+libraryDependencies += "com.twilio.sdk" % "twilio-java-sdk" % "5.2.1"
 

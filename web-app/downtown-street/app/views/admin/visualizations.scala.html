@@ -1,0 +1,62 @@
+@(title: String, isLoggedIn: Boolean, requestList: List[models.Request])
+
+@import helper._
+@import views.html.bootstrap3._
+
+@backend(title, isLoggedIn) {
+
+    
+    <div class="request-container col m12">
+    	<div class="maps col m6">
+    		<div id="map">
+        	</div>
+    	</div>
+   	</div>
+   	}
+   	
+   	<script type = "text/javascript">
+   	function drawMap()
+   	{
+
+   		   alert('Hello')
+   	       var map = new google.maps.Map(document.getElementById('map'), {
+   	         zoom: 8,
+   	         center: new google.maps.LatLng(-33.92, 151.25),
+   	         mapTypeId: google.maps.MapTypeId.ROADMAP
+   	       });
+
+   	        var infowindow = new google.maps.InfoWindow();
+
+   	        var marker, i;
+
+   	    	@for(request <- requestList){
+   	        {
+   	                
+   	        	@if(request.getLatitude() && request.getLatitude()){
+   	        		alert(@request.getLatitude());
+   	                marker = new google.maps.Marker({
+   	                  position: new google.maps.LatLng( @request.getLatitude(), @request.getLongitude()),
+   	                  map: map,
+   	                  icon: image
+   	                });
+
+   	                google.maps.event.addListener(marker, 'click', (function(marker, i)
+   	                {
+   	                  return function()
+   	                  {
+   	                    infowindow.setContent('Sentiment : '+data[i].sentiment);
+   	                    infowindow.open(map, marker);
+   	                  }
+   	                })(marker, i));
+	
+   	        	}
+   	        }
+
+
+
+   	}	
+   	    	
+   	 drawMap();
+   	</script>
+   	}
+   	    

@@ -59,3 +59,13 @@ cleanFiles
 reload
 compile
 run
+clean
+cleanFiles
+reload
+compile
+run
+clean
+cleanFiles
+reload
+compile
+run

@@ -1,24 +1,12 @@
-2015-10-04 06:40:15,540 - [INFO] - from play in pool-4-thread-2 
+2015-10-04 11:55:15,438 - [INFO] - from play in pool-4-thread-2 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-10-04 06:41:10,711 - [INFO] - from play in play-internal-execution-context-1 
+2015-10-04 11:55:58,815 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:mysql://localhost/downtown_street
 
-2015-10-04 06:41:11,266 - [INFO] - from application in play-internal-execution-context-1 
+2015-10-04 11:55:59,955 - [INFO] - from application in play-internal-execution-context-1 
 Application has started
 
-2015-10-04 06:41:11,274 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-10-04 06:43:08,784 - [INFO] - from application in play-internal-execution-context-2 
-Application shutdown...
-
-2015-10-04 06:43:08,878 - [INFO] - from play in play-internal-execution-context-2 
-database [default] connected at jdbc:mysql://localhost/downtown_street
-
-2015-10-04 06:43:08,921 - [INFO] - from application in play-internal-execution-context-2 
-Application has started
-
-2015-10-04 06:43:08,921 - [INFO] - from play in play-internal-execution-context-2 
+2015-10-04 11:55:59,961 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 

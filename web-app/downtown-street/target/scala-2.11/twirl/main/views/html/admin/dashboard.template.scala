@@ -75,19 +75,18 @@ Seq[Any](format.raw/*1.152*/("""
                         </thead>
                         
 			<tbody>
-				"""),_display_(/*51.6*/for(request <- requestList) yield /*51.33*/{_display_(Seq[Any](format.raw/*51.34*/("""
-					"""),format.raw/*52.6*/("""<tr>
-						<td><strong>"""),_display_(/*53.20*/request/*53.27*/.getId()),format.raw/*53.35*/("""</strong></td>
-						<td><img class="thumb" src="/assets/images/request-thumbs/thumb-"""),_display_(/*54.72*/request/*54.79*/.getImage()),format.raw/*54.90*/(""""></td>
-						<td class="text-center">"""),_display_(/*55.32*/request/*55.39*/.getFirstName()),format.raw/*55.54*/(""" """),_display_(/*55.56*/request/*55.63*/.getLastName()),format.raw/*55.77*/("""</td>
-						<td>"""),_display_(/*56.12*/request/*56.19*/.getAddress()),format.raw/*56.32*/("""</td>
-						<td>"""),_display_(/*57.12*/request/*57.19*/.getCreatedAt()),format.raw/*57.34*/("""</td>
-						<td><span class=""""),_display_(/*58.25*/if(request.isResolved())/*58.49*/{_display_(Seq[Any](format.raw/*58.50*/("""status-resolved""")))}/*58.66*/else/*58.70*/{_display_(Seq[Any](format.raw/*58.71*/("""status-pending""")))}),format.raw/*58.86*/("""">"""),_display_(/*58.89*/if(request.isResolved())/*58.113*/{_display_(Seq[Any](format.raw/*58.114*/("""Resolved""")))}/*58.123*/else/*58.127*/{_display_(Seq[Any](format.raw/*58.128*/("""Pending""")))}),format.raw/*58.136*/("""</span></td>
-						<td><a href=""""),_display_(/*59.21*/routes/*59.27*/.AdminController.viewRequest(request.getId())),format.raw/*59.72*/("""" class="btn btn-default">Details</a></td>
-					</tr>
-				""")))}),format.raw/*61.6*/("""
-							
-			"""),format.raw/*63.4*/("""</tbody>
+						"""),_display_(/*51.8*/for(request <- requestList) yield /*51.35*/{_display_(Seq[Any](format.raw/*51.36*/("""
+							"""),format.raw/*52.8*/("""<tr>
+								<td><strong>"""),_display_(/*53.22*/request/*53.29*/.getId()),format.raw/*53.37*/("""</strong></td>
+								<td><img class="thumb" src="/assets/images/request-thumbs/thumb-"""),_display_(/*54.74*/request/*54.81*/.getImage()),format.raw/*54.92*/(""""></td>
+								<td class="text-center">"""),_display_(/*55.34*/request/*55.41*/.getFirstName()),format.raw/*55.56*/(""" """),_display_(/*55.58*/request/*55.65*/.getLastName()),format.raw/*55.79*/("""</td>
+								<td>"""),_display_(/*56.14*/request/*56.21*/.getAddress()),format.raw/*56.34*/("""</td>
+								<td>"""),_display_(/*57.14*/request/*57.21*/.getCreatedAt()),format.raw/*57.36*/("""</td>
+								<td><span class=""""),_display_(/*58.27*/if(request.isResolved())/*58.51*/{_display_(Seq[Any](format.raw/*58.52*/("""status-resolved""")))}/*58.68*/else/*58.72*/{_display_(Seq[Any](format.raw/*58.73*/("""status-pending""")))}),format.raw/*58.88*/("""">"""),_display_(/*58.91*/if(request.isResolved())/*58.115*/{_display_(Seq[Any](format.raw/*58.116*/("""Resolved""")))}/*58.125*/else/*58.129*/{_display_(Seq[Any](format.raw/*58.130*/("""Pending""")))}),format.raw/*58.138*/("""</span></td>
+								<td><a href=""""),_display_(/*59.23*/routes/*59.29*/.AdminController.viewRequest(request.getId())),format.raw/*59.74*/("""" class="btn btn-default">Details</a></td>
+							</tr>
+						""")))}),format.raw/*61.8*/("""
+			"""),format.raw/*62.4*/("""</tbody>
 			
 		</table>
 	</div>
@@ -97,8 +96,13 @@ Seq[Any](format.raw/*1.152*/("""
 	
 	</div>
 	
+	<script type="text/javascript">
+		jQuery(document).ready(function()"""),format.raw/*73.36*/("""{"""),format.raw/*73.37*/("""
+			"""),format.raw/*74.4*/("""jQuery("head").append('<meta http-equiv="refresh" content="15">');
+		"""),format.raw/*75.3*/("""}"""),format.raw/*75.4*/(""");
+	</script>
 	
-""")))}),format.raw/*74.2*/("""
+""")))}),format.raw/*78.2*/("""
 """))}
   }
 
@@ -111,11 +115,11 @@ Seq[Any](format.raw/*1.152*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sun Oct 04 06:16:43 PDT 2015
+                  DATE: Sun Oct 04 11:01:07 PDT 2015
                   SOURCE: /Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/app/views/admin/dashboard.scala.html
-                  HASH: bd9eb9b68e474df472aa7058c9edf1baa622a404
-                  MATRIX: 799->1|1084->151|1112->202|1139->204|1173->230|1212->232|1249->243|1577->544|1601->547|1924->842|1954->850|2311->1179|2340->1186|3265->2085|3308->2112|3347->2113|3380->2119|3431->2143|3447->2150|3476->2158|3589->2244|3605->2251|3637->2262|3703->2301|3719->2308|3755->2323|3784->2325|3800->2332|3835->2346|3879->2363|3895->2370|3929->2383|3973->2400|3989->2407|4025->2422|4082->2452|4115->2476|4154->2477|4189->2493|4202->2497|4241->2498|4287->2513|4317->2516|4351->2540|4391->2541|4420->2550|4434->2554|4474->2555|4514->2563|4574->2596|4589->2602|4655->2647|4744->2706|4783->2718|4871->2776
-                  LINES: 26->1|30->1|32->5|33->6|33->6|33->6|36->9|43->16|43->16|49->22|49->22|56->29|56->29|78->51|78->51|78->51|79->52|80->53|80->53|80->53|81->54|81->54|81->54|82->55|82->55|82->55|82->55|82->55|82->55|83->56|83->56|83->56|84->57|84->57|84->57|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|86->59|86->59|86->59|88->61|90->63|101->74
+                  HASH: 81676c72fe64199b33c1e0fb81b179bb9e8731b6
+                  MATRIX: 799->1|1084->151|1112->202|1139->204|1173->230|1212->232|1249->243|1577->544|1601->547|1924->842|1954->850|2311->1179|2340->1186|3267->2087|3310->2114|3349->2115|3384->2123|3437->2149|3453->2156|3482->2164|3597->2252|3613->2259|3645->2270|3713->2311|3729->2318|3765->2333|3794->2335|3810->2342|3845->2356|3891->2375|3907->2382|3941->2395|3987->2414|4003->2421|4039->2436|4098->2468|4131->2492|4170->2493|4205->2509|4218->2513|4257->2514|4303->2529|4333->2532|4367->2556|4407->2557|4436->2566|4450->2570|4490->2571|4530->2579|4592->2614|4607->2620|4673->2665|4766->2728|4797->2732|4948->2855|4977->2856|5008->2860|5104->2929|5132->2930|5179->2947
+                  LINES: 26->1|30->1|32->5|33->6|33->6|33->6|36->9|43->16|43->16|49->22|49->22|56->29|56->29|78->51|78->51|78->51|79->52|80->53|80->53|80->53|81->54|81->54|81->54|82->55|82->55|82->55|82->55|82->55|82->55|83->56|83->56|83->56|84->57|84->57|84->57|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|85->58|86->59|86->59|86->59|88->61|89->62|100->73|100->73|101->74|102->75|102->75|105->78
                   -- GENERATED --
               */
           

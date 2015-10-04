@@ -18,6 +18,7 @@ import play.mvc.Result;
 import views.formdata.admin.AdminLoginForm;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.twilio.sdk.TwilioRestException;
 
 public class ApplicationController extends Controller {
 	
@@ -56,8 +57,6 @@ public class ApplicationController extends Controller {
     }
     
     public static Result requestRestCall(){
-      System.out.println("Received a request...");
-    	
       response().setHeader("Access-Control-Allow-Origin", "*");
       response().setHeader("Allow", "*");
       response().setHeader("Access-Control-Allow-Methods", "POST");
@@ -79,7 +78,7 @@ public class ApplicationController extends Controller {
   	  FilePart pictureFile = body.getFile("image");
   	  String fileName = Utilities.uploadItemPicture(pictureFile);
   	  
-  	  System.out.println("FileName: " + fileName + " body details: " +body.getFiles().size() );
+ 	  System.out.println("FileName: " + fileName + " body details: " +body.getFiles().size() );
   	  try {
   		  Thumbnails.of(new File(directoryPath + fileName)).size(160, 160).toFile(new File(thumbDirectory + "thumb-" + fileName));
 		} catch (IOException e) {
@@ -88,11 +87,6 @@ public class ApplicationController extends Controller {
 			result.put("error", "No picture in the body");
 		}
   	  
-//  	  if(latitude.equals("") || longitude.equals("") || pictureFile == null){
-//  		  result.put("error", "Missing latitude, longitude or picture");
-//  		  return badRequest(result);
-//  	  }
-  	  System.out.println("Saving requests");
   	  Request request = new Request();
   	  
   	  request.setFirstName(firstName);
@@ -100,7 +94,7 @@ public class ApplicationController extends Controller {
   	  request.setLatitude(latitude);
   	  request.setLongitude(longitude);
   	  request.setBusiness(business);
-  	  request.setBusiness(email);
+  	  request.setEmail(email);
   	  request.setAddress(address);
   	  request.setComment(comment);
   	  request.setContact(contact);
@@ -116,10 +110,19 @@ public class ApplicationController extends Controller {
 		result.put("error", "Could not save request");
 		return badRequest(result);
 	}
-  	result.put("success", "success");
+  	  result.put("success", "success");
+  	  
+  	  String adminEmail = Admin.find.findUnique().getEmail();
+  	  
+  	  Utilities.sendEmail("New Request Received", adminEmail , "Hi, You have a new request on the web dashboard.");
   	  
   	  
-  	  
+//  	  try {
+//		Utilities.sendMessage("4158678494", "New request");
+//	} catch (Exception e) {
+//		// TODO Auto-generated catch block
+//		e.printStackTrace();
+//	}
   	  return ok(result);
     }
 

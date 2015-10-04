@@ -1,6 +1,6 @@
 // @SOURCE:/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/conf/routes
-// @HASH:d09978da376513e9e9d5c0036cccc1a91c19163b
-// @DATE:Sat Oct 03 23:30:08 PDT 2015
+// @HASH:7c8476fc74761ef12fa768130f4c2dfe3283988f
+// @DATE:Sun Oct 04 11:23:23 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,7 +15,10 @@ import _root_.play.libs.F
 import Router.queryString
 
 
+// @LINE:41
 // @LINE:38
+// @LINE:36
+// @LINE:34
 // @LINE:32
 // @LINE:30
 // @LINE:28
@@ -87,11 +90,11 @@ def error(): Call = {
 }
                           
 
-// @LINE:38
+// @LINE:41
 class ReverseAssets {
 
 
-// @LINE:38
+// @LINE:41
 def at(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -101,6 +104,9 @@ def at(file:String): Call = {
 }
                           
 
+// @LINE:38
+// @LINE:36
+// @LINE:34
 // @LINE:32
 // @LINE:30
 // @LINE:26
@@ -127,10 +133,31 @@ def authenticateLogin(): Call = {
 }
                         
 
+// @LINE:36
+def locations(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "locations")
+}
+                        
+
+// @LINE:34
+def visualizations(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "visualize")
+}
+                        
+
 // @LINE:26
 def viewRequest(id:Integer): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "request/" + implicitly[PathBindable[Integer]].unbind("id", id))
+}
+                        
+
+// @LINE:38
+def allRequestAjax(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "request")
 }
                         
 
@@ -182,7 +209,10 @@ def login(): Call = {
                   
 
 
+// @LINE:41
 // @LINE:38
+// @LINE:36
+// @LINE:34
 // @LINE:32
 // @LINE:30
 // @LINE:28
@@ -279,11 +309,11 @@ def error : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:38
+// @LINE:41
 class ReverseAssets {
 
 
-// @LINE:38
+// @LINE:41
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
@@ -297,6 +327,9 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:38
+// @LINE:36
+// @LINE:34
 // @LINE:32
 // @LINE:30
 // @LINE:26
@@ -331,12 +364,45 @@ def authenticateLogin : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
+// @LINE:36
+def locations : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.AdminController.locations",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "locations"})
+      }
+   """
+)
+                        
+
+// @LINE:34
+def visualizations : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.AdminController.visualizations",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "visualize"})
+      }
+   """
+)
+                        
+
 // @LINE:26
 def viewRequest : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.AdminController.viewRequest",
    """
       function(id) {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "request/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id)})
+      }
+   """
+)
+                        
+
+// @LINE:38
+def allRequestAjax : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.AdminController.allRequestAjax",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "request"})
       }
    """
 )
@@ -414,7 +480,10 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:41
 // @LINE:38
+// @LINE:36
+// @LINE:34
 // @LINE:32
 // @LINE:30
 // @LINE:28
@@ -481,11 +550,11 @@ def error(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
-// @LINE:38
+// @LINE:41
 class ReverseAssets {
 
 
-// @LINE:38
+// @LINE:41
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -494,6 +563,9 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
+// @LINE:38
+// @LINE:36
+// @LINE:34
 // @LINE:32
 // @LINE:30
 // @LINE:26
@@ -518,9 +590,27 @@ def authenticateLogin(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRe
 )
                       
 
+// @LINE:36
+def locations(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.AdminController.locations(), HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "locations", Seq(), "GET", """""", _prefix + """locations""")
+)
+                      
+
+// @LINE:34
+def visualizations(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.AdminController.visualizations(), HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "visualizations", Seq(), "GET", """""", _prefix + """visualize""")
+)
+                      
+
 // @LINE:26
 def viewRequest(id:Integer): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.AdminController.viewRequest(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "viewRequest", Seq(classOf[Integer]), "GET", """""", _prefix + """request/$id<[^/]+>""")
+)
+                      
+
+// @LINE:38
+def allRequestAjax(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.AdminController.allRequestAjax(), HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "allRequestAjax", Seq(), "GET", """""", _prefix + """request""")
 )
                       
 

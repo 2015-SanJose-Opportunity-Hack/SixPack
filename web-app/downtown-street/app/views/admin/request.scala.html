@@ -56,6 +56,11 @@
     			@request.getAddress()
     		</div>
     		
+    		<div class="request-info-group col m12">
+    			@request.getCreatedAt()
+    		</div>
+    		
+    		
     		@if(request.isResolved()){
     			<a href="@routes.AdminController.unresolveRequest(request.getId())" class="waves-effect green darken-1 waves-light btn resolved resolve-btn">@if(request.isResolved){ Resolved }else{ Unresolved } </a>
     		}else{
@@ -143,18 +148,21 @@
 	    	//google maps
 	      function initialize() {
 	    		//37.3351874,-121.8832655
-	    	  var myLatLng = {lat: 37.3351874, lng: -121.8832655};
+	    		@if(request.getLatitude() && request.getLongitude()){
+	    			 var myLatLng = {lat: @request.getLatitude(), lng: @request.getLongitude()};
 
-	    	  var map = new google.maps.Map(document.getElementById('map'), {
-	    	    zoom: 17,
-	    	    center: myLatLng
-	    	  });
-
-	    	  var marker = new google.maps.Marker({
-	    	    position: myLatLng,
-	    	    map: map,
-	    	    title: 'Hello World!'
-	    	  });
+		   	    	  var map = new google.maps.Map(document.getElementById('map'), {
+		   	    	    zoom: 17,
+		   	    	    center: myLatLng
+		   	    	  });
+	
+		   	    	  var marker = new google.maps.Marker({
+		   	    	    position: myLatLng,
+		   	    	    map: map,
+		   	    	    title: 'Hello World!'
+		   	    	  });
+	    		}	
+	    	 
 	      }
 	      google.maps.event.addDomListener(window, 'load', initialize);
 	      
@@ -174,7 +182,19 @@
 			  
 			  jQuery(".modal-trigger").leanModal();
 	      });
-	      
+	      var time = new Date().getTime();
+           jQuery(document.body).bind("mousemove keypress", function(e) {
+               time = new Date().getTime();
+           });
+
+           function refresh() {
+               if(new Date().getTime() - time >= 60000) 
+                   window.location.reload(true);
+               else 
+                   setTimeout(refresh, 10000);
+           }
+
+           setTimeout(refresh, 10000);
 	      
 				
 	    </script>

@@ -17,8 +17,8 @@
 	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
 	    <script src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
-	    <script src="https://cdn.datatables.net/responsive/1.0.7/js/dataTables.responsive.min.js"></script>
-	    <script src="https://cdn.datatables.net/responsive/1.0.7/css/responsive.dataTables.min.css"></script>
+	    <!-- <script src="https://cdn.datatables.net/responsive/1.0.7/js/dataTables.responsive.min.js"></script>
+	    <link rel="stylesheet" grf="https://cdn.datatables.net/responsive/1.0.7/css/responsive.dataTables.min.css"> -->
 	    
 	   <!-- End Data Tables -->
        
@@ -48,8 +48,8 @@
 		                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><span class="glyphicon glyphicon-user"></span>  My Account<i class="material-icons right">arrow_drop_down</i> </a></li>
 		
 		                    <ul id="dropdown1" class="dropdown-content">
-		                        <li><a href="/settings">Settings</a></li>
-		                        <li><a href="/logout">logout</a></li>
+		                        <li><a href="@routes.AdminController.settings()">Settings</a></li>
+		                        <li><a href="@routes.ApplicationController.logout()">logout</a></li>
 		
 		                    </ul>
 		                </ul>

@@ -1,6 +1,6 @@
 // @SOURCE:/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/conf/routes
-// @HASH:d09978da376513e9e9d5c0036cccc1a91c19163b
-// @DATE:Sat Oct 03 23:30:08 PDT 2015
+// @HASH:7c8476fc74761ef12fa768130f4c2dfe3283988f
+// @DATE:Sun Oct 04 11:23:23 PDT 2015
 
 
 import play.core._
@@ -137,13 +137,34 @@ controllers.AdminController.unresolveRequest(fakeValue[Integer]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "unresolveRequest", Seq(classOf[Integer]),"GET", """""", Routes.prefix + """request/unresolve/$id<[^/]+>"""))
         
 
+// @LINE:34
+private[this] lazy val controllers_AdminController_visualizations15_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("visualize"))))
+private[this] lazy val controllers_AdminController_visualizations15_invoker = createInvoker(
+controllers.AdminController.visualizations(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "visualizations", Nil,"GET", """""", Routes.prefix + """visualize"""))
+        
+
+// @LINE:36
+private[this] lazy val controllers_AdminController_locations16_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("locations"))))
+private[this] lazy val controllers_AdminController_locations16_invoker = createInvoker(
+controllers.AdminController.locations(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "locations", Nil,"GET", """""", Routes.prefix + """locations"""))
+        
+
 // @LINE:38
-private[this] lazy val controllers_Assets_at15_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_at15_invoker = createInvoker(
+private[this] lazy val controllers_AdminController_allRequestAjax17_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("request"))))
+private[this] lazy val controllers_AdminController_allRequestAjax17_invoker = createInvoker(
+controllers.AdminController.allRequestAjax(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.AdminController", "allRequestAjax", Nil,"GET", """""", Routes.prefix + """request"""))
+        
+
+// @LINE:41
+private[this] lazy val controllers_Assets_at18_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_at18_invoker = createInvoker(
 controllers.Assets.at(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.ApplicationController.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.ApplicationController.logout()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """about""","""controllers.ApplicationController.aboutProject()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """not-found""","""controllers.ApplicationController.errorNotFound()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """error""","""controllers.ApplicationController.error()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.AdminController.login()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """authenticate""","""controllers.AdminController.authenticateLogin()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dashboard""","""controllers.AdminController.dashboard()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings""","""controllers.AdminController.settings()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings""","""controllers.AdminController.updateSettings()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """error/not-found""","""controllers.AdminController.errorNotFound()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request/$id<[^/]+>""","""controllers.AdminController.viewRequest(id:Integer)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request/v1""","""controllers.ApplicationController.requestRestCall()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request/$id<[^/]+>""","""controllers.AdminController.resolveRequest(id:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request/unresolve/$id<[^/]+>""","""controllers.AdminController.unresolveRequest(id:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.ApplicationController.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.ApplicationController.logout()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """about""","""controllers.ApplicationController.aboutProject()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """not-found""","""controllers.ApplicationController.errorNotFound()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """error""","""controllers.ApplicationController.error()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.AdminController.login()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """authenticate""","""controllers.AdminController.authenticateLogin()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """dashboard""","""controllers.AdminController.dashboard()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings""","""controllers.AdminController.settings()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """settings""","""controllers.AdminController.updateSettings()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """error/not-found""","""controllers.AdminController.errorNotFound()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request/$id<[^/]+>""","""controllers.AdminController.viewRequest(id:Integer)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request/v1""","""controllers.ApplicationController.requestRestCall()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request/$id<[^/]+>""","""controllers.AdminController.resolveRequest(id:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request/unresolve/$id<[^/]+>""","""controllers.AdminController.unresolveRequest(id:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """visualize""","""controllers.AdminController.visualizations()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """locations""","""controllers.AdminController.locations()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """request""","""controllers.AdminController.allRequestAjax()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -271,10 +292,34 @@ case controllers_AdminController_unresolveRequest14_route(params) => {
 }
         
 
+// @LINE:34
+case controllers_AdminController_visualizations15_route(params) => {
+   call { 
+        controllers_AdminController_visualizations15_invoker.call(controllers.AdminController.visualizations())
+   }
+}
+        
+
+// @LINE:36
+case controllers_AdminController_locations16_route(params) => {
+   call { 
+        controllers_AdminController_locations16_invoker.call(controllers.AdminController.locations())
+   }
+}
+        
+
 // @LINE:38
-case controllers_Assets_at15_route(params) => {
+case controllers_AdminController_allRequestAjax17_route(params) => {
+   call { 
+        controllers_AdminController_allRequestAjax17_invoker.call(controllers.AdminController.allRequestAjax())
+   }
+}
+        
+
+// @LINE:41
+case controllers_Assets_at18_route(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at15_invoker.call(controllers.Assets.at(path, file))
+        controllers_Assets_at18_invoker.call(controllers.Assets.at(path, file))
    }
 }
         

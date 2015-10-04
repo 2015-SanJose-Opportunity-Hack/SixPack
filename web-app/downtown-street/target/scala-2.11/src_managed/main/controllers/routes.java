@@ -1,6 +1,6 @@
 // @SOURCE:/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/conf/routes
-// @HASH:d09978da376513e9e9d5c0036cccc1a91c19163b
-// @DATE:Sat Oct 03 23:30:08 PDT 2015
+// @HASH:7c8476fc74761ef12fa768130f4c2dfe3283988f
+// @DATE:Sun Oct 04 11:23:23 PDT 2015
 
 package controllers;
 

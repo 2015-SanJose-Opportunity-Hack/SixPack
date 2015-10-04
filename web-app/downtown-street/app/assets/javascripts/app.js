@@ -26,7 +26,7 @@ jQuery(document).ready(function(){
 	
 	jQuery(".resolved").hover(function(){
 		jQuery(this).removeClass("green darken-1");
-		jQuery(this).addClass("orange amber-4");
+		jQuery(this).addClass("amber accent-4");
 		jQuery(this).text("Unresolve");
 	},
 	function(){
@@ -37,7 +37,9 @@ jQuery(document).ready(function(){
 	
     // DataTable
     jQuery('#search-table').DataTable({
-        "order": [[4, "desc"]]
+        "order": [[4, "desc"]],
+        "scrollX":true
+//        "ajax" : "/request"
     });
 });
 
