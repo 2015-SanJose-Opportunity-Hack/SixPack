@@ -24,9 +24,9 @@
 <body ng-app="starter">
 <form>
   <ion-pane ng-init="showHome = true">
-    <ion-view view-title="Home" ng-show="showHome" class="home-page" ng-show="imgURI === undefined">
+    <ion-view view-title="Home" ng-show="showHome" class="home-page">
       <ion-content id="capture-content" ng-controller="ExampleController" padding="true" class="home-content">
-        <div ng-show="imgURI === undefined">
+        <div>
           <button class="button button-full button-assertive" ng-click="takePhoto()">
             <i class="fa fa-camera"></i>&nbsp;Take Photo
           </button>
@@ -39,7 +39,8 @@
 
   </ion-pane>
 </form>
-
-
+<script>
+  getCurrentLocation();
+</script>
 </body>
 </html>

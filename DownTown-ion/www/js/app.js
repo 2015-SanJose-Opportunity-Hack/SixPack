@@ -28,8 +28,8 @@ angular.module('starter', ['ionic', 'ngCordova'])
         sourceType: Camera.PictureSourceType.CAMERA,
         allowEdit: true,
         encodingType: Camera.EncodingType.JPEG,
-        targetWidth: 300,
-        targetHeight: 300,
+        targetWidth: 1024,
+        targetHeight: 768,
         popoverOptions: CameraPopoverOptions,
         saveToPhotoAlbum: false
       };
@@ -39,7 +39,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
         window.location.href = 'preview.html'
 
       }, function (err) {
-        // Show Error message to the user
+        alert(err)
       });
 
     }
@@ -51,8 +51,8 @@ angular.module('starter', ['ionic', 'ngCordova'])
         sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
         allowEdit: true,
         encodingType: Camera.EncodingType.JPEG,
-        targetWidth: 300,
-        targetHeight: 300,
+        targetWidth: 1024,
+        targetHeight: 768,
         popoverOptions: CameraPopoverOptions,
         saveToPhotoAlbum: false
       };
@@ -60,7 +60,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
       $cordovaCamera.getPicture(options).then(function (imageData) {
         $scope.imgURI = "data:image/jpeg;base64," + imageData;
         localStorage.setItem('image', $scope.imgURI);
-        window.location = 'preview.html'
+        window.location.href = 'preview.html'
       }, function (err) {
         // Show Error message to the user
       });

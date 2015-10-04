@@ -5,6 +5,7 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
   <title></title>
 
+
   <link href="lib/ionic/css/ionic.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css"/>
@@ -16,6 +17,7 @@
   <script src="lib/ionic/js/ionic.bundle.js"></script>
   <script src="js/external.js"></script>
   <script src="js/requests.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;libraries=places"></script>
 
   <!-- cordova script (this will be a 404 during development) -->
   <script src="cordova.js"></script>
@@ -35,6 +37,7 @@
         <label class="item item-input">
           <input id="firstName" type="text" placeholder="First Name">
         </label>
+
         <label class="item item-input">
           <input id="lastName" type="text" placeholder="Last Name">
         </label>
@@ -60,7 +63,10 @@
     </ion-view>
   </ion-pane>
 </form>
-
+<script>
+  var input = (document.getElementById('location'));
+  var autocomplete = new google.maps.places.Autocomplete(input);
+</script>
 
 </body>
 </html>
