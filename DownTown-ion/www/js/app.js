@@ -21,6 +21,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
 .controller("ExampleController", function ($scope, $cordovaCamera) {
 
                 $scope.takePhoto = function () {
+                    
                   var options = {
                     quality: 75,
                     destinationType: Camera.DestinationType.DATA_URL,
@@ -36,8 +37,9 @@ angular.module('starter', ['ionic', 'ngCordova'])
                         $scope.imgURI = "data:image/jpeg;base64," + imageData;
                         localStorage.setItem('image',$scope.imgURI );
                     }, function (err) {
-                        // An error occured. Show a message to the user
+                        // Show Error message to the user
                     });
+                    
                 }
 
                 $scope.choosePhoto = function () {

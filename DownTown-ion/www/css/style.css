@@ -3,7 +3,7 @@
 
 .pic-preview{
 margin:auto;
-
+text-align: center;
 }
 
 .img-prev{
@@ -32,6 +32,7 @@ margin:auto;
   margin-top: 30%;
 
 }
+
 .logo{
 
   text-align: center;

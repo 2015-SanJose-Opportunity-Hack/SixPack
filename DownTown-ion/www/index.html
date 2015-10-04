@@ -31,21 +31,26 @@
     <!--</h1>-->
     <!--</ion-header-bar>-->
     <ion-view view-title="Home" ng-show="showHome" class="home-page">
-
-
       <ion-content id="capture-content" ng-controller="ExampleController" padding="true" class="home-content">
+          <div ng-show="imgURI === undefined">
         <button class="button button-full button-assertive" ng-click="takePhoto()">
           <i class="fa fa-camera"></i>&nbsp;Take Photo
         </button>
         <button class="button button-full button-assertive" ng-click="choosePhoto()">
           <i class="fa fa-file-image-o"></i>&nbsp;Choose Photo
         </button>
+          </div>
+          <div ng-show="imgURI !== undefined">
             <span class="pic-preview">
-                <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" class="img-prev"></span>
-        <textarea id="comments" ng-show="imgURI !== undefined" class="comments" rows="3" placeholder="comments"></textarea>
-        <button ng-show="imgURI !== undefined" class="button button-full " onClick="loadForm()">
+                <img ng-src="{{imgURI}}" class="img-prev"></span>
+        <textarea id="comments" class="comments" rows="3" placeholder="comments"></textarea>
+        <button class="button button-full button-assertive" onClick="loadForm()">
           Upload
         </button>
+              <button class="button button-full button-assertive" onClick="returnHome()">
+          Cancel
+        </button>
+          </div>
       </ion-content>
     </ion-view>
   </ion-pane>
