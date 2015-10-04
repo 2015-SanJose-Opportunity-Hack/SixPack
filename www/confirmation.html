@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css"/>
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <script src="js/maps.js"></script>
+  <script src="js/requests.js"></script>
+  <script src="js/external.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+  <script src="js/ng-cordova.min.js"></script>
+  <!-- your app's js -->
+  <script src="js/app.js"></script>
+
+</head>
+<body ng-app="starter">
+<form>
+  <ion-pane>
+    <ion-header-bar class="bar-assertive">
+      <h1 class="title">Done</h1>
+    </ion-header-bar>
+    <ion-view view-title="FormView">
+      <ion-content id="capture-data" ng-controller="ExampleController" padding="true" class="fullscreen">
+        <br>
+        <div style="text-align: center">
+          <img src="img/logo.png" height="70px" style="margin: auto" >
+        </div>
+
+        <div style="text-align:center">
+          Thank you. Your request has been submitted.
+
+          <br>
+          With your support, the possibilities are limitless and the door to opportunity is wide open! Every dollar raised creates change. Help us address our Team Members greatest needs by
+          donating today.
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="encrypted"
+                   value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </div>
+        <br>
+        <button class="button button-full button-assertive " onClick="returnHome()">
+          <i class="fa fa-home"></i>&nbsp;Home
+        </button>
+      </ion-content>
+    </ion-view>
+
+  </ion-pane>
+</form>
+
+</body>
+</html>
