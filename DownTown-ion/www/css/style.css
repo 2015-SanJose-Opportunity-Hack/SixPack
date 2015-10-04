@@ -10,7 +10,29 @@ margin:auto;
 margin:auto;
         min-width: 200px;
         max-width:80%;
-       
+
+
+}
+
+.home-page{
+  background-image: url('../img/cover.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
+
+}
+
+
+.logo{
+
+  text-align: center;
+}
+
+.lite-bg{
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
 
 }
 .comments{
