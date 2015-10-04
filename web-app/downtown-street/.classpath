@@ -145,5 +145,7 @@
 	<classpathentry kind="lib" path="/Users/harshmalewar/Documents/workspace/SixPack/web-app/downtown-street/target/scala-2.11/classes_managed"/>
 	<classpathentry kind="lib" path="/Users/harshmalewar/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar"/>
 	<classpathentry kind="lib" path="lib/thumbnailator-0.4.8.jar"/>
+	<classpathentry kind="lib" path="lib/mail-1.4.7.jar"/>
+	<classpathentry kind="lib" path="lib/twilio-java-sdk-5.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

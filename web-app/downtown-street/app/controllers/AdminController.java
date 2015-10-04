@@ -169,7 +169,12 @@ public class AdminController extends Controller {
   	  	request.setResolvedImage(fileName);
 	  	request.setResolved(true);
 		request.update();
-		
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return redirect(routes.AdminController.viewRequest(id));
 	}
 	
