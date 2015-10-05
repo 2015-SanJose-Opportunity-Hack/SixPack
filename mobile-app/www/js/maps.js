@@ -9,9 +9,12 @@ function getCurrentLocation() {
       reverseGeoCode(position.coords.latitude, position.coords.longitude)
     }, function () {
       console.log('Navigator Not Supported by browser')
+
     });
+
   }
   catch (error) {
+
     console.log(error.message);
   }
 
@@ -19,15 +22,23 @@ function getCurrentLocation() {
 
 
 function setLatLongs() {
+
+
   try {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address);
     xhr.onreadystatechange = function () {
       if (xhr.readyState == 4 && xhr.status == 200) {
 
+
+        localStorage.setItem('latitude', lat);
+        localStorage.setItem('longitude', lon);
+
+
         var result = JSON.parse(xhr.responseText);
         var lat = result.results[0].geometry.location.lat;
         var lng = result.results[0].geometry.location.lng;
+
         localStorage.setItem('latitude', lat);
         localStorage.setItem('longitude', lng);
       }
@@ -37,6 +48,7 @@ function setLatLongs() {
   catch (err) {
     console.log(err.message);
   }
+
 }
 
 

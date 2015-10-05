@@ -1,4 +1,4 @@
-var server = 'http://ec2-54-153-97-140.us-west-1.compute.amazonaws.com';
+var server = 'http://192.168.90.206';
 var port = ':9000';
 
 function getServerURL() {
@@ -7,6 +7,7 @@ function getServerURL() {
 
 
 function submitRequest(formdata) {
+
 
   var url = getServerURL() + '/request/v1';
   try {
@@ -44,8 +45,18 @@ function getFormData() {
     formData.append("contact", localStorage.getItem('contact') || '');
     formData.append("business", localStorage.getItem('business') || '');
 
-    formData.append("latitude",  '37');
-    formData.append("longitude", '-21');
+    try {
+      setLatLongs();
+
+    }
+    catch (err) {
+      alert(err);
+    }
+
+    formData.append("latitude", localStorage.getItem('latitude') || '');
+    formData.append("longitude", localStorage.getItem('longitude') || '');
+
+
     formData.append("location", localStorage.getItem('location') || '');
     formData.append("comments", localStorage.getItem('comments') || '');
     var blob = dataURItoBlob(localStorage.getItem('image'));
@@ -59,6 +70,7 @@ function getFormData() {
     alert(error.message)
   }
   return formData;
+
 }
 
 
